@@ -1,0 +1,13 @@
+---
+name: Propositions
+description: >
+  Ensemble des propositions créées sur la plateforme. Sont prises en comptes les
+  propositions acceptées, refusées ou en cours d'évalutation. Les propositions
+  retirées sont également prises en compte
+viz_settings:
+  scalar:
+    name: Propositions
+  line:
+    name: Nouvelles propositions
+    description: >
+      Nouvelles propositions créées sur votre plateforme

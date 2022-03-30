@@ -1,0 +1,24 @@
+---
+query:
+  model: true
+  sql: |
+    select *,
+      (case when confirmed_at is null then false else true end) as "confirmed"
+    from decidim_users
+  info:
+    filterables:
+      date:
+        attr: created_at
+        required: false
+      integer:
+        attr: decidim_organization_id
+        required: true
+    viz_settings:
+      scalar:
+        - day
+        - week
+        - month
+      line:
+        - day
+        - week
+        - month

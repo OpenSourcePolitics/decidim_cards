@@ -1,0 +1,18 @@
+---
+name: Utilisateurs
+description: |
+  Tous les comptes utilisateurs créés sur votre plateforme (y compris les
+  administrateurs, les utilisateurs invités, gérés, signalés, bloqués et
+  supprimés)
+viz_settings:
+  scalar:
+    name: Utilisateurs
+    description: Description utilisateurs
+  line:
+    name: Nouveaux utilisateurs
+    description: |
+      Nouveaux comptes utilisateurs créés sur votre plateforme (y compris
+      les administrateurs, les utilisateurs invités, gérés, signalés,
+      bloqués et supprimés)
+    axis_x: Date
+    axis_y: ""
