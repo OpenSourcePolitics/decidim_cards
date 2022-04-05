@@ -1,5 +1,5 @@
 ---
-name: Users
+name: Utilisateurs
 description: >
   All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
 viz_settings:
