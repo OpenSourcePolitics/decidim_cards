@@ -1,15 +1,14 @@
 ---
 name: Utilisateurs
 description: >
-  All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
+  Tous les utilisateurs créés sur votre plateforme (y compris les administrateurs, les utilisateurs invités, gérés, signalés, bloqués et supprimés)
 viz_settings:
   scalar:
-    name: Users
-    description: Users description
+    name: Utilisateurs
+    description: Description des utilisateurs
   line:
-    name: New users
+    name: Nouveaux utilisateurs
     description: |
-      New users on your platform (includes
-      admins, invited and managed, blocked and deleted users)
+      Nouveaux utilisateurs créés sur votre plateforme (y compris les administrateurs, les utilisateurs invités, gérés, signalés, bloqués et supprimés)
     axis_x: Date
     axis_y: ""
