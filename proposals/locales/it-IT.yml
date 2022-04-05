@@ -1,5 +1,5 @@
 ---
-name: Propositions
+name: Proposte
 description: >
   All proposals created on your platform. It includes : proposals with the following state : accepted, evaluated, rejected and withdrawn. It doesn't include hidden proposals (moderation) and unpublished proposals (remember the a participatory space and component can be published or unpublished).
 viz_settings:
