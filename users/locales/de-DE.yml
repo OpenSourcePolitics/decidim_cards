@@ -1,5 +1,5 @@
 ---
-name: Users
+name: Benutzer
 description: >
   All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
 viz_settings:
@@ -11,5 +11,5 @@ viz_settings:
     description: |
       New users on your platform (includes
       admins, invited and managed, blocked and deleted users)
-    axis_x: Date
+    axis_x: Datum
     axis_y: ""
