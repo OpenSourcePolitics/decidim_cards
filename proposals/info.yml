@@ -9,7 +9,6 @@ query:
         (case when (decidim_categories.name->>'fr' = '' is not false) then 'uncategorized' else decidim_categories.name->>'fr' end)  as category,
         regexp_replace(decidim_proposals_proposals.title->>'fr', E'<[^>]+>', '', 'gi') as proposal_title,
         regexp_replace(decidim_proposals_proposals.body->>'fr', E'<[^>]+>', '', 'gi') as proposal_body,
-        regexp_replace(decidim_proposals_proposals.body->>'fr', E'<[^>]+>', '', 'gi') as proposal_body,
         decidim_areas.name->>'fr' as area_name,
         decidim_area_types.name->>'fr' as area_type_name,
         decidim_proposals_proposals.*
