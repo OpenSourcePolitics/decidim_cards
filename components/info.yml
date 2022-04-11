@@ -3,6 +3,7 @@ query:
   model: true
   sql: |
     -- Warning: are not taken by default into account Conferences, Consultations, Elections, Initiatives, Votations. Uncomment corresponding line to do so
+    -- This request needs a meta request giving targeted Decidim organizations
     with participatory_spaces as (
         select id as pp_id, published_at as pp_published_at, title as pp_title, subtitle as pp_subtitle, slug as pp_slug, decidim_organization_id, 'Decidim::Assembly' as pp_participatory_space_type
         from decidim_assemblies
@@ -25,11 +26,11 @@ query:
     select decidim_components.*, participatory_spaces.*
     from decidim_components
         join participatory_spaces on participatory_spaces.pp_participatory_space_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.pp_id 
-        join {{#organization_meta}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id
+        join {{#organizations}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id
     where array_position(array[decidim_components.published_at, participatory_spaces.pp_published_at], null) is null
   info:
-    meta_required:
-      - organization_meta
+    meta:
+      organizations: id
     filterables:
       date:
         attr: created_at

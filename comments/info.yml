@@ -2,9 +2,7 @@
 query:
   model:  true
   sql:  |
-    -- WARNING : are not taken into account this modules
-    -- Decidim::Consultations::Question
-    -- Initiative
+    -- WARNING: 
     with commentaries as (
             select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "commentable_component_id"
             from decidim_accountability_results
@@ -48,18 +46,15 @@ query:
                     and decidim_proposals_collaborative_drafts.published_at is not null
                     and decidim_moderations.hidden_at is null
     )
-    select commentaries.*, decidim_participatory_processes.slug as pp_slug
+    select commentaries.*, decidim_components.pp_slug
     from commentaries
-        join {{#components_meta_id}} decidim_components on decidim_components.id = commentaries.commentable_component_id
+        join {{#components}} as decidim_components on decidim_components.id = commentaries.commentable_component_id
         left join decidim_moderations on decidim_moderations.decidim_reportable_id = commentaries.id
     where (decidim_moderations.hidden_at is null or (decidim_moderations.hidden_at is not null and decidim_moderations.decidim_reportable_type not like 'Decidim::Comments::Comment'))
   info:
-    meta_required:
-      - components_meta
+    meta:
+      components: id
     filterables:
-      integer:
-        attr: decidim_organization_id
-        required: true
       date:
         attr: created_at
         required: false
