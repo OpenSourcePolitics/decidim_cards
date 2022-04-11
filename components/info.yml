@@ -25,12 +25,12 @@ query:
     select decidim_components.*, participatory_spaces.*
     from decidim_components
         join participatory_spaces on participatory_spaces.pp_participatory_space_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.pp_id 
+        join {{#organization_meta}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id
     where array_position(array[decidim_components.published_at, participatory_spaces.pp_published_at], null) is null
   info:
+    meta_required:
+      - organization_meta
     filterables:
-      integer:
-        attr: decidim_organization_id
-        required: true
       date:
         attr: created_at
         required: false
