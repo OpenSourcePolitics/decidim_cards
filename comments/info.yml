@@ -1,0 +1,68 @@
+---
+query:
+  model:  true
+  sql:  |
+    -- WARNING: 
+    with commentaries as (
+            select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "commentable_component_id"
+            from decidim_accountability_results
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_accountability_results.id
+            where decidim_root_commentable_type = 'Decidim::Accountability::Result'
+        union all
+            select decidim_comments_comments.*, decidim_blogs_posts.decidim_component_id as "commentable_component_id"
+            from decidim_blogs_posts
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_blogs_posts.id
+            where decidim_root_commentable_type = 'Decidim::Blogs::Post'
+        union all
+            select decidim_comments_comments.*, decidim_budgets_budgets.decidim_component_id as "commentable_component_id"
+            from decidim_budgets_projects
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_budgets_projects.id
+                join decidim_budgets_budgets on decidim_budgets_budgets.id = decidim_budgets_projects.decidim_budgets_budget_id
+            where decidim_root_commentable_type = 'Decidim::Budgets::Project'
+        union all
+            select decidim_comments_comments.*, decidim_debates_debates.decidim_component_id as "commentable_component_id"
+            from decidim_debates_debates
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_debates_debates.id
+            where decidim_root_commentable_type = 'Decidim::Debates::Debate'
+        union all
+            select decidim_comments_comments.*, decidim_meetings_meetings.decidim_component_id as "commentable_component_id"
+            from decidim_meetings_meetings
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_meetings_meetings.id
+            where decidim_root_commentable_type = 'Decidim::Meetings::Meeting'
+        union all
+            select decidim_comments_comments.*, decidim_proposals_proposals.decidim_component_id as "commentable_component_id"
+            from decidim_proposals_proposals
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_proposals_proposals.id
+                left join decidim_moderations on decidim_proposals_proposals.id = decidim_moderations.decidim_reportable_id
+            where decidim_root_commentable_type = 'Decidim::Proposals::Proposal'
+                    and decidim_proposals_proposals.published_at is not null
+                    and (decidim_moderations.hidden_at is null and (decidim_reportable_type='Decidim::Proposals::Proposal' or decidim_reportable_type is null))
+        union all
+                select decidim_comments_comments.*, decidim_proposals_collaborative_drafts.decidim_component_id as "commentable_component_id"
+            from decidim_proposals_collaborative_drafts
+                join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_proposals_collaborative_drafts.id
+                left join decidim_moderations on decidim_proposals_collaborative_drafts.id = decidim_moderations.decidim_reportable_id
+            where decidim_root_commentable_type = 'Decidim::Proposals::CollaborativeDraft'
+                    and decidim_proposals_collaborative_drafts.published_at is not null
+                    and decidim_moderations.hidden_at is null
+    )
+    select commentaries.*, decidim_components.pp_slug
+    from commentaries
+        join {{#components}} as decidim_components on decidim_components.id = commentaries.commentable_component_id
+        left join decidim_moderations on decidim_moderations.decidim_reportable_id = commentaries.id
+    where (decidim_moderations.hidden_at is null or (decidim_moderations.hidden_at is not null and decidim_moderations.decidim_reportable_type not like 'Decidim::Comments::Comment'))
+  info:
+    meta:
+      components: id
+    filterables:
+      date:
+        attr: created_at
+        required: false
+    viz_settings:
+      scalar:
+        - total
+      line:
+        - day
+        - week
+        - month
+

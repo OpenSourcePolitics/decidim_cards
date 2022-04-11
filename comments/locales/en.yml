@@ -1,0 +1,11 @@
+---
+name: Comments
+description: >
+  All comments made on the platform.
+viz_settings:
+  scalar:
+    name: Comments
+  line:
+    name: New comments
+    description: >
+      New comments created on the platform
