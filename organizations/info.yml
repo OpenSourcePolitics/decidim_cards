@@ -1,0 +1,13 @@
+---
+query:
+  model: true
+  sql: |
+    select *
+    from decidim_organizations
+    where host = HOST
+  info:
+    filterables:
+      text:
+        attr: HOST
+        required: true 
+    viz_settings:
