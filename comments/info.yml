@@ -2,9 +2,7 @@
 query:
   model:  true
   sql:  |
-    -- WARNING : are not taken into account this modules
-    -- Decidim::Consultations::Question
-    -- Initiative
+    -- WARNING: 
     with commentaries as (
             select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "commentable_component_id"
             from decidim_accountability_results
@@ -57,9 +55,6 @@ query:
     meta_required:
       - components_meta
     filterables:
-      integer:
-        attr: decidim_organization_id
-        required: true
       date:
         attr: created_at
         required: false
