@@ -50,12 +50,12 @@ query:
     )
     select commentaries.*, decidim_participatory_processes.slug as pp_slug
     from commentaries
-        join decidim_components on decidim_components.id = commentaries.commentable_component_id
-        join decidim_participatory_processes on decidim_components.participatory_space_id = decidim_participatory_processes.id
+        join {{#components_meta_id}} decidim_components on decidim_components.id = commentaries.commentable_component_id
         left join decidim_moderations on decidim_moderations.decidim_reportable_id = commentaries.id
-    where array_position(array[decidim_components.published_at, decidim_participatory_processes.published_at], null) is null
-        and(decidim_moderations.hidden_at is null or (decidim_moderations.hidden_at is not null and decidim_moderations.decidim_reportable_type not like 'Decidim::Comments::Comment'))
+    where (decidim_moderations.hidden_at is null or (decidim_moderations.hidden_at is not null and decidim_moderations.decidim_reportable_type not like 'Decidim::Comments::Comment'))
   info:
+    meta_required:
+      - components_meta
     filterables:
       integer:
         attr: decidim_organization_id
