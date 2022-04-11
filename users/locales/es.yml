@@ -1,0 +1,15 @@
+---
+name: Users
+description: >
+  All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
+viz_settings:
+  scalar:
+    name: Users
+    description: Users description
+  line:
+    name: New users
+    description: |
+      New users on your platform (includes
+      admins, invited and managed, blocked and deleted users)
+    axis_x: Date
+    axis_y: ""
