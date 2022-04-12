@@ -2,7 +2,7 @@
 query:
   model:  true
   sql:  |
-    -- WARNING: 
+    -- WARNING: Are not taken into account comments from Consultations, Initiative and Sortitions
     with commentaries as (
             select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "commentable_component_id"
             from decidim_accountability_results

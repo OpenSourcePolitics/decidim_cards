@@ -2,10 +2,15 @@
 query:
   model: true
   sql: |
-    select *,
-      (case when confirmed_at is null then false else true end) as "confirmed"
+    select decidim_users.*,
+        (case when confirmed_at is null then false else true end) as "confirmed"
     from decidim_users
+        join {{#organizations}} as decidim_organizations on decidim_organizations.id = decidim_users.decidim_organization_id
+    where deleted_at is null
+        and type like 'Decidim::User'
   info:
+    meta:
+      organizations: id
     filterables:
       date:
         attr: created_at
@@ -15,9 +20,7 @@ query:
         required: true
     viz_settings:
       scalar:
-        - day
-        - week
-        - month
+        - total
       line:
         - day
         - week
