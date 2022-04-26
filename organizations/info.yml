@@ -2,9 +2,7 @@
 query:
   model: true
   sql: |
-    select *
-    from decidim_organizations
-    where host = HOST
+    select * from decidim_organizations where host = $HOST
   info:
     filterables:
       text:
