@@ -53,6 +53,8 @@ query:
     where (decidim_moderations.hidden_at is null or (decidim_moderations.hidden_at is not null and decidim_moderations.decidim_reportable_type not like 'Decidim::Comments::Comment'))
   info:
     meta:
+      depends_on:
+        - components
       components: id
     filterables:
       date:

@@ -25,9 +25,6 @@ query:
         and array_position(array[decidim_proposals_proposals.published_at,decidim_components.published_at, decidim_participatory_processes.published_at], null) is null
   info:
     filterables:
-      integer:
-        attr: decidim_organization_id
-        required: true
       date:
         attr: created_at
         required: false

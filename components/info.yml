@@ -30,6 +30,8 @@ query:
     where array_position(array[decidim_components.published_at, participatory_spaces.pp_published_at], null) is null
   info:
     meta:
+      depends_on:
+        - organizations
       organizations: id
     filterables:
       date:
