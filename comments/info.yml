@@ -2,7 +2,7 @@
 query:
   model:  true
   sql:  |
-    -- WARNING: 
+    -- WARNING: based on the definition of the decidim_app here : https://github.com/OpenSourcePolitics/decidim-app
     with commentaries as (
             select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "commentable_component_id"
             from decidim_accountability_results
