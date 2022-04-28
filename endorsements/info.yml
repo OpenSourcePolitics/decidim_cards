@@ -31,8 +31,8 @@ query:
           left join decidim_moderations on resource_type = decidim_reportable_type and resource_id = decidim_reportable_id 
       where hidden_at is null
   info:
-      meta:
-        depends_on:
-          - components
-        components: id
+    meta:
+      depends_on:
+        - components
+      components: id
     viz_settings:
