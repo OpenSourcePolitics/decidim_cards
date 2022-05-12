@@ -1,0 +1,31 @@
+---
+query:
+  model: true
+  sql: |
+    select
+        decidim_meetings_meetings.id,
+        decidim_meetings_meetings.title->>'fr' as title,
+        regexp_replace(description->>'fr', E'<[^>]+>', '', 'gi') as description,
+        (case length(address) when 0 then 'Pas d''adresse' else address end) as address,
+        (case when attendees_count is null is false then attendees_count else 0 end) as attendees_count,
+        decidim_meetings_meetings.created_at,
+        decidim_scope_id,
+        decidim_component_id,
+        start_time,
+        end_time,
+        registration_url,
+        private_meeting,
+        decidim_author_id
+    from decidim_meetings_meetings
+        join {{#components}} as decidim_components on decidim_meetings_meetings.decidim_component_id = decidim_components.id
+    where manifest_name like 'meetings'
+  info:
+    meta:
+      depends_on:
+        - components
+      components: id
+    filterables:
+      date:
+        attr: created_at
+        required: false
+    viz_settings:
