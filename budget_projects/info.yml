@@ -1,0 +1,25 @@
+---
+query:
+  model: true
+  sql: |
+    select
+        decidim_budgets_projects.id, 
+        decidim_budgets_projects.title->>'fr' as title,
+        regexp_replace(decidim_budgets_projects.description->>'fr', E'<[^>]+>', '', 'gi') as description,
+        decidim_budgets_projects.decidim_scope_id, 
+        decidim_budgets_projects.budget_amount as project_amount, 
+        decidim_budgets_budgets.id as budget_id,
+        decidim_budgets_budgets.title as budget_title,
+        decidim_component_id
+    from decidim_budgets_projects
+    join {{#budgets}} as decidim_budgets_budgets on decidim_budgets_budgets.id = decidim_budgets_projects.decidim_budgets_budget_id
+  info:
+    meta:
+      depends_on:
+        - components
+      components: id
+    filterables:
+      date:
+        attr: created_at
+        required: false
+    viz_settings:
