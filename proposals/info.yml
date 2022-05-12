@@ -20,8 +20,9 @@ query:
         left join decidim_categories on decidim_categories.id = decidim_categorizations.decidim_category_id
         left join decidim_areas on decidim_areas.decidim_organization_id = decidim_components.decidim_organization_id
         left join decidim_area_types on decidim_areas.area_type_id = decidim_area_types.id
-    where hidden_at is null
-        and array_position(array[decidim_proposals_proposals.published_at,decidim_components.published_at, decidim_participatory_processes.published_at], null) is null
+    where true
+        and not(hidden_at is not null and decidim_reportable_type = 'Decidim::Proposals::Proposal')
+        and decidim_proposals_proposals.published_at is not null
   info:
     meta:
       components: id

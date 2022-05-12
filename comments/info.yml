@@ -2,7 +2,7 @@
 query:
   model:  true
   sql:  |
-    -- WARNING: Are not taken into account comments from Consultations, Initiative and Sortitions
+    -- WARNING: based on the definition of the decidim_app here : https://github.com/OpenSourcePolitics/decidim-app
     with commentaries as (
             select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "commentable_component_id"
             from decidim_accountability_results
@@ -53,6 +53,8 @@ query:
     where (decidim_moderations.hidden_at is null or (decidim_moderations.hidden_at is not null and decidim_moderations.decidim_reportable_type not like 'Decidim::Comments::Comment'))
   info:
     meta:
+      depends_on:
+        - components
       components: id
     filterables:
       date:

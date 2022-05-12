@@ -4,7 +4,7 @@ query:
   sql: |
     select *
     from decidim_organizations
-    where host = HOST
+    where host = $HOST
   info:
     filterables:
       text:
