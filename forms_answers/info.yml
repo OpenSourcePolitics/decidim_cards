@@ -1,0 +1,78 @@
+---
+query:
+  model: true
+  sql: |
+    with answers as (
+            select 
+                decidim_user_id, 
+                session_token,
+                question_type,
+                position,
+                (case when decidim_forms_answers.body = '' then 'Pas de réponse' else decidim_forms_answers.body end) as "answer",
+                '' as sub_matrix_question,
+                '' as custom_body,
+                -1 as sorting_position,
+                decidim_forms_questions.decidim_questionnaire_id
+            from decidim_forms_answers
+                join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
+            where true
+                and decidim_forms_answers.body is not null
+                and question_type = ANY('{long_answer}'::text[])
+        union all -- /!\ Must put apart custom_body for question 4 and question 10
+            select distinct 
+                decidim_user_id,
+                session_token,
+                question_type,
+                decidim_forms_questions.position as "position",
+                decidim_forms_answer_choices.body::text as "answer",
+                '' as sub_matrix_question,
+                decidim_forms_answer_choices.custom_body as custom_body,
+                (case question_type when 'sorting' then decidim_forms_answer_choices.position else -1 end) as sorting_position,
+                decidim_forms_questions.decidim_questionnaire_id
+            from decidim_forms_answers
+                join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
+                join decidim_forms_answer_choices on decidim_forms_answer_choices.decidim_answer_id = decidim_forms_answers.id
+            where true
+                and question_type = ANY('{single_option, multiple_option, sorting}'::text[])
+        union all
+            select distinct 
+                decidim_user_id, 
+                session_token,
+                question_type,
+                decidim_forms_questions.position as "position",
+                decidim_forms_answer_choices.body::text as "answer",
+                decidim_forms_question_matrix_rows.body->>'fr' as "sub_matrix_question",
+                '' as custom_body,
+                -1 as sorting_position,
+                decidim_forms_questions.decidim_questionnaire_id
+            from decidim_forms_answers
+                join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
+                join decidim_forms_answer_choices on decidim_forms_answer_choices.decidim_answer_id = decidim_forms_answers.id
+                join decidim_forms_question_matrix_rows on decidim_forms_question_matrix_rows.decidim_question_id = decidim_forms_answers.decidim_question_id
+            where true
+                and question_type = ANY('{matrix_single}'::text[])
+    )
+    select 
+        decidim_user_id,
+        session_token,
+        question_type,
+        position,
+        btrim(answer, '"') as answer,
+        sub_matrix_question,
+        custom_body,
+        sorting_position,
+        decidim_questionnaire_id,
+        decidim_component_id
+    from answers
+        join {{#forms}} as decidim_forms_questionnaires on decidim_forms_questionnaires.id = decidim_questionnaire_id
+    order by session_token, position
+  info:
+    meta:
+      depends_on:
+        - forms
+      forms: id
+    filterables:
+      date:
+        attr: created_at
+        required: false
+    viz_settings:
