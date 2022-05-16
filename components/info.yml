@@ -5,11 +5,27 @@ query:
     -- Warning: are not taken by default into account Conferences, Consultations, Elections, Initiatives, Votations. Uncomment corresponding line to do so
     -- This request needs a meta request giving targeted Decidim organizations
     with participatory_spaces as (
-        select id as pp_id, published_at as pp_published_at, title as pp_title, subtitle as pp_subtitle, slug as pp_slug, decidim_organization_id, 'Decidim::Assembly' as pp_participatory_space_type
-        from decidim_assemblies
+            select
+                id as pp_id,
+                published_at as pp_published_at,
+                title->>'fr' as pp_title,
+                subtitle->>'fr' as pp_subtitle,
+                slug as pp_slug,
+                decidim_organization_id,
+                'Decidim::Assembly' as pp_participatory_space_type,
+                'assemblies' as pp_space_type_slug
+            from decidim_assemblies
         union all
-        select id as pp_id, published_at as pp_published_at, title as pp_title, subtitle as pp_subtitle, slug as pp_slug, decidim_organization_id, 'Decidim::ParticipatoryProcess' as pp_participatory_space_type
-        from decidim_participatory_processes
+            select
+                id as pp_id, 
+                published_at as pp_published_at, 
+                title->>'fr' as pp_title, 
+                subtitle->>'fr' as pp_subtitle, 
+                slug as pp_slug, 
+                decidim_organization_id, 
+                'Decidim::ParticipatoryProcess' as pp_participatory_space_type,
+                'processes' as pp_space_type_slug
+            from decidim_participatory_processes
         -- union all
         -- select id, published_at, title, '{}'::jsonb as subtitle, slug, decidim_organization_id, 'Decidim::Conferences' as participatory_space_type
         -- from decidim_conferences
@@ -23,7 +39,13 @@ query:
         -- select id, published_at, title, '{}'::jsonb as subtitle, slug, decidim_organization_id, 'Decidim::Initiatives' as participatory_space_type
         -- from decidim_initiatives
     )
-    select decidim_components.*, participatory_spaces.*
+    select 
+        decidim_components.id,
+        manifest_name,
+        published_at,
+        decidim_components.created_at,
+        participatory_spaces.*,
+        decidim_organizations.host as organization_host
     from decidim_components
         join participatory_spaces on participatory_spaces.pp_participatory_space_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.pp_id 
         join {{#organizations}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id
