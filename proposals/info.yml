@@ -3,23 +3,19 @@ query:
   model: true
   sql: |
     select
-        decidim_proposals_proposals.*,
-        decidim_components.pp_id as decidim_participatory_processes_id,
-        decidim_components.pp_slug as decidim_participatory_processes_slug,
-        (case when (decidim_scopes.name->>'fr' = '' is not false) then 'unscoped' else decidim_scopes.name->>'fr' end) as decidim_scope_name,
-        (case when (decidim_categories.name->>'fr' = '' is not false) then 'uncategorized' else decidim_categories.name->>'fr' end)  as category,
-        regexp_replace(decidim_proposals_proposals.title->>'fr', E'<[^>]+>', '', 'gi') as proposal_title,
-        regexp_replace(decidim_proposals_proposals.body->>'fr', E'<[^>]+>', '', 'gi') as proposal_body,
-        decidim_areas.name->>'fr' as area_name,
-        decidim_area_types.name->>'fr' as area_type_name
+        decidim_proposals_proposals.id,
+        pp_id as decidim_participatory_processes_id,
+        pp_slug as decidim_participatory_processes_slug,
+        (case when (decidim_scopes.name->>'fr' = '' is not false) then 'Sans secteur' else decidim_scopes.name->>'fr' end) as decidim_scope_name,
+        regexp_replace(decidim_proposals_proposals.title->>'fr', E'<[^>]+>', '', 'gi') as title,
+        regexp_replace(decidim_proposals_proposals.body->>'fr', E'<[^>]+>', '', 'gi') as body,
+        'Decidim::Proposals::Proposal' as resource_type,
+        'https://' ||  organization_host || '/' ||  pp_space_type_slug ||  '/' ||  pp_slug || '/f/' || decidim_proposals_proposals.decidim_component_id || '/proposals/' || decidim_proposals_proposals.id as url,
+        decidim_proposals_proposals.decidim_component_id
     from decidim_proposals_proposals
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
         left join decidim_moderations on decidim_reportable_id = decidim_proposals_proposals.id
         left join decidim_scopes on decidim_scopes.id = decidim_proposals_proposals.decidim_scope_id
-        left join decidim_categorizations on decidim_categorizations.categorizable_id = decidim_proposals_proposals.id
-        left join decidim_categories on decidim_categories.id = decidim_categorizations.decidim_category_id
-        left join decidim_areas on decidim_areas.decidim_organization_id = decidim_components.decidim_organization_id
-        left join decidim_area_types on decidim_areas.area_type_id = decidim_area_types.id
     where true
         and not(hidden_at is not null and decidim_reportable_type = 'Decidim::Proposals::Proposal')
         and decidim_proposals_proposals.published_at is not null
