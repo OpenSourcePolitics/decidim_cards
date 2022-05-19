@@ -16,8 +16,8 @@ query:
   info:
     meta:
       depends_on:
-        - components
-      components: id
+        - budgets
+      budgets: id
     filterables:
       date:
         attr: created_at
