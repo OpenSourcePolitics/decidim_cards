@@ -1,0 +1,85 @@
+---
+query:
+  model: true
+  sql: |
+    with contributions as (
+        select decidim_users.id,
+            decidim_proposals_proposals.decidim_component_id,
+            'Decidim::Proposals::Proposal' as "contribution_type",
+            decidim_proposals_proposals.id::text as "contribution_id", 
+            decidim_proposals_proposals.created_at as contribution_date
+        from {{#proposals}} as decidim_proposals_proposals
+            join decidim_coauthorships on decidim_coauthorships.coauthorable_id = decidim_proposals_proposals.id
+            join decidim_users on decidim_users.id = decidim_coauthorships.decidim_author_id
+        where coauthorable_type = 'Decidim::Proposals::Proposal'
+     union all
+         select decidim_users.id,
+             decidim_endorsements.decidim_component_id,
+             'Decidim::Endorsements::Endorsement' as "contribution_type",
+             decidim_endorsements.id::text as "contribution_id", 
+             decidim_endorsements.created_at as contribution_date
+         from {{#endorsmements}} as decidim_endorsements
+             join decidim_users on decidim_users.id = decidim_endorsements.decidim_author_id
+     union all
+         select decidim_users.id,
+             decidim_component_id,
+             'Decidim::Comments::Comment' as "contribution_type",
+             decidim_comments_comments.id::text as "contribution_id",
+             decidim_comments_comments.created_at as contribution_date
+         from {{#comments}} decidim_comments_comments
+             join decidim_users on decidim_users.id = decidim_comments_comments.decidim_author_id
+     union all
+         select decidim_users.id,
+             decidim_proposals_proposals.decidim_component_id,
+             'Decidim::Proposals::ProposalVote' as "contribution_type",
+             decidim_proposals_proposal_votes.id::text as "contribution_id",
+             decidim_proposals_proposal_votes.created_at as contribution_date
+         from decidim_proposals_proposal_votes
+             join decidim_users on decidim_users.id = decidim_author_id
+             join {{#proposals}} as decidim_proposals_proposals on decidim_proposals_proposal_votes.decidim_proposal_id = decidim_proposals_proposals.id 
+    union all
+        select distinct
+            decidim_user_id,
+            decidim_component_id,
+            'Decidim::Forms::Answer' as "contribution_type",
+           decidim_forms_answers.session_token as "contribution_id",
+           decidim_forms_answers.created_at::date as contribution_date
+        from {{#forms_answers}} as decidim_forms_answers
+    union all
+        select decidim_author_id as decidim_user_id,
+            decidim_component_id,
+            'Decidim::Debates::Debate' as "contribution_type",
+            id::text as contribution_id,
+            created_at as contribution_date
+        from {{#debates}} decidim_debates_debates
+    union all
+        select 
+            decidim_user_id,
+            decidim_component_id,
+            id::text as contribution_id,
+            'Decidim::Budgets::Project::Vote' as contribution_type,
+            created_at as contribution_date
+        from {{#projects_votes}} decidim_bugdets_projects_votes
+    )
+    select 
+        distinct contributions.id as "user_id",
+        contribution_id,
+        decidim_component_id,
+        contribution_type,
+        contribution_date
+    from contributions
+  info:
+    meta:
+      depends_on: 
+      - proposals
+      - endorsmements
+      - forms_answers
+      - debates
+      - projects_votes
+      proposals: id
+      endorsmements: id
+      forms_answers: id
+      debates: id
+      projects_votes: id      
+    filterables:
+    viz_settings:
