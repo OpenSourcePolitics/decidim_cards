@@ -6,7 +6,7 @@ query:
     select
         decidim_blogs_posts.id,
         title->>'fr' as title,
-        regexp_replace(body->>'fr', E'<[^>]+>', '', 'gi') as body,
+        regexp_replace(body->>'fr', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as body,
         decidim_component_id,
         decidim_blogs_posts.created_at,
         decidim_blogs_posts.updated_at,
