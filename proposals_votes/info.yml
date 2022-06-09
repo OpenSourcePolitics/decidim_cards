@@ -16,7 +16,6 @@ query:
     meta:
       depends_on:
         - proposals
-      proposals: id
     filterables:
       date:
         attr: created_at

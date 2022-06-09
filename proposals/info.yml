@@ -22,7 +22,6 @@ query:
         and decidim_proposals_proposals.published_at is not null
   info:
     meta:
-      components: id
       depends_on:
         - components
     filterables:
