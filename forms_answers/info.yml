@@ -102,6 +102,7 @@ query:
   info:
     meta:
       depends_on:
+        - organizations
         - forms
       forms: id
     filterables:
