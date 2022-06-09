@@ -7,25 +7,25 @@ query:
     -- This request needs a meta request giving targeted Decidim organizations
     with participatory_spaces as (
             select
-                id as pp_id,
-                published_at as pp_published_at,
-                title->>'fr' as pp_title,
-                subtitle->>'fr' as pp_subtitle,
-                slug as pp_slug,
+                id as ps_id,
+                published_at as ps_published_at,
+                title->>'fr' as ps_title,
+                subtitle->>'fr' as ps_subtitle,
+                slug as ps_slug,
                 decidim_organization_id,
-                'Decidim::Assembly' as pp_participatory_space_type,
-                'assemblies' as pp_space_type_slug
+                'Decidim::Assembly' as ps_participatory_space_type,
+                'assemblies' as ps_space_type_slug
             from decidim_assemblies
         union all
             select
-                id as pp_id, 
-                published_at as pp_published_at, 
-                title->>'fr' as pp_title, 
-                subtitle->>'fr' as pp_subtitle, 
-                slug as pp_slug, 
+                id as ps_id, 
+                published_at as ps_published_at, 
+                title->>'fr' as ps_title, 
+                subtitle->>'fr' as ps_subtitle, 
+                slug as ps_slug, 
                 decidim_organization_id, 
-                'Decidim::ParticipatoryProcess' as pp_participatory_space_type,
-                'processes' as pp_space_type_slug
+                'Decidim::ParticipatoryProcess' as ps_participatory_space_type,
+                'processes' as ps_space_type_slug
             from decidim_participatory_processes
         -- union all
         -- select id, published_at, title, '{}'::jsonb as subtitle, slug, decidim_organization_id, 'Decidim::Conferences' as participatory_space_type
@@ -48,11 +48,11 @@ query:
         decidim_components.created_at,
         participatory_spaces.*,
         decidim_organizations.host as organization_host,
-        concat('https://',decidim_organizations.host,'/', pp_space_type_slug, '/',pp_slug,'/f/',decidim_components.id) as "component_url"
+        concat('https://',decidim_organizations.host,'/', ps_space_type_slug, '/',ps_slug,'/f/',decidim_components.id) as "component_url"
     from decidim_components
-        join participatory_spaces on participatory_spaces.pp_participatory_space_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.pp_id 
+        join participatory_spaces on participatory_spaces.ps_participatory_space_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.ps_id 
         join {{#organizations}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id
-    where array_position(array[decidim_components.published_at, participatory_spaces.pp_published_at], null) is null
+    where array_position(array[decidim_components.published_at, participatory_spaces.ps_published_at], null) is null
   info:
     meta:
       depends_on:
