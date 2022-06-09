@@ -1,4 +1,5 @@
 ---
+resource: projects_votes
 query:
   model: true
   sql: |
@@ -18,7 +19,6 @@ query:
     meta:
       depends_on:
         - budgets_projects
-      budgets_projects: id
     filterables:
       date:
         attr: created_at
