@@ -5,8 +5,8 @@ query:
   sql: |
     select
         decidim_proposals_proposals.id,
-        ps_id as decidim_participatory_processes_id,
-        ps_slug as decidim_participatory_processes_slug,
+        ps_id as decidim_participatory_space_id,
+        ps_slug as decidim_participatory_space_slug,
         (case when (decidim_scopes.name->>'fr' = '' is not false) then 'Sans secteur' else decidim_scopes.name->>'fr' end) as decidim_scope_name,
         regexp_replace(decidim_proposals_proposals.title->>'fr', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as title,
         regexp_replace(decidim_proposals_proposals.body->>'fr', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as body,
