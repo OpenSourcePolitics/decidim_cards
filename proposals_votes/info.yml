@@ -1,5 +1,5 @@
 ---
-resource: proposal_votes
+resource: proposals_votes
 query:
   model: true
   sql: |
