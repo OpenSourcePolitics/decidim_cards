@@ -35,5 +35,4 @@ query:
     meta:
       depends_on:
         - components
-      components: id
     viz_settings:

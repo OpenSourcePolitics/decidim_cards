@@ -18,4 +18,3 @@ query:
     meta:
       depends_on:
         - components
-      components: id

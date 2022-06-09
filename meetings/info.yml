@@ -25,7 +25,6 @@ query:
     meta:
       depends_on:
         - components
-      components: id
     filterables:
       date:
         attr: created_at

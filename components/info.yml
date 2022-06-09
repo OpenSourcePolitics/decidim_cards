@@ -57,7 +57,6 @@ query:
     meta:
       depends_on:
         - organizations
-      organizations: id
     filterables:
       date:
         attr: created_at

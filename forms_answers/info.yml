@@ -105,7 +105,6 @@ query:
       depends_on:
         - organizations
         - forms
-      forms: id
     filterables:
       date:
         attr: created_at

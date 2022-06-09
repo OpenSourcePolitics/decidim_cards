@@ -44,7 +44,8 @@ query:
         and type like 'Decidim::User'
   info:
     meta:
-      organizations: id
+      depends_on:
+        - organizations
     filterables:
       date:
         attr: created_at
