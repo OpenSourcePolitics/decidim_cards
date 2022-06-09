@@ -3,28 +3,28 @@ query:
   model: true
   sql: |
     select decidim_follows.*, decidim_proposals_proposals.decidim_component_id
-    from decidim_follows
-        join {{#proposals}} decidim_proposals_proposals on decidim_proposals_proposals.id = decidim_followable_id
-    where decidim_followable_type = 'Decidim::Proposals::Proposal'
-union all
-    select decidim_follows.*, decidim_components.id
-    from decidim_follows
-        join {{#components}} decidim_components on decidim_components.pp_id = decidim_followable_id and pp_participatory_space_type = decidim_followable_type
-union all
-    select decidim_follows.*, decidim_debates_debates.decidim_component_id
-    from decidim_follows
-        join {{#debates}} decidim_debates_debates on decidim_debates_debates.id = decidim_followable_id
-    where decidim_followable_type = 'Decidim::Debates::Debate'
-union all
-    select decidim_follows.*, decidim_blogs_posts.decidim_component_id
-    from decidim_follows
-        join {{#blogs_posts}} decidim_blogs_posts on decidim_blogs_posts.id = decidim_followable_id
-    where decidim_followable_type = 'Decidim::Blogs::Post'
-union all
-    select decidim_follows.*, -1 as decidim_component_id
-    from decidim_follows
-        join {{#users}} decidim_users on decidim_users.id = decidim_followable_id
-    where decidim_followable_type = 'Decidim::UserBaseEntity'
+        from decidim_follows
+            join {{#proposals}} decidim_proposals_proposals on decidim_proposals_proposals.id = decidim_followable_id
+        where decidim_followable_type = 'Decidim::Proposals::Proposal'
+    union all
+        select decidim_follows.*, decidim_components.id
+        from decidim_follows
+            join {{#components}} decidim_components on decidim_components.pp_id = decidim_followable_id and pp_participatory_space_type = decidim_followable_type
+    union all
+        select decidim_follows.*, decidim_debates_debates.decidim_component_id
+        from decidim_follows
+            join {{#debates}} decidim_debates_debates on decidim_debates_debates.id = decidim_followable_id
+        where decidim_followable_type = 'Decidim::Debates::Debate'
+    union all
+        select decidim_follows.*, decidim_blogs_posts.decidim_component_id
+        from decidim_follows
+            join {{#blogs_posts}} decidim_blogs_posts on decidim_blogs_posts.id = decidim_followable_id
+        where decidim_followable_type = 'Decidim::Blogs::Post'
+    union all
+        select decidim_follows.*, -1 as decidim_component_id
+        from decidim_follows
+            join {{#users}} decidim_users on decidim_users.id = decidim_followable_id
+        where decidim_followable_type = 'Decidim::UserBaseEntity'
   info:
     meta:
       depends_on:
