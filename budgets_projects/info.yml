@@ -1,0 +1,29 @@
+---
+resource: budgets_projects
+query:
+  model: true
+  sql: |
+    select
+        decidim_budgets_projects.id, 
+        decidim_budgets_projects.title->>'fr' as title,
+        regexp_replace(decidim_budgets_projects.description->>'fr', E'<[^>]+>', '', 'gi') as description,
+        decidim_budgets_projects.decidim_scope_id, 
+        decidim_budgets_projects.budget_amount as project_amount, 
+        decidim_budgets_budgets.id as budget_id,
+        decidim_budgets_budgets.title as budget_title,
+        decidim_component_id,
+        project_url
+    from decidim_budgets_projects
+        join {{#budgets}} as decidim_budgets_budgets on decidim_budgets_budgets.id = decidim_budgets_projects.decidim_budgets_budget_id
+        join {{#components}} as decidim_components on decidim_components.id = decidim_component_id,
+        lateral (select concat(component_url,'/', manifest_name_for_url,'/', decidim_budgets_budgets.id, '/projects/', decidim_budgets_projects.id) as project_url) t_project_url
+  info:
+    meta:
+      depends_on:
+        - budgets
+        - components
+    filterables:
+      date:
+        attr: created_at
+        required: false
+    viz_settings:
