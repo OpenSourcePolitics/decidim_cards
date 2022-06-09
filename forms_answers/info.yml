@@ -1,4 +1,5 @@
 ---
+resource: forms_answers
 query:
   model: true
   sql: |
