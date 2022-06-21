@@ -12,7 +12,8 @@ query:
         regexp_replace(decidim_proposals_proposals.body->>'fr', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as body,
         'Decidim::Proposals::Proposal' as resource_type,
         'https://' ||  organization_host || '/' ||  ps_space_type_slug ||  '/' ||  ps_slug || '/f/' || decidim_proposals_proposals.decidim_component_id || '/proposals/' || decidim_proposals_proposals.id as url,
-        decidim_proposals_proposals.decidim_component_id
+        decidim_proposals_proposals.decidim_component_id,
+        decidim_proposals_proposals.created_at
     from decidim_proposals_proposals
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
         left join decidim_moderations on decidim_reportable_id = decidim_proposals_proposals.id
