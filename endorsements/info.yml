@@ -4,7 +4,7 @@ query:
   model: true
   sql: |
       with contributions as (
-          select decidim_endorsements.*
+          select decidim_endorsements.*,decidim_component_id
           from decidim_endorsements
               join decidim_proposals_proposals on decidim_endorsements.resource_id = decidim_proposals_proposals.id
               join {{#components}} as decidim_components on decidim_components.id = decidim_proposals_proposals.decidim_component_id
@@ -13,7 +13,7 @@ query:
 
           union all
 
-          select decidim_endorsements.*
+          select decidim_endorsements.*,decidim_component_id
           from decidim_endorsements
               join decidim_debates_debates on decidim_endorsements.resource_id = decidim_debates_debates.id
               join {{#components}} as decidim_components on decidim_components.id = decidim_debates_debates.decidim_component_id
@@ -21,7 +21,7 @@ query:
           
           union all
 
-          select decidim_endorsements.*
+          select decidim_endorsements.*,decidim_component_id
           from decidim_endorsements
               join decidim_blogs_posts on decidim_endorsements.resource_id = decidim_blogs_posts.id
               join {{#components}} as decidim_components on decidim_components.id = decidim_blogs_posts.decidim_component_id
