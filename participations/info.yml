@@ -81,7 +81,7 @@ query:
     meta:
       depends_on: 
       - proposals
-      - endorsmements
+      - endorsements
       - forms_answers
       - debates
       - projects_votes
