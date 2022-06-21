@@ -14,7 +14,8 @@ query:
                 '' as custom_body,
                 -1 as sorting_position,
                 decidim_forms_questions.decidim_questionnaire_id,
-                decidim_forms_questions.body
+                decidim_forms_questions.body,
+                decidim_forms_answers.created_at
             from decidim_forms_answers
                 join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
             where true
@@ -31,7 +32,8 @@ query:
                 decidim_forms_answer_choices.custom_body as custom_body,
                 (case question_type when 'sorting' then decidim_forms_answer_choices.position else -1 end) as sorting_position,
                 decidim_forms_questions.decidim_questionnaire_id,
-                decidim_forms_questions.body
+                decidim_forms_questions.body,
+                decidim_forms_answers.created_at
             from decidim_forms_answers
                 join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
                 join decidim_forms_answer_choices on decidim_forms_answer_choices.decidim_answer_id = decidim_forms_answers.id
@@ -48,7 +50,8 @@ query:
                 '' as custom_body,
                 -1 as sorting_position,
                 decidim_forms_questions.decidim_questionnaire_id,
-                decidim_forms_questions.body
+                decidim_forms_questions.body,
+                decidim_forms_answers.created_at
             from decidim_forms_answers
                 join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
                 join decidim_forms_answer_choices on decidim_forms_answer_choices.decidim_answer_id = decidim_forms_answers.id
@@ -66,7 +69,8 @@ query:
                 'https://' || (select host from {{#organizations}} decidim_organizations) || '/uploads/decidim/attachment/file/' || decidim_attachments.id || '/' || decidim_attachments.file as custom_body,
                 -1 as sorting_position,
                 decidim_forms_questions.decidim_questionnaire_id,
-                decidim_forms_questions.body
+                decidim_forms_questions.body,
+                decidim_forms_answers.created_at
             from decidim_forms_answers
                 join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
                 join decidim_attachments on decidim_attachments.attached_to_id = decidim_forms_answers.id
@@ -96,7 +100,8 @@ query:
             when 9 then 1
             else -1
         end) as sorting_points,
-        position
+        position,
+        created_at
     from answers
         join {{#forms}} as decidim_forms_questionnaires on decidim_forms_questionnaires.id = decidim_questionnaire_id
     order by session_token, position
