@@ -2,7 +2,6 @@
 query:
   model: true
   sql: |
-    -- /!\ Asked by city : not taking into account comments, endorsments and proposal votes in contributions !
     with participations as (
             select decidim_users.id,
                 decidim_proposals_proposals.decidim_component_id,
