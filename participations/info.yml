@@ -60,6 +60,15 @@ query:
                 'Decidim::Budgets::Project::Vote' as participation_type,
                 created_at as participation_date
             from {{#projects_votes}} decidim_bugdets_projects_votes
+        union all
+            select 
+                decidim_user_id,
+                decidim_component_id,
+                decidim_meetings_meetings.id::text as participation_id,
+                'Decidim::Meetings::Registration' as participation_type,
+                decidim_meetings_registrations.created_at as participation_date
+            from {{#meetings}} decidim_meetings_meetings
+                join decidim_meetings_registrations on decidim_meetings_registrations.decidim_meeting_id = decidim_meetings_meetings.id
     )
     select 
         distinct participations.id as "user_id",
@@ -76,10 +85,6 @@ query:
       - forms_answers
       - debates
       - projects_votes
-      proposals: id
-      endorsmements: id
-      forms_answers: id
-      debates: id
-      projects_votes: id      
+      - meetings 
     filterables:
     viz_settings:
