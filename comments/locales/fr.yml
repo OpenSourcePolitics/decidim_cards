@@ -1,11 +1,11 @@
 ---
-name: Comments
+name: Commentaires
 description: >
-  All comments made on the platform.
+  Tous les commentaires faits sur la plateforme.
 viz_settings:
   scalar:
-    name: Comments
+    name: Commentaires
   line:
-    name: New comments
+    name: Nouveaux commentaires
     description: >
       New comments created on the platform
