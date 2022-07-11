@@ -1,4 +1,4 @@
 ---
-name: Endorsements
-description: "Endorsements made on the platform. Not to be confused with proposal votes: endorsements are visible and not anonymous, contrary to proposal votes"
+name: Soutiens
+description: "Soutiens effectués sur la plateforme. Ne pas confondre avec les votes de proposition : les soutiens sont visibles et non anonymes, contrairement aux votes de proposition"
 viz_settings:
