@@ -1,17 +1,17 @@
 ---
-resource: initiatives
+resource: initiatives_votes
 query:
   model: true
   sql: |
     select decidim_initiatives_votes.id,
-    decidim_initiative_id,
-    decidim_initiatives.decidim_author_id,
-    decidim_initiatives.created_at,
-    decidim_initiatives.updated_at,
-    hash_id, 
-    decidim_scope_id
-from decidim_initiatives_votes
-    join {{#initiatives}} as decidim_initiatives on decidim_initiatives.id = decidim_initiative_id
+        decidim_initiative_id,
+        decidim_initiatives.decidim_author_id,
+        decidim_initiatives.created_at,
+        decidim_initiatives.updated_at,
+        hash_id, 
+        decidim_scope_id
+    from decidim_initiatives_votes
+        join {{#initiatives}} as decidim_initiatives on decidim_initiatives.id = decidim_initiative_id
     
   info:
     meta:
