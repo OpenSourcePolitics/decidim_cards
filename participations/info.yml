@@ -87,5 +87,6 @@ query:
       - projects_votes
       - meetings 
       - comments
+      - blogs_posts
     filterables:
     viz_settings:
