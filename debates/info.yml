@@ -14,7 +14,8 @@ query:
         decidim_debates_debates.created_at,
         closed_at,
         ps_slug,
-        concat('https://', organization_host, '/', ps_space_type_slug, '/', ps_slug, '/f/', decidim_components.id, '/debates/', decidim_debates_debates.id) as debate_url
+        concat('https://', organization_host, '/', ps_space_type_slug, '/', ps_slug, '/f/', decidim_components.id, '/debates/', decidim_debates_debates.id) as debate_url,
+        'Decidim::Debates::Debate' as resource_type
     from decidim_debates_debates
         join {{#components}} decidim_components on decidim_components.id = decidim_component_id
   info:
