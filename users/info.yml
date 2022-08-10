@@ -36,7 +36,7 @@ query:
         admin_terms_accepted_at,
         blocked,
         blocked_at,
-        (case when confirmed_at is null then 'Non' else 'Oui' end) as "confirmed"
+        (case when confirmed_at is null then false else true end) as "confirmed",
     from decidim_users
         join {{#organizations}} as decidim_organizations on decidim_organizations.id = decidim_users.decidim_organization_id
     where true
