@@ -9,7 +9,13 @@ query:
     union all
         select decidim_follows.*, decidim_components.id, component_url as followable_url, ps_title as followable_title
         from decidim_follows
-            join {{#components}} decidim_components on decidim_components.ps_id = decidim_followable_id and ps_participatory_space_type = decidim_followable_type
+            join {{#components}} decidim_components on decidim_components.ps_id = decidim_followable_id
+                and ps_type = decidim_followable_type
+    union all
+        select decidim_follows.*, decidim_initiatives.id, decidim_initiatives.url as followable_url, decidim_initiatives.title as followable_title
+        from decidim_follows
+            join {{#initiatives}} decidim_initiatives on decidim_initiatives.id = decidim_followable_id
+        where decidim_followable_type = 'Decidim::Initiative'
     union all
         select decidim_follows.*, decidim_debates_debates.decidim_component_id, debate_url as followable_url, title as followable_title
         from decidim_follows
@@ -45,4 +51,5 @@ query:
         - users
         - meetings
         - budgets_projects
+        - initiatives
     viz_settings:
