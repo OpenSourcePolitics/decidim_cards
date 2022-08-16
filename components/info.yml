@@ -9,22 +9,22 @@ query:
             select
                 id as ps_id,
                 published_at as ps_published_at,
-                title->>'fr' as ps_title,
-                subtitle->>'fr' as ps_subtitle,
+                title->>'$LANGUAGE_CODE' as ps_title,
+                subtitle->>'$LANGUAGE_CODE' as ps_subtitle,
                 slug as ps_slug,
                 decidim_organization_id,
-                'Decidim::Assembly' as ps_participatory_space_type,
+                'Decidim::Assembly' as ps_type,
                 'assemblies' as ps_space_type_slug
             from decidim_assemblies
         union all
             select
                 id as ps_id, 
                 published_at as ps_published_at, 
-                title->>'fr' as ps_title, 
-                subtitle->>'fr' as ps_subtitle, 
+                title->>'$LANGUAGE_CODE' as ps_title, 
+                subtitle->>'$LANGUAGE_CODE' as ps_subtitle, 
                 slug as ps_slug, 
                 decidim_organization_id, 
-                'Decidim::ParticipatoryProcess' as ps_participatory_space_type,
+                'Decidim::ParticipatoryProcess' as ps_type,
                 'processes' as ps_space_type_slug
             from decidim_participatory_processes
         -- union all
@@ -50,7 +50,7 @@ query:
         decidim_organizations.host as organization_host,
         concat('https://',decidim_organizations.host,'/', ps_space_type_slug, '/',ps_slug,'/f/',decidim_components.id) as "component_url"
     from decidim_components
-        join participatory_spaces on participatory_spaces.ps_participatory_space_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.ps_id 
+        join participatory_spaces on participatory_spaces.ps_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.ps_id 
         join {{#organizations}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id
     where array_position(array[decidim_components.published_at, participatory_spaces.ps_published_at], null) is null
   info:
