@@ -14,18 +14,29 @@ query:
         'https://' ||  organization_host || '/' ||  ps_space_type_slug ||  '/' ||  ps_slug || '/f/' || decidim_proposals_proposals.decidim_component_id || '/proposals/' || decidim_proposals_proposals.id as url,
         decidim_proposals_proposals.decidim_component_id,
         decidim_proposals_proposals.created_at,
-        state
+        state,
+        (array_agg(distinct decidim_users.id))[1]::int as first_author,
+        array_agg(distinct decidim_users.id) as authors
     from decidim_proposals_proposals
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
+        join decidim_coauthorships on decidim_coauthorships.coauthorable_id = decidim_proposals_proposals.id
+        left join {{#users}} as decidim_users on decidim_users.id = decidim_coauthorships.decidim_author_id
         left join decidim_moderations on decidim_reportable_id = decidim_proposals_proposals.id
         left join decidim_scopes on decidim_scopes.id = decidim_proposals_proposals.decidim_scope_id
     where true
         and not(hidden_at is not null and decidim_reportable_type = 'Decidim::Proposals::Proposal')
         and decidim_proposals_proposals.published_at is not null
+    group by decidim_proposals_proposals.id,
+        ps_id,
+        ps_slug,
+        decidim_scope_name,
+        organization_host,
+        ps_space_type_slug
   info:
     meta:
       depends_on:
         - components
+        - users
     filterables:
       date:
         attr: created_at
