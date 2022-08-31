@@ -40,7 +40,8 @@ query:
         supports_required,
         decidim_areas.id as area_id,
         (case when decidim_areas.name ? '$LANGUAGE_CODE' then decidim_areas.name->>'$LANGUAGE_CODE' else 'No sub category' end) as area_name,
-        (case when decidim_area_types.name ? '$LANGUAGE_CODE' then decidim_area_types.name->>'$LANGUAGE_CODE' else 'No category' end) as area_type_name
+        (case when decidim_area_types.name ? '$LANGUAGE_CODE' then decidim_area_types.name->>'$LANGUAGE_CODE' else 'No category' end) as area_type_name,
+        'Decidim::Initiative' as resource_type
     from decidim_initiatives
         join {{#organizations}} decidim_organizations on decidim_organizations.id = decidim_initiatives.decidim_organization_id
         join decidim_initiatives_type_scopes on scoped_type_id = decidim_initiatives_type_scopes.id
