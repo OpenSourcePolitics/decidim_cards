@@ -27,7 +27,7 @@ query:
             union all
                 select decidim_follows.*, decidim_blogs_posts.decidim_component_id, post_url as followable_url, title as followable_title
                 from decidim_follows
-                    join {{#blogs}} decidim_blogs_posts on decidim_blogs_posts.id = decidim_followable_id
+                    join {{#blogs_posts}} decidim_blogs_posts on decidim_blogs_posts.id = decidim_followable_id
                         and resource_type = decidim_followable_type
             union all
                 select decidim_follows.*, -1 as decidim_component_id, '' as followable_url, '' as followable_title
