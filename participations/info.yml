@@ -1,4 +1,5 @@
 ---
+resource: participations
 query:
   model: true
   sql: |
@@ -56,23 +57,23 @@ query:
             select 
                 decidim_user_id,
                 decidim_component_id,
-                id::text as participation_id,
                 'Decidim::Budgets::Project::Vote' as participation_type,
+                id::text as participation_id,
                 created_at as participation_date
             from {{#projects_votes}} decidim_bugdets_projects_votes
         union all
             select 
                 decidim_user_id,
                 decidim_component_id,
-                decidim_meetings_meetings.id::text as participation_id,
                 'Decidim::Meetings::Registration' as participation_type,
+                decidim_meetings_meetings.id::text as participation_id,
                 decidim_meetings_registrations.created_at as participation_date
             from {{#meetings}} decidim_meetings_meetings
                 join decidim_meetings_registrations on decidim_meetings_registrations.decidim_meeting_id = decidim_meetings_meetings.id
     )
     select 
         distinct participations.id as "user_id",
-        participation_id,
+        substr(participation_id,1,10)::bigint as participation_id,
         decidim_component_id,
         participation_type,
         participation_date
