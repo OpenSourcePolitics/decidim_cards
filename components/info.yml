@@ -49,7 +49,7 @@ query:
         participatory_spaces.*,
         decidim_organizations.host as organization_host,
         concat('https://',decidim_organizations.host,'/', ps_space_type_slug, '/',ps_slug,'/f/',decidim_components.id) as "component_url",
-        concat('https://',decidim_organizations.host,'/', ps_space_type_slug, '/') as "ps_url"
+        concat('https://',decidim_organizations.host,'/', ps_space_type_slug, '/',ps_slug,'/') as "ps_url"
     from decidim_components
         join participatory_spaces on participatory_spaces.ps_type = decidim_components.participatory_space_type and decidim_components.participatory_space_id = participatory_spaces.ps_id 
         join {{#organizations}} as decidim_organizations on decidim_organizations.id = participatory_spaces.decidim_organization_id

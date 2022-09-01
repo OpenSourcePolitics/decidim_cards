@@ -1,0 +1,7 @@
+---
+name: Suivis
+description: > 
+  Rassemble toutes les actions de suivis sur une plateforme. Par défaut,
+  Decidim compte comme suivi d'une contribution particulière également les suivis
+  de l'espace de concertation l'englobant.
+viz_settings:
