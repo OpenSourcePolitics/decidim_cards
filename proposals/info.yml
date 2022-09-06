@@ -7,25 +7,42 @@ query:
         decidim_proposals_proposals.id,
         ps_id as decidim_participatory_space_id,
         ps_slug as decidim_participatory_space_slug,
-        (case when (decidim_scopes.name->>'$LANGUAGE_CODE' = '' is not false) then 'Sans secteur' else decidim_scopes.name->>'$LANGUAGE_CODE' end) as decidim_scope_name,
+        coalesce(nullif(decidim_scopes.name->>'fr', ''), 'Sans secteur') as decidim_scope_name,
         regexp_replace(decidim_proposals_proposals.title->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as title,
         regexp_replace(decidim_proposals_proposals.body->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as body,
         'Decidim::Proposals::Proposal' as resource_type,
-        'https://' ||  organization_host || '/' ||  ps_space_type_slug ||  '/' ||  ps_slug || '/f/' || decidim_proposals_proposals.decidim_component_id || '/proposals/' || decidim_proposals_proposals.id as url,
+        concat('https://',organization_host,'/',ps_space_type_slug,'/',ps_slug,'/f/',decidim_proposals_proposals.decidim_component_id,'/proposals/',decidim_proposals_proposals.id) as url,
         decidim_proposals_proposals.decidim_component_id,
         decidim_proposals_proposals.created_at,
-        state
+        state,
+        authors_ids,
+        coalesce(authors_ids[1], -1) as first_author_id
     from decidim_proposals_proposals
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
+        left join (
+            select array_agg(decidim_users.id) as authors_ids, decidim_coauthorships.coauthorable_id 
+            from {{#users}} as decidim_users 
+                join decidim_coauthorships on decidim_users.id = decidim_coauthorships.decidim_author_id
+            where coauthorable_type = 'Decidim::Proposals::Proposal'
+            group by coauthorable_id
+        ) as coauthorships on decidim_proposals_proposals.id = coauthorable_id
         left join decidim_moderations on decidim_reportable_id = decidim_proposals_proposals.id
         left join decidim_scopes on decidim_scopes.id = decidim_proposals_proposals.decidim_scope_id
     where true
         and not(hidden_at is not null and decidim_reportable_type = 'Decidim::Proposals::Proposal')
         and decidim_proposals_proposals.published_at is not null
+    group by decidim_proposals_proposals.id,
+        ps_id,
+        ps_slug,
+        decidim_scope_name,
+        organization_host,
+        ps_space_type_slug,
+        authors_ids
   info:
     meta:
       depends_on:
         - components
+        - users
     filterables:
       date:
         attr: created_at
