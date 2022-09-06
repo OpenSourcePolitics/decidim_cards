@@ -17,7 +17,7 @@ query:
         categories,
         coalesce(nullif(categories[1], ''), 'Without category') as first_category
     from decidim_budgets_projects
-        join {{#budgets_projects}} as decidim_budgets_budgets on decidim_budgets_budgets.id = decidim_budgets_projects.decidim_budgets_budget_id
+        join {{#budgets}} as decidim_budgets_budgets on decidim_budgets_budgets.id = decidim_budgets_projects.decidim_budgets_budget_id
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
         left join (
             select array_agg(decidim_categories.name->>'$LANGUAGE_CODE') as categories, categorizable_id
