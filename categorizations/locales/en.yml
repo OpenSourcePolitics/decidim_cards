@@ -1,0 +1,6 @@
+---
+name: Categorizations
+description: >
+  Link between each categorized entity on the platform and its categories, if 
+  they exist.
+viz_settings:

@@ -20,7 +20,9 @@ query:
         coalesce(authors_ids[1], -1) as first_author_id,
         coalesce(nullif(decidim_proposals_proposals.address,''),'Pas d''adresse') as address,
         categories,
-        coalesce(categories[1], 'Sans catégorie') as first_category
+        coalesce(categories[1], 'Sans catégorie') as first_category,
+        sub_categories,
+        coalesce(sub_categories[1], 'Sans sous-catégorie') as first_sub_category
     from decidim_proposals_proposals
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
         left join (
@@ -33,10 +35,11 @@ query:
         left join decidim_moderations on decidim_reportable_id = decidim_proposals_proposals.id
         left join decidim_scopes on decidim_scopes.id = decidim_proposals_proposals.decidim_scope_id
         left join (
-          select array_agg(decidim_categories.name->>'$LANGUAGE_CODE') as categories, categorizable_id
-          from decidim_categorizations
-              join decidim_categories on decidim_categories.id = decidim_categorizations.decidim_category_id
-          where decidim_categorizations.categorizable_type = 'Decidim::Proposals::Proposal'
+          select array_agg(name) as categories, 
+              array_agg(child_name) as sub_categories,
+              categorizable_id
+          from {{#categorizations}} categorizations
+          where categorizations.categorizable_type = 'Decidim::Proposals::Proposal'
           group by categorizable_id
         ) as categorizations on categorizations.categorizable_id = decidim_proposals_proposals.id 
     where true
@@ -49,12 +52,14 @@ query:
         organization_host,
         ps_space_type_slug,
         authors_ids,
-        categories
+        categories,
+        sub_categories
   info:
     meta:
       depends_on:
         - components
         - users
+        - categorizations
     filterables:
       date:
         attr: created_at
