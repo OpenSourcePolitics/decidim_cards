@@ -1,0 +1,6 @@
+---
+name: Catégorisations
+description: >
+  Lien entre chaque entité catégorisée sur la plateforme et ses catégories, 
+  si ce lien existe.
+viz_settings:
