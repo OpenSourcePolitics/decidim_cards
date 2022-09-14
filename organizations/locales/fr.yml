@@ -2,3 +2,21 @@
 name: Organisations
 description: Informations à propos de l'organisation principale sur votre
 viz_settings:
+meta:
+  columns:
+    id: ID
+    name: Name
+    host: Host
+    default_locale: Default locale
+    available_locales: Availables locales
+    created_at: Date of creation
+    updated_at: Last update date
+    description: Description
+    secondary_hosts: Secondary hosts
+    available_authorizations: Available authorizations
+    header_snippets: Header snippet
+    tos_version: Version of TOS
+    badges_enabled: Banana spliter
+    send_welcome_notification: Sending welcome notification
+    users_registration_mode: Users' registration mode
+    time_zone: Time zone
