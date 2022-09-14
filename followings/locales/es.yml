@@ -3,3 +3,16 @@ name: Followings
 description: >
   All actions of followings made on the platform.
 viz_settings:
+meta:
+  columns:
+    decidim_user_id: User ID
+    root_decidim_followable_id: Root followable ID
+    root_decidim_followable_type: Root followable type
+    root_followable_title: Root followable title
+    created_at: Date of creation
+    updated_at: Date of udpate
+    root_following_url: Root following URL
+    decidim_followable_id: Followable ID
+    decidim_followable_type: Followable Type
+    followable_url: Followable URL
+    following_way: Following way
