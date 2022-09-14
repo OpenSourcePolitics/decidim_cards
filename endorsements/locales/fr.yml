@@ -1,4 +1,14 @@
 ---
 name: Soutiens
-description: "Soutiens effectués sur la plateforme. À ne pas confondre avec les votes sur les propositions : les soutiens sont visibles et non anonymes, contrairement aux votes sur les propositions"
+description: "Endorsements made on the platform. Not to be confused with proposal votes: endorsements are visible and not anonymous contrary to proposal votes"
 viz_settings:
+meta:
+  columns:
+    id: ID
+    resource_type: Resource type
+    resource_id: Resource ID
+    decidim_author_type: Author type
+    decidim_author_id: Author ID
+    created_at: Date of creation
+    updated_at: Date of update
+    decidim_component_id: Resource component ID
