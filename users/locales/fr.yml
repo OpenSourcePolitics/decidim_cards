@@ -9,35 +9,35 @@ meta:
   columns:
     id: ID
     email: Email
-    sign_in_count: Signin count
-    last_sign_in_at: Last signin date
-    created_at: Date of creation
-    updated_at: Last date of update
-    invitation_created_at: Date of invitation creation
-    invitation_sent_at: Date of invitation sending
-    invitation_accepted_at: Date of accepted invitation
-    invited_by_id: ID of inviter
-    invited_by_type: Type of the inviter
-    decidim_organization_id: ID of organization
-    confirmed_at: Confirmation date
-    confirmation_token: Confirmation token
-    unconfirmed_email: Email not confirmed ?
-    name: Name
+    sign_in_count: Nombre de connexions
+    last_sign_in_at: Date de dernière connexion
+    created_at: Date de création
+    updated_at: Date de mise à jour
+    invitation_created_at: Date de création de l'invitation
+    invitation_sent_at: Date d'envoi d'invitation
+    invitation_accepted_at: Date d'acceptation de l'invitation
+    invited_by_id: ID de l'inviteur
+    invited_by_type: Type d'invitateur
+    decidim_organization_id: ID de l'organisation
+    confirmed_at: Date de confirmation
+    confirmation_token: Jeton de confirmation
+    unconfirmed_email: E-mail non confirmé ?
+    name: Nom
     locale: Locale
-    deleted_at: Date of account deletion
-    admin: Is admin ?
-    managed: Is managed ?
-    roles: Roles
-    email_on_notification: Email on notification ?
-    nickname: Nickname
-    accepted_tos_version: Version of TOS accepted
+    deleted_at: Date de suppression du compte
+    admin: Est administrateur ?
+    managed: Est utilisateur géré ?
+    roles: Rôles
+    email_on_notification: Notifications par email ?
+    nickname: Surnom
+    accepted_tos_version: Version des CGV acceptée
     type: Type
-    following_count: Followings count
-    followers_count: Followers count
-    failed_attempts: Failed signin count
-    locked_at: Locking date
-    admin_terms_accepted_at: Date of admin terms acceptation
-    blocked: Is blocked ?
+    following_count: Nombre de suivis
+    followers_count: Nombre d’abonnés
+    failed_attempts: Nombre d'échecs de connexion
+    locked_at: Date de blocage
+    admin_terms_accepted_at: Date d'acceptation des conditions d'administration
+    blocked: Est bloqué ?
     blocked_at: Blocking date
     confirmed: Is confirmed ?
     url: Profile URL
