@@ -6,10 +6,10 @@ viz_settings:
 meta:
   columns:
     id: ID
-    title: Title
+    title: Titre
     description: Description
-    decidim_author_id: Author ID
-    published_at: Date of publication
+    decidim_author_id: ID de l'auteur
+    published_at: Date de publication
     parsed_state: Parsed state
     state: State
     signature_type: Signature type
