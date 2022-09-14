@@ -5,8 +5,8 @@ description: >
 viz_settings:
 meta:
   columns:
-    user_id: User ID
-    participation_id: Participation ID
-    decidim_component_id: Component ID
-    participation_type: Participation type
-    participation_date: Participation date
+    user_id: ID de l’utilisateur
+    participation_id: ID de la participation
+    decidim_component_id: ID du composant
+    participation_type: Type de participation
+    participation_date: Date de la participation
