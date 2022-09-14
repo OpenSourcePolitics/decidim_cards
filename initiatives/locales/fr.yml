@@ -1,5 +1,38 @@
 ---
 name: Initiatives
 description: >
-  Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives créées, quel que soit leur état.
+  All initiatives created on the platform. Includes all created ones whatever their states.
 viz_settings:
+meta:
+  columns:
+    id: ID
+    title: Title
+    description: Description
+    decidim_author_id: Author ID
+    published_at: Date of publication
+    parsed_state: Parsed state
+    state: State
+    signature_type: Signature type
+    signature_start_date: Signature start date
+    signature_end_date: Signature end date
+    answer: Answer
+    answered_at: Date of answer
+    answer_url: Answer URL
+    created_at: Date of creation
+    updated_at: Date of udpate
+    decidim_user_group_id: User group ID
+    hashtag: Hashtag
+    scoped_type_id: Scoped type id
+    decidim_author_type: Author Type
+    parsed_online_votes: Online votes
+    parsed_offline_votes: Offline votes
+    sum_votes: Sum of votes
+    comments_count: Comments votes
+    follows_count: Follows count
+    url: Initiative URL
+    supports_required: Supports required
+    area_id: Area ID
+    area_name: Area name
+    area_type_name: Area type name
+    resource_type: Resource type
+    id_as_text: ID as text
