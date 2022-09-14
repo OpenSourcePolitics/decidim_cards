@@ -3,3 +3,13 @@ name: Initiatives votes
 description: >
   All initiatives votes made on the platform. 
 viz_settings:
+meta:
+  columns:
+    id: ID
+    decidim_initiative_id: Initiative ID
+    decidim_author_id: Author ID
+    created_at: Date of creation
+    updated_at: Date of update
+    hash_id: Hash ID 
+    decidim_scope_id: Scope ID
+    initiative_url: Initiative URL
