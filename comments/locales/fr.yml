@@ -3,9 +3,19 @@ name: Commentaires
 description: >
   Tous les commentaires faits sur la plateforme.
 viz_settings:
-  scalar:
-    name: Commentaires
-  line:
-    name: Nouveaux commentaires
-    description: >
-      Nouveaux commentaires écrits sur la plateforme
+meta:
+  columns:
+    id: ID
+    decidim_commentable_id: Commentable ID
+    decidim_commentable_type: Commentable type
+    decidim_author_id: Author ID
+    created_at: Date of creation
+    depth: Depth
+    alignment: Alignment
+    decidim_root_commentable_id: Root commentable ID
+    decidim_root_commentable_type: Root commentable type
+    decidim_author_type: Author type
+    body: Body
+    decidim_component_id: Component ID
+    ps_slug: Participatory space slug
+    comment_url: Comment URL
