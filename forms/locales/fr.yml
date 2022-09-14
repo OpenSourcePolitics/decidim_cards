@@ -1,11 +1,11 @@
 ---
 name: Formulaires
 description: >
-  All forms published on the platform including closed ones.
+  Tous les questionnaires publiés sur la plateforme, y compris les formulaires fermés.
 viz_settings:
 meta:
   columns:
     id: ID
-    title: Title
-    decidim_component_id: Component ID
-    questionnaire_url: Form URL
+    title: Titre
+    decidim_component_id: ID du composant
+    questionnaire_url: URL du questionnaire
