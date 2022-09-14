@@ -3,7 +3,8 @@ resource: initiatives_votes
 query:
   model: true
   sql: |
-    select decidim_initiatives_votes.id,
+    select
+        decidim_initiatives_votes.id,
         decidim_initiative_id,
         decidim_initiatives_votes.decidim_author_id,
         decidim_initiatives_votes.created_at,
