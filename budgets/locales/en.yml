@@ -3,3 +3,8 @@ name: Budgets
 description: >
   All participatory budgets created on the platform
 viz_settings:
+meta:
+  columns:
+    id: ID
+    title: Title
+    decidim_component_id: Component ID
