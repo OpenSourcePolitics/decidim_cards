@@ -6,21 +6,21 @@ viz_settings:
 meta:
   columns:
     id: ID
-    title: Title
+    title: Titre
     description: Description
-    address: Address
-    attendees_count: Attendees_count
-    created_at: Date of creation
-    decidim_scope_id: Scope ID
-    decidim_component_id: Component ID
-    start_time: Start time
-    end_time: End time
-    registration_url: Registration URL
-    meeting_url: Meeting URL
-    private_meeting: Is private meeting?
-    decidim_author_id: Author ID
-    resource_type: Resource type
-    categories: Categories
-    first_category: Category
-    sub_categories: Subcategories
-    first_sub_category: Subcategory
+    address: Adresse
+    attendees_count: Nombre de participants
+    created_at: Date de création
+    decidim_scope_id: ID du périmètre d'application
+    decidim_component_id: ID du composant
+    start_time: Date de début
+    end_time: Date de fin
+    registration_url: URL d'inscription
+    meeting_url: URL de la réunion
+    private_meeting: Réunion privée ?
+    decidim_author_id: ID de l'auteur
+    resource_type: Type de ressource
+    categories: Catégories
+    first_category: Catégorie
+    sub_categories: Sous-catégories
+    first_sub_category: Sous-catégorie
