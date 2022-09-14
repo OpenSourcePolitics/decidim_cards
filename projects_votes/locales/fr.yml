@@ -10,6 +10,6 @@ meta:
     project_id: Project ID
     project_title: Project title
     decidim_component_id: Component ID
-    created_at: Date of creation
-    checked_out_at: Date of vote validation
-    project_url: Project URL
+    created_at: Date de création
+    checked_out_at: Date de validation du vote
+    project_url: URL du projet
