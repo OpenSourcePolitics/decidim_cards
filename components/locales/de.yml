@@ -2,3 +2,21 @@
 name: Components
 description: All components published on your plattform
 viz_settings:
+meta:
+  columns:
+    id: ID
+    manifest_name: Manifest name
+    manifest_name_for_url: Parsed manifest name
+    published_at: Date of publication
+    created_at: Date of creation
+    component_url: Component URL
+    ps_id: Participatory space ID
+    ps_published_at: Participatory space' date of publication
+    ps_title: Participatory space title
+    ps_subtitle: Participatory space subtitle
+    ps_slug: Participatory space slug
+    ps_type: Participatory space type
+    ps_space_type_slug: Participatory space type slug
+    ps_url: Participatory space URL
+    decidim_organization_id: Organization ID
+    organization_host: Organization host
