@@ -3,3 +3,19 @@ name: Budgets projects
 description: >
   All projects contained in budgets created on the platform
 viz_settings:
+meta:
+  columns:
+    id: ID 
+    title: Title
+    description: Description
+    decidim_scope_id: Scope ID 
+    project_amount: Project amount 
+    budget_id: Budget ID
+    budget_title: Budget title
+    decidim_component_id: Component ID
+    project_url: Project URL
+    resource_type: Resource type
+    categories: Categories
+    first_category: Category
+    sub_categories: Sub categories
+    first_sub_category: Subcategory
