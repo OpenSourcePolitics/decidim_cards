@@ -8,4 +8,4 @@ meta:
     id: ID
     title: Title
     decidim_component_id: Component ID
-    form_url: Form URL
+    questionnaire_url: Form URL
