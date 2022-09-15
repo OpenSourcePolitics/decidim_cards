@@ -14,8 +14,8 @@ meta:
     alignment: Sentiment
     decidim_root_commentable_id: ID de la ressource racine commentée
     decidim_root_commentable_type: Type de la ressource racine commentée
-    decidim_author_type: Author type
-    body: Body
-    decidim_component_id: Component ID
-    ps_slug: Participatory space slug
-    comment_url: Comment URL
+    decidim_author_type: Type d’auteur
+    body: Corps
+    decidim_component_id: ID du composant
+    ps_slug: Slug d'espace participatif
+    comment_url: URL du commentaire
