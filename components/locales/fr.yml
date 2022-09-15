@@ -5,12 +5,12 @@ viz_settings:
 meta:
   columns:
     id: ID
-    manifest_name: Manifest name
-    manifest_name_for_url: Parsed manifest name
-    published_at: Date of publication
-    created_at: Date of creation
-    component_url: Component URL
-    ps_id: Participatory space ID
+    manifest_name: Manifest
+    manifest_name_for_url: Nom du manifeste corrigé
+    published_at: Date de publication
+    created_at: Date de création
+    component_url: URL du composant
+    ps_id: ID d'espace participatif
     ps_published_at: Participatory space' date of publication
     ps_title: Participatory space title
     ps_subtitle: Participatory space subtitle
