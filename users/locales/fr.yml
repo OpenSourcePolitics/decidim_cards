@@ -38,7 +38,7 @@ meta:
     locked_at: Date de blocage
     admin_terms_accepted_at: Date d'acceptation des conditions d'administration
     blocked: Est bloqué ?
-    blocked_at: Blocking date
-    confirmed: Is confirmed ?
-    url: Profile URL
-    extended_data: Extended data
+    blocked_at: Date de blocage
+    confirmed: Est confirmé ?
+    url: URL du profil
+    extended_data: Données supplémentaires
