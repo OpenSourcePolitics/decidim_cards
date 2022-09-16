@@ -23,7 +23,7 @@ meta:
     confirmation_token: Jeton de confirmation
     unconfirmed_email: E-mail non confirmé ?
     name: Nom
-    locale: Locale
+    locale: Langue
     deleted_at: Date de suppression du compte
     admin: Est administrateur ?
     managed: Est utilisateur géré ?
