@@ -6,5 +6,5 @@ viz_settings:
 meta:
   columns:
     id: ID
-    title: Title
-    decidim_component_id: Component ID
+    title: Titre
+    decidim_component_id: ID du composant
