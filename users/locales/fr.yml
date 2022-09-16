@@ -12,12 +12,12 @@ meta:
     sign_in_count: Nombre de connexions
     last_sign_in_at: Date de dernière connexion
     created_at: Date de création
-    updated_at: Date of update
+    updated_at: Date de mise à jour
     invitation_created_at: Date de création de l'invitation
     invitation_sent_at: Date d'envoi d'invitation
     invitation_accepted_at: Date d'acceptation de l'invitation
     invited_by_id: ID de l'inviteur
-    invited_by_type: Type d'invitateur
+    invited_by_type: Type d'inviteur
     decidim_organization_id: ID de l'organisation
     confirmed_at: Date de confirmation
     confirmation_token: Jeton de confirmation
