@@ -8,7 +8,7 @@ meta:
     id: Identifiant
     title: Titre
     body: Corps
-    decidim_component_id: Identification du composants
+    decidim_component_id: ID du composant
     created_at: Date de création
     updated_at: Date de dernière mise à jour
     decidim_author_id: Identifiant de l'auteur
