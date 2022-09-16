@@ -4,7 +4,7 @@ description: Informations à propos de l'organisation principale sur votre
 viz_settings:
 meta:
   columns:
-    id: Identifiant
+    id: ID
     name: Nom
     host: Domaine
     default_locale: Langue par défaut
@@ -13,10 +13,10 @@ meta:
     updated_at: Date de dernière mise à jour
     description: Description
     secondary_hosts: Domaines secondaires
-    available_authorizations: Autorisations possibles
+    available_authorizations: Autorisations disponibles
     header_snippets: Code d'en-tête
     tos_version: Version des CGU
     badges_enabled: Badges activés
-    send_welcome_notification: Envoyer une notification de bienvenue
-    users_registration_mode: Mode d'inscription utilisateurs
+    send_welcome_notification: Envoi une notification de bienvenue ?
+    users_registration_mode: Mode d'inscription des utilisateurs
     time_zone: Fuseau horaire
