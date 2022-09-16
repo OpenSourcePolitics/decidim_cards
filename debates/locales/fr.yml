@@ -5,19 +5,19 @@ description: >
 viz_settings:
 meta:
   columns:
-    id: ID
-    title: Title
+    id: Identifiant
+    title: Titre
     description: Description
-    start_time: Start time
-    end_time: End time
-    decidim_component_id: Component ID
-    decidim_author_id: Author ID
-    created_at: Date of creation
-    closed_at: Closed at
-    ps_slug: Participatory space slug
-    debate_url: Debate URL
-    resource_type: Resource type
-    categories: Categories
-    first_category: Category
-    sub_categories: Subcategories
-    first_sub_category: Subcategory
+    start_time: Heure de début
+    end_time: Heure de fin
+    decidim_component_id: ID du composant
+    decidim_author_id: ID de l’auteur
+    created_at: Date de création
+    closed_at: Fermé le
+    ps_slug: Slug d'espace participatif
+    debate_url: URL du débat
+    resource_type: Type de participation
+    categories: Catégories
+    first_category: Catégorie
+    sub_categories: Sous-catégories
+    first_sub_category: Sous-catégorie
