@@ -11,7 +11,7 @@ meta:
     decidim_scope_name: Périmètre d'application
     title: Titre
     body: Corps
-    resource_type: Type de ressource
+    resource_type: Type de la participation
     url: URL de la proposition
     decidim_component_id: ID du composant
     created_at: Date de création
