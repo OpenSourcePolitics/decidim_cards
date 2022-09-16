@@ -5,14 +5,14 @@ description: >
 viz_settings:
 meta:
   columns:
-    decidim_user_id: ID de l’utilisateur
+    decidim_user_id: ID du participant
     root_decidim_followable_id: ID de la participation suivie 
-    root_decidim_followable_type: Type de participation suivie 
-    root_followable_title: Titre suivi de la racine
+    root_decidim_followable_type: Type de participation suivie
+    root_followable_title: Titre de la participation suivie
     created_at: Date de création
     updated_at: Date de mise à jour
     root_following_url: URL de la participation suivie
-    decidim_followable_id: ID suivi
-    decidim_followable_type: Type de suivi
+    decidim_followable_id: ID de la participation suivie
+    decidim_followable_type: Type de la participation suivie
     followable_url: URL du suivi
     following_way: Niveau de suivi
