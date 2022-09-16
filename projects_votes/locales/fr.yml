@@ -6,10 +6,10 @@ viz_settings:
 meta:
   columns:
     id: ID
-    decidim_user_id: User ID
-    project_id: Project ID
-    project_title: Project title
-    decidim_component_id: Component ID
+    decidim_user_id: ID de l’utilisateur
+    project_id: ID du projet
+    project_title: Titre du projet
+    decidim_component_id: ID du composant
     created_at: Date de création
     checked_out_at: Date de validation du vote
     project_url: URL du projet
