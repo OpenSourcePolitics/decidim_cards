@@ -5,12 +5,12 @@ description: >
 viz_settings:
 meta:
   columns:
-    id: Identifiant
+    id: ID
     title: Titre
     body: Corps
     decidim_component_id: ID du composant
     created_at: Date de création
     updated_at: Date de dernière mise à jour
-    decidim_author_id: Identifiant de l'auteur
+    decidim_author_id: ID de l’auteur
     post_url: URL du post
     resource_type: Type de participation
