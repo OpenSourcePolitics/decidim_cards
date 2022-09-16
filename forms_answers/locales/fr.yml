@@ -16,5 +16,5 @@ meta:
     decidim_questionnaire_id: ID du questionnaire
     decidim_component_id: ID du composant
     sorting_points: Points de classement
-    position: Position 
+    position: Position
     created_at: Date de création
