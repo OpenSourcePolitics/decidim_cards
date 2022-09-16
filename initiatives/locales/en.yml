@@ -1,7 +1,7 @@
 ---
 name: Initiatives
 description: >
-  All initiatives created on the platform. Includes all created ones whatever 
+  All initiatives created on the platform. Includes all created ones, whatever 
   their states.
 viz_settings:
 meta:
