@@ -11,12 +11,12 @@ meta:
     created_at: Date de création
     component_url: URL du composant
     ps_id: ID d'espace participatif
-    ps_published_at: Participatory space' date of publication
-    ps_title: Participatory space title
-    ps_subtitle: Participatory space subtitle
-    ps_slug: Participatory space slug
-    ps_type: Participatory space type
-    ps_space_type_slug: Participatory space type slug
-    ps_url: Participatory space URL
-    decidim_organization_id: Organization ID
-    organization_host: Organization host
+    ps_published_at: Date de publication d'un espace de participation
+    ps_title: Titre de l'espace de participation
+    ps_subtitle: Sous-titres de l'espace participatif
+    ps_slug: Slug de l'espace participatif
+    ps_type: Type de l'espace participatif
+    ps_space_type_slug: Slug d'espace participatif
+    ps_url: URL d'espace participatif
+    decidim_organization_id: Identifiant de l'organisation
+    organization_host: Domaine de l'organisation
