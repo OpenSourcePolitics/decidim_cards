@@ -1,7 +1,9 @@
 ---
 name: Suivis
 description: >
-  Toutes les actions de suivis effectuées sur la plateforme.
+  Toutes les actions de suivis effectuées sur la plateforme. Par défaut,
+  Decidim compte comme suivi d'une contribution particulière également les suivis
+  de l'espace de concertation l'englobant.
 viz_settings:
 meta:
   columns:

@@ -3,3 +3,18 @@ name: Forms' answers
 description: >
   All answers of participants to the published forms on the platform
 viz_settings:
+meta:
+  columns:
+    decidim_user_id: User ID
+    session_token: Session token
+    question_type: Question type
+    question_title: Question title
+    answer: Answer
+    sub_matrix_question: Submatrix question
+    custom_body: Custom body
+    sorting_position: Sorting position
+    decidim_questionnaire_id: Form ID
+    decidim_component_id: Component ID
+    sorting_points: Sorting points
+    position: Position
+    created_at: Date of creation
