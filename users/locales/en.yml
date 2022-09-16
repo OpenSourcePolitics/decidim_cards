@@ -11,7 +11,7 @@ meta:
     sign_in_count: Signin count 
     last_sign_in_at: Last signin date
     created_at: Date of creation
-    updated_at: Last date of update
+    updated_at: Date of update
     invitation_created_at: Date of invitation creation
     invitation_sent_at: Date of invitation sending
     invitation_accepted_at: Date of accepted invitation

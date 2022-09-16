@@ -1,8 +1,8 @@
 ---
 name: Participations
 description: >
-  All participations made on the platform : proposals endorsements proposals' votes debates answers to surveys and comments. 
-  ⚠️ Please note that it also counts answers of unregistered users in this case they're identified by their session_id.
+  All participations made on the platform : proposals, endorsements, proposals' votes, debates, answers to surveys and comments. 
+  ⚠️ Please note that it also counts answers of unregistered users, in this case they're identified by their session_id.
 viz_settings:
 meta:
   columns:

@@ -16,7 +16,7 @@ meta:
     available_authorizations: Available authorizations
     header_snippets: Header snippet
     tos_version: Version of TOS
-    badges_enabled: Banana spliter
+    badges_enabled: Badges enabled
     send_welcome_notification: Sending welcome notification
     users_registration_mode: Users' registration mode
     time_zone: Time zone
