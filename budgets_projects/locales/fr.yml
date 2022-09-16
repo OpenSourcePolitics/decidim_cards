@@ -12,10 +12,10 @@ meta:
     project_amount: Montant du projet
     budget_id: ID du budget
     budget_title: Titre du budget
-    decidim_component_id: Id du composant
+    decidim_component_id: ID du composant
     project_url: URL du projet
     resource_type: Type de participation
-    categories: Catégorie
+    categories: Catégories
     first_category: Catégorie
-    sub_categories: Sous catégories
+    sub_categories: Sous-catégories
     first_sub_category: Sous-catégorie
