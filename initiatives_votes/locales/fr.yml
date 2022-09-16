@@ -6,10 +6,10 @@ viz_settings:
 meta:
   columns:
     id: ID
-    decidim_initiative_id: Initiative ID
-    decidim_author_id: Author ID
-    created_at: Date of creation
-    updated_at: Date of update
-    hash_id: Hash ID
-    decidim_scope_id: Scope ID
-    initiative_url: Initiative URL
+    decidim_initiative_id: ID de l’initiative
+    decidim_author_id: ID de l’auteur
+    created_at: Date de création
+    updated_at: Date de mise à jour
+    hash_id: ID du hash
+    decidim_scope_id: ID du périmètre d'application
+    initiative_url: URL de l’initiative
