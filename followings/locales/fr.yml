@@ -1,7 +1,18 @@
 ---
 name: Suivis
-description: > 
-  Rassemble toutes les actions de suivis sur une plateforme. Par défaut,
-  Decidim compte comme suivi d'une contribution particulière également les suivis
-  de l'espace de concertation l'englobant.
+description: >
+  Toutes les actions de suivis effectuées sur la plateforme.
 viz_settings:
+meta:
+  columns:
+    decidim_user_id: ID du participant
+    root_decidim_followable_id: ID de la participation suivie 
+    root_decidim_followable_type: Type de participation suivie
+    root_followable_title: Titre de la participation suivie
+    created_at: Date de création
+    updated_at: Date de mise à jour
+    root_following_url: URL de la participation suivie
+    decidim_followable_id: ID de la participation suivie
+    decidim_followable_type: Type de la participation suivie
+    followable_url: URL du suivi
+    following_way: Niveau de suivi

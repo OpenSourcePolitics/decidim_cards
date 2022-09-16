@@ -3,3 +3,19 @@ name: Projets des budgets
 description: >
   Tous les projets compris dans les budgets créés sur la plateforme
 viz_settings:
+meta:
+  columns:
+    id: ID
+    title: Titre
+    description: Description
+    decidim_scope_id: ID du périmètre d'application
+    project_amount: Montant du projet
+    budget_id: ID du budget
+    budget_title: Titre du budget
+    decidim_component_id: ID du composant
+    project_url: URL du projet
+    resource_type: Type de participation
+    categories: Catégories
+    first_category: Catégorie
+    sub_categories: Sous-catégories
+    first_sub_category: Sous-catégorie

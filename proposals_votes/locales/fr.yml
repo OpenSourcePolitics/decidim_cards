@@ -3,3 +3,12 @@ name: Votes sur les propositions
 description: >
   Tous les votes effectués sur les propositions
 viz_settings:
+meta:
+  columns:
+    id: ID
+    created_at: Date de création
+    decidim_author_id: ID de l'auteur
+    decidim_proposal_id: ID de la proposition
+    decidim_component_id: ID du composant
+    proposal_title: Titre de la proposition
+    proposal_url: URL de la proposition

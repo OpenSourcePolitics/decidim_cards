@@ -3,4 +3,14 @@ name: Articles de blog
 description: >
   Tous les articles de blog sur la plateforme
 viz_settings:
-
+meta:
+  columns:
+    id: ID
+    title: Titre
+    body: Corps
+    decidim_component_id: ID du composant
+    created_at: Date de création
+    updated_at: Date de dernière mise à jour
+    decidim_author_id: ID de l’auteur
+    post_url: URL du post
+    resource_type: Type de participation

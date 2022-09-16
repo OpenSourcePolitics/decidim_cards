@@ -3,13 +3,40 @@ name: Users
 description: >
   All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
 viz_settings:
-  scalar:
-    name: Users
-    description: Users description
-  line:
-    name: New users
-    description: |
-      New users on your platform (includes
-      admins, invited and managed, blocked and deleted users)
-    axis_x: Date
-    axis_y: ""
+meta:
+  columns:
+    id: ID
+    email: Email
+    sign_in_count: Signin count
+    last_sign_in_at: Last signin date
+    created_at: Date of creation
+    updated_at: Date of update
+    invitation_created_at: Date of invitation creation
+    invitation_sent_at: Date of invitation sending
+    invitation_accepted_at: Date of accepted invitation
+    invited_by_id: ID of inviter
+    invited_by_type: Type of the inviter
+    decidim_organization_id: ID of organization
+    confirmed_at: Confirmation date
+    confirmation_token: Confirmation token
+    unconfirmed_email: Email not confirmed ?
+    name: Name
+    locale: Locale
+    deleted_at: Date of account deletion
+    admin: Is admin ?
+    managed: Is managed ?
+    roles: Roles
+    email_on_notification: Email on notification ?
+    nickname: Nickname
+    accepted_tos_version: Version of TOS accepted
+    type: Type
+    following_count: Followings count
+    followers_count: Followers count
+    failed_attempts: Failed signin count
+    locked_at: Locking date
+    admin_terms_accepted_at: Date of admin terms acceptation
+    blocked: Is blocked ?
+    blocked_at: Blocking date
+    confirmed: Is confirmed ?
+    url: Profile URL
+    extended_data: Extended data

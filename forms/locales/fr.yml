@@ -1,5 +1,11 @@
 ---
 name: Questionnaires
 description: >
-  Tous les questionnaires publiés sur la plateforme, y compris les questionnaires fermés.
+  Tous les questionnaires publiés sur la plateforme, y compris les formulaires fermés.
 viz_settings:
+meta:
+  columns:
+    id: ID
+    title: Titre
+    decidim_component_id: ID du composant
+    questionnaire_url: URL du questionnaire

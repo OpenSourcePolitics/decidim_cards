@@ -3,9 +3,24 @@ name: Proposals
 description: >
   All proposals created on your platform. It includes : proposals with the following state : accepted, evaluated, rejected and withdrawn. It doesn't include hidden proposals (moderation) and unpublished proposals (remember the a participatory space and component can be published or unpublished).
 viz_settings:
-  scalar:
-    name: Proposals
-  line:
-    name: New proposals
-    description: >
-      New proposals created on the platform
+meta:
+  columns:
+    id: ID
+    decidim_participatory_space_id: Participatory space ID
+    decidim_participatory_space_slug: Participatory space slug
+    decidim_scope_name: Scope name
+    title: Title
+    body: Body
+    resource_type: Resource type
+    url: Proposal URL
+    decidim_component_id: Component ID
+    created_at: Date of creation
+    published_at: Date of publication
+    state: State
+    authors_ids: Authors IDs
+    first_author_id: First author ID
+    address: Address
+    categories: Categories
+    first_category: Category
+    sub_categories: Subcategories
+    first_sub_category: Subcategory

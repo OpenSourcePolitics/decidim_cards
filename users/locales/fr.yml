@@ -5,14 +5,40 @@ description: >
   administrateurs, les utilisateurs invités, gérés, signalés, bloqués et
   supprimés)
 viz_settings:
-  scalar:
-    name: Utilisateurs
-    description: Description utilisateurs
-  line:
-    name: Nouveaux utilisateurs
-    description: |
-      Nouveaux comptes utilisateurs créés sur votre plateforme (y compris
-      les administrateurs, les utilisateurs invités, gérés, signalés,
-      bloqués et supprimés)
-    axis_x: Date
-    axis_y: ""
+meta:
+  columns:
+    id: ID
+    email: Email
+    sign_in_count: Nombre de connexions
+    last_sign_in_at: Date de dernière connexion
+    created_at: Date de création
+    updated_at: Date de mise à jour
+    invitation_created_at: Date de création de l'invitation
+    invitation_sent_at: Date d'envoi d'invitation
+    invitation_accepted_at: Date d'acceptation de l'invitation
+    invited_by_id: ID de l'inviteur
+    invited_by_type: Type d'inviteur
+    decidim_organization_id: ID de l'organisation
+    confirmed_at: Date de confirmation
+    confirmation_token: Jeton de confirmation
+    unconfirmed_email: E-mail non confirmé ?
+    name: Nom
+    locale: Langue
+    deleted_at: Date de suppression du compte
+    admin: Est administrateur ?
+    managed: Est utilisateur géré ?
+    roles: Rôles
+    email_on_notification: Notifications par email ?
+    nickname: Surnom
+    accepted_tos_version: Version des CGV acceptée
+    type: Type
+    following_count: Nombre de suivis
+    followers_count: Nombre d’abonnés
+    failed_attempts: Nombre d'échecs de connexion
+    locked_at: Date de blocage
+    admin_terms_accepted_at: Date d'acceptation des conditions d'administration
+    blocked: Est bloqué ?
+    blocked_at: Date de blocage
+    confirmed: Est confirmé ?
+    url: URL du profil
+    extended_data: Données supplémentaires
