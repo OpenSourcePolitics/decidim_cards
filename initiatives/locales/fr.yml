@@ -35,4 +35,4 @@ meta:
     area_name: Nom de la catégorie
     area_type_name: Nom du type de catégorie
     resource_type: Type de participation
-    id_as_text: ID comme texte
+    id_as_text: ID textuel
