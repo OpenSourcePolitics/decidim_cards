@@ -6,16 +6,16 @@ viz_settings:
 meta:
   columns:
     id: ID
-    title: Title
+    title: Titre
     description: Description
-    decidim_scope_id: Scope ID
-    project_amount: Project amount
-    budget_id: Budget ID
-    budget_title: Budget title
-    decidim_component_id: Component ID
-    project_url: Project URL
-    resource_type: Resource type
-    categories: Categories
-    first_category: Category
-    sub_categories: Sub categories
-    first_sub_category: Subcategory
+    decidim_scope_id: ID du périmètre d'application
+    project_amount: Montant du projet
+    budget_id: ID du budget
+    budget_title: Titre du budget
+    decidim_component_id: Id du composant
+    project_url: URL du projet
+    resource_type: Type de participation
+    categories: Catégorie
+    first_category: Catégorie
+    sub_categories: Sous catégories
+    first_sub_category: Sous-catégorie
