@@ -5,10 +5,10 @@ viz_settings:
 meta:
   columns:
     id: ID
-    resource_type: Type de ressource
-    resource_id: ID de la ressource
+    resource_type: Type de participation
+    resource_id: ID de la participation
     decidim_author_type: Type d’auteur
     decidim_author_id: ID de l'auteur
     created_at: Date de création
     updated_at: Date de mise à jour
-    decidim_component_id: ID du composant de la ressource
+    decidim_component_id: ID du composant de la participation
