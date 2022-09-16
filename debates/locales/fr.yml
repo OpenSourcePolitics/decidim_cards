@@ -5,7 +5,7 @@ description: >
 viz_settings:
 meta:
   columns:
-    id: Identifiant
+    id: ID
     title: Titre
     description: Description
     start_time: Heure de début
@@ -13,7 +13,7 @@ meta:
     decidim_component_id: ID du composant
     decidim_author_id: ID de l’auteur
     created_at: Date de création
-    closed_at: Fermé le
+    closed_at: Date de fermeture
     ps_slug: Slug d'espace participatif
     debate_url: URL du débat
     resource_type: Type de participation
