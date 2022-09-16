@@ -16,7 +16,7 @@ meta:
     available_authorizations: Autorisations possibles
     header_snippets: Code d'en-tête
     tos_version: Version des CGU
-    badges_enabled: Badges enabled
+    badges_enabled: Badges activés
     send_welcome_notification: Envoyer une notification de bienvenue
     users_registration_mode: Mode d'inscription utilisateurs
     time_zone: Fuseau horaire
