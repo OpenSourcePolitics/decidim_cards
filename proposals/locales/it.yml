@@ -5,7 +5,7 @@ description: >
 viz_settings:
 meta:
   columns:
-    id: ID,
+    id: ID
     decidim_participatory_space_id: Participatory space ID
     decidim_participatory_space_slug: Participatory space slug
     decidim_scope_name: Scope name
