@@ -28,7 +28,7 @@ meta:
     parsed_online_votes: Online votes
     parsed_offline_votes: Offline votes
     sum_votes: Sum of votes
-    comments_count: Comments votes
+    comments_count: Comments count
     follows_count: Follows count
     url: Initiative URL
     supports_required: Supports required
