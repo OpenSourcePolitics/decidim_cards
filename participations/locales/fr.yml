@@ -1,7 +1,7 @@
 ---
 name: Participations
 description: >
-  Toutes les participations faites sur la plateforme : propositions, soutiens, votes sur les propositions, débats, réponses aux sondages et commentaires. ⚠️ Notez que sont aussi comptés les réponses des utilisateurs non enregistrés ; ils sont dans ce cas identifiés par leur session_id.
+  Toutes les participations faites sur la plateforme : propositions, soutiens, votes sur les propositions, débats, réponses aux sondages et commentaires. ⚠️ Notez que sont aussi comptés les réponses des utilisateurs non enregistrés ; ils sont dans ce cas identifiés par leur ID de session.
 viz_settings:
 meta:
   columns:
