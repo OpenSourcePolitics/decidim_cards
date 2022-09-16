@@ -10,9 +10,9 @@ meta:
     decidim_commentable_type: Type de la ressource commentée
     decidim_author_id: ID de l'auteur
     created_at: Date de création
-    depth: Profondeur du commentaire
+    depth: Niveau du commentaire
     alignment: Sentiment
-    decidim_root_commentable_id: ID de la ressource racine commentée
+    decidim_root_commentable_id: ID de la participation racine commentée
     decidim_root_commentable_type: Type de la ressource racine commentée
     decidim_author_type: Type d’auteur
     body: Corps
