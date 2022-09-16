@@ -1,7 +1,7 @@
 ---
 name: Initiatives
 description: >
-  All initiatives created on the platform. Includes all created ones, whatever their states.
+  Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives créées, quel que soit leur état.
 viz_settings:
 meta:
   columns:
@@ -22,12 +22,12 @@ meta:
     updated_at: Date de mise à jour
     decidim_user_group_id: ID du groupe utilisateur
     hashtag: Hashtag
-    scoped_type_id: ID du type de secteur
+    scoped_type_id: ID du type de périmètre d'application
     decidim_author_type: Type d’auteur
     parsed_online_votes: Votes en ligne
     parsed_offline_votes: Votes hors ligne
     sum_votes: Somme des votes
-    comments_count: Comments count
+    comments_count: Nombre de commentaires
     follows_count: Nombre de suivis
     url: URL de l’initiative
     supports_required: Supports requis
