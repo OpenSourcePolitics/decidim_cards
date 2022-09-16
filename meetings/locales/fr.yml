@@ -19,7 +19,7 @@ meta:
     meeting_url: URL de la réunion
     private_meeting: Réunion privée ?
     decidim_author_id: ID de l'auteur
-    resource_type: Type de ressource
+    resource_type: Type de la participation
     categories: Catégories
     first_category: Catégorie
     sub_categories: Sous-catégories
