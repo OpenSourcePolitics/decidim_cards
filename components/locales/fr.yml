@@ -5,18 +5,18 @@ viz_settings:
 meta:
   columns:
     id: ID
-    manifest_name: Manifest
+    manifest_name: Type de composant
     manifest_name_for_url: Nom du manifeste corrigé
     published_at: Date de publication
     created_at: Date de création
     component_url: URL du composant
     ps_id: ID d'espace participatif
-    ps_published_at: Participatory space date of publication
+    ps_published_at: Date de publication de l'espace participatif
     ps_title: Titre de l'espace de participation
     ps_subtitle: Sous-titres de l'espace participatif
     ps_slug: Slug de l'espace participatif
     ps_type: Type de l'espace participatif
-    ps_space_type_slug: Slug d'espace participatif
+    ps_space_type_slug: Slug du type d'espace participatif
     ps_url: URL d'espace participatif
     decidim_organization_id: Identifiant de l'organisation
     organization_host: Domaine de l'organisation
