@@ -13,10 +13,10 @@ meta:
     ps_id: ID d'espace participatif
     ps_published_at: Date de publication de l'espace participatif
     ps_title: Titre de l'espace de participation
-    ps_subtitle: Sous-titres de l'espace participatif
+    ps_subtitle: Sous-titre de l'espace participatif
     ps_slug: Slug de l'espace participatif
     ps_type: Type de l'espace participatif
     ps_space_type_slug: Slug du type d'espace participatif
     ps_url: URL d'espace participatif
-    decidim_organization_id: Identifiant de l'organisation
+    decidim_organization_id: ID de l'organisation
     organization_host: Domaine de l'organisation
