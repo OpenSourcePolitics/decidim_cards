@@ -1,13 +1,13 @@
 ---
-name: Categorizations
+name: Catégorisations
 description: >
-  Link between each categorized entity on the platform and its categories, if they exist.
+  Lien entre chaque entité classée sur la plateforme et ses catégories, si elles existent.
 viz_settings:
 meta:
   columns:
     id: ID
-    name: Name
-    child_id: Category child ID
-    child_name: Category child name
-    categorizable_id: Categorizable ID
-    categorizable_type: Categorizable type
+    name: Nom
+    child_id: ID de la catégorie enfant
+    child_name: Nom de la catégorie enfant
+    categorizable_id: ID de l'entité catégorisée
+    categorizable_type: Type de l'entité catégorisée
