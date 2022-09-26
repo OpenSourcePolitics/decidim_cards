@@ -8,3 +8,4 @@ meta:
     id: ID
     title: Titre
     decidim_component_id: ID du composant
+    url: URL du budget participatif
