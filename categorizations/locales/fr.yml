@@ -2,7 +2,6 @@
 name: Catégorisations
 description: >
   Lien entre chaque entité classée sur la plateforme et ses catégories, si elles existent.
-viz_settings:
 meta:
   columns:
     id: ID
