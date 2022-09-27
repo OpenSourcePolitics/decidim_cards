@@ -4,7 +4,6 @@ description: >
   Tous les comptes utilisateurs créés sur votre plateforme (y compris les
   administrateurs, les utilisateurs invités, gérés, signalés, bloqués et
   supprimés)
-viz_settings:
 meta:
   columns:
     id: ID
