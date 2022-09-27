@@ -110,8 +110,3 @@ query:
       depends_on:
         - organizations
         - forms
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:
