@@ -2,7 +2,6 @@
 name: Suivis
 description: >
   Toutes les actions de suivis effectuées sur la plateforme.
-viz_settings:
 meta:
   columns:
     decidim_user_id: ID du participant
