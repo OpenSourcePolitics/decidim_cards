@@ -21,8 +21,3 @@ query:
     meta:
       depends_on:
         - budgets_projects
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:
