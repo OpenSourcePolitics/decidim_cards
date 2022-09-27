@@ -2,7 +2,6 @@
 name: Initiatives
 description: >
   Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives créées, quel que soit leur état.
-viz_settings:
 meta:
   columns:
     id: ID
