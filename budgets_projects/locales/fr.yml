@@ -2,7 +2,6 @@
 name: Projets des budgets
 description: >
   Tous les projets compris dans les budgets créés sur la plateforme
-viz_settings:
 meta:
   columns:
     id: ID
