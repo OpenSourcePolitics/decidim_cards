@@ -12,4 +12,5 @@ meta:
     decidim_component_id: ID du composant
     created_at: Date de création
     checked_out_at: Date de validation du vote
+    vote_finished: Vote terminé ?
     project_url: URL du projet
