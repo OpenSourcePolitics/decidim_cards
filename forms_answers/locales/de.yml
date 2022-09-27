@@ -2,7 +2,6 @@
 name: Forms' answers
 description: >
   All answers of participants to the published forms on the platform
-viz_settings:
 meta:
   columns:
     decidim_user_id: User ID
