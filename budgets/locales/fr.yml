@@ -8,5 +8,5 @@ meta:
     id: ID
     title: Titre
     decidim_component_id: ID du composant
-    url: URL du budget participatif
-    ps_slug: Slug de l'espace participatif
+    url: URL of participatory budget
+    ps_slug: Slug of the participatory space
