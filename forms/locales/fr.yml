@@ -2,7 +2,6 @@
 name: Questionnaires
 description: >
   Tous les questionnaires publiés sur la plateforme, y compris les formulaires fermés.
-viz_settings:
 meta:
   columns:
     id: ID
