@@ -29,4 +29,3 @@ query:
     meta:
       depends_on:
         - components
-    viz_settings:
