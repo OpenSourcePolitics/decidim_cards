@@ -36,8 +36,3 @@ query:
         - budgets
         - components
         - categorizations
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:
