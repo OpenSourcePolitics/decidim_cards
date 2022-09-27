@@ -2,7 +2,6 @@
 name: Réponses aux questionnaires
 description: >
   Toutes les réponses des participants aux questionnaires publiés sur la plateforme
-viz_settings:
 meta:
   columns:
     decidim_user_id: ID de l’utilisateur
