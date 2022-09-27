@@ -38,8 +38,8 @@ query:
         concat('https://', (select host from {{#organizations}} org), '/initiatives/i-',decidim_initiatives.id) as url,
         supports_required,
         decidim_areas.id as area_id,
-        (case when decidim_areas.name ? '$LANGUAGE_CODE' then decidim_areas.name->>'$LANGUAGE_CODE' else 'No sub category' end) as area_name,
-        (case when decidim_area_types.name ? '$LANGUAGE_CODE' then decidim_area_types.name->>'$LANGUAGE_CODE' else 'No category' end) as area_type_name,
+        coalesce(nullif(decidim_areas.name->>'$LANGUAGE_CODE', ''), 'No sub category') as area_name,
+        coalesce(nullif(decidim_area_types.name->>'$LANGUAGE_CODE',''), 'No category') as area_type_name,
         'Decidim::Initiative' as resource_type,
         decidim_initiatives.id::text as id_as_text
     from decidim_initiatives
@@ -47,8 +47,8 @@ query:
         join decidim_initiatives_type_scopes on scoped_type_id = decidim_initiatives_type_scopes.id
         left join decidim_areas on decidim_areas.id = decidim_initiatives.decidim_area_id
         left join decidim_area_types on decidim_area_types.id = area_type_id,
-        lateral (select (case when online_votes ? 'total' then online_votes->>'total' else '0' end)::int as parsed_online_votes) t_online,
-        lateral (select (case when offline_votes ? 'total' then offline_votes->>'total' else '0' end)::int as parsed_offline_votes) t_offline
+        lateral (select coalesce(nullif(online_votes->>'total',''), '0')::int as parsed_online_votes) t_online,
+        lateral (select coalesce(nullif(offline_votes->>'total',''), '0')::int as parsed_offline_votes) t_offline
     
   info:
     meta:
