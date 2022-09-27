@@ -65,8 +65,3 @@ query:
     meta:
       depends_on:
         - organizations
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:

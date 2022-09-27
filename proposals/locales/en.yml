@@ -5,7 +5,6 @@ description: >
   following state : accepted, evaluated, rejected and withdrawn. It doesn't
   include hidden proposals (moderation) and unpublished proposals (remember
   the a participatory space and component can be published or unpublished).
-viz_settings:
 meta:
   columns:
     id: ID

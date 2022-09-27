@@ -15,8 +15,3 @@ query:
     meta:
       depends_on:
         - components
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:

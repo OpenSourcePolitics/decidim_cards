@@ -1,7 +1,6 @@
 ---
 name:  Components
 description:  All components published on your plattform
-viz_settings:
 meta:
   columns:
     id: ID

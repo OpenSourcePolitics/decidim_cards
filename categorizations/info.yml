@@ -32,5 +32,3 @@ query:
   info:
     meta:
       depends_on:
-    filterables:
-    viz_settings:

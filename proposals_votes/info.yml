@@ -17,8 +17,3 @@ query:
     meta:
       depends_on:
         - proposals
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:
