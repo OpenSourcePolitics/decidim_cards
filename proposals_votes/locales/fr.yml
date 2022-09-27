@@ -2,7 +2,6 @@
 name: Votes sur les propositions
 description: >
   Tous les votes effectués sur les propositions
-viz_settings:
 meta:
   columns:
     id: ID
