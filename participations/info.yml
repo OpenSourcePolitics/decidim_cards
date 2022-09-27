@@ -89,5 +89,3 @@ query:
       - meetings 
       - comments
       - blogs_posts
-    filterables:
-    viz_settings:
