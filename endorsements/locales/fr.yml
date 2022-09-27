@@ -1,7 +1,6 @@
 ---
 name: Soutiens
 description: "Soutiens faits sur la plateforme. À ne pas confondre avec les votes sur les propositions : les soutiens sont visibles et non anonymes, contrairement aux votes sur les propositions"
-viz_settings:
 meta:
   columns:
     id: ID
