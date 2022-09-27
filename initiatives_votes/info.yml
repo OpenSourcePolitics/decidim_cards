@@ -19,5 +19,3 @@ query:
     meta:
       depends_on:
         - initiatives
-    filterables:
-    viz_settings:
