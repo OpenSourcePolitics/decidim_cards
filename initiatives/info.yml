@@ -54,5 +54,3 @@ query:
     meta:
       depends_on:
         - organizations
-    filterables:
-    viz_settings:
