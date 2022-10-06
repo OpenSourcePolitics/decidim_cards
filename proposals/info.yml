@@ -22,7 +22,9 @@ query:
         categories,
         coalesce(categories[1], 'Sans catégorie') as first_category,
         sub_categories,
-        coalesce(sub_categories[1], 'Sans sous-catégorie') as first_sub_category
+        coalesce(sub_categories[1], 'Sans sous-catégorie') as first_sub_category,
+        comments_count,
+        endorsements_count
     from decidim_proposals_proposals
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
         left join (
