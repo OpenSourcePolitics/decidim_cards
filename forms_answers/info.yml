@@ -55,7 +55,7 @@ query:
             from decidim_forms_answers
                 join decidim_forms_questions on decidim_forms_questions.id = decidim_forms_answers.decidim_question_id
                 join decidim_forms_answer_choices on decidim_forms_answer_choices.decidim_answer_id = decidim_forms_answers.id
-                join decidim_forms_question_matrix_rows on decidim_forms_question_matrix_rows.decidim_question_id = decidim_forms_answers.decidim_question_id
+                join decidim_forms_question_matrix_rows on decidim_forms_question_matrix_rows.id = decidim_forms_answer_choices.decidim_question_matrix_row_id
             where true
                 and question_type = ANY('{matrix_single, matrix_multiple}'::text[])
         union all
