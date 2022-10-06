@@ -23,3 +23,5 @@ meta:
     first_category: Catégorie
     sub_categories: Sous-catégories
     first_sub_category: Sous-catégorie
+    comments_count: Number of comments
+    endorsements_count: Number of endorsements
