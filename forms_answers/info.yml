@@ -66,7 +66,7 @@ query:
                 decidim_forms_questions.position as "position",
                 file as "answer",
                 '' as "sub_matrix_question",
-                'https://' || (select host from {{#organizations}} decidim_organizations) || '/uploads/decidim/attachment/file/' || decidim_attachments.id || '/' || decidim_attachments.file as custom_body,
+                concat('https://',(select host from {{#organizations}} decidim_organizations),'/uploads/decidim/attachment/file/',decidim_attachments.id,'/',decidim_attachments.file) as custom_body,
                 -1 as sorting_position,
                 decidim_forms_questions.decidim_questionnaire_id,
                 decidim_forms_questions.body,
