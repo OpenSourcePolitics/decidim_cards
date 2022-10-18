@@ -7,7 +7,7 @@ query:
         decidim_proposals_proposals.id,
         ps_id as decidim_participatory_space_id,
         ps_slug as decidim_participatory_space_slug,
-        coalesce(nullif(decidim_scopes.name->>'fr', ''), 'Sans secteur') as decidim_scope_name,
+        coalesce(nullif(decidim_scopes.name->>'$LANGUAGE_CODE', ''), 'Sans secteur') as decidim_scope_name,
         regexp_replace(decidim_proposals_proposals.title->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as title,
         regexp_replace(decidim_proposals_proposals.body->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as body,
         'Decidim::Proposals::Proposal' as resource_type,
