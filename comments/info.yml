@@ -4,36 +4,36 @@ query:
   model:  true
   sql:  |
     -- WARNING: based on the definition of the decidim_app here : https://github.com/OpenSourcePolitics/decidim-app
-    with commentaries as (
+    with comments_accountability_results as (
             select decidim_comments_comments.*, decidim_accountability_results.decidim_component_id as "decidim_component_id"
             from decidim_accountability_results join decidim_comments_comments on decidim_root_commentable_id = decidim_accountability_results.id
             where decidim_root_commentable_type = 'Decidim::Accountability::Result'
-        union all
+    ), comments_blogs_posts as (
             select decidim_comments_comments.*, decidim_blogs_posts.decidim_component_id as "decidim_component_id"
             from {{#blogs_posts}} decidim_blogs_posts
                 join decidim_comments_comments on decidim_root_commentable_id = decidim_blogs_posts.id
                     and decidim_root_commentable_type = decidim_blogs_posts.resource_type
-        union all
+    ), comments_budgets_projects as (
             select decidim_comments_comments.*, decidim_budgets_projects.decidim_component_id as "decidim_component_id"
             from {{#budgets_projects}} decidim_budgets_projects
                 join decidim_comments_comments on decidim_root_commentable_id = decidim_budgets_projects.id
                     and decidim_root_commentable_type = decidim_budgets_projects.resource_type
-        union all
+    ), comments_debates as (
             select decidim_comments_comments.*, decidim_debates_debates.decidim_component_id as "decidim_component_id"
             from {{#debates}} decidim_debates_debates
                 join decidim_comments_comments on decidim_root_commentable_id = decidim_debates_debates.id
                     and decidim_root_commentable_type = decidim_debates_debates.resource_type
-        union all
+    ), comments_meetings as (
             select decidim_comments_comments.*, decidim_meetings_meetings.decidim_component_id as "decidim_component_id"
             from {{#meetings}} as decidim_meetings_meetings
                 join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_meetings_meetings.id
                     and decidim_root_commentable_type = decidim_meetings_meetings.resource_type
-        union all
+    ), comments_proposals as (
             select decidim_comments_comments.*, decidim_proposals_proposals.decidim_component_id as "decidim_component_id"
             from {{#proposals}} as decidim_proposals_proposals
                 join decidim_comments_comments on decidim_root_commentable_id = decidim_proposals_proposals.id
                     and decidim_root_commentable_type = decidim_proposals_proposals.resource_type
-        union all
+    ), comments_proposal_collaborative_drafts as (
                 select decidim_comments_comments.*, decidim_proposals_collaborative_drafts.decidim_component_id as "decidim_component_id"
             from decidim_proposals_collaborative_drafts
                 join decidim_comments_comments on decidim_comments_comments.decidim_root_commentable_id = decidim_proposals_collaborative_drafts.id
@@ -41,6 +41,14 @@ query:
             where decidim_root_commentable_type = 'Decidim::Proposals::CollaborativeDraft'
                 and decidim_proposals_collaborative_drafts.published_at is not null
                 and decidim_moderations.hidden_at is null
+    ), commentaries as(
+        select * from comments_accountability_results union all
+        select * from comments_blogs_posts union all
+        select * from comments_budgets_projects union all
+        select * from comments_debates union all
+        select * from comments_meetings union all
+        select * from comments_proposals union all
+        select * from comments_proposal_collaborative_drafts
     )
     select
         commentaries.id,
