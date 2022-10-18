@@ -6,7 +6,6 @@ meta:
   columns:
     id: ID
     manifest_name: Type de composant
-    manifest_name_for_url: Nom du manifeste corrigé
     published_at: Date de publication
     created_at: Date de création
     component_url: URL du composant
