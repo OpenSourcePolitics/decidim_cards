@@ -86,6 +86,7 @@ query:
         custom_body,
         sorting_position,
         decidim_questionnaire_id,
+        decidim_forms_questionnaires.title as form_title,
         decidim_component_id,
         (case sorting_position
             when 0 then 10
