@@ -7,6 +7,7 @@ query:
             select 
                 decidim_user_id, 
                 session_token,
+                ip_hash,
                 question_type,
                 position,
                 (case when decidim_forms_answers.body = '' then 'Pas de réponse' else decidim_forms_answers.body end) as "answer",
@@ -25,6 +26,7 @@ query:
             select distinct 
                 decidim_user_id,
                 session_token,
+                ip_hash,
                 question_type,
                 decidim_forms_questions.position as "position",
                 decidim_forms_answer_choices.body::text as "answer",
@@ -43,6 +45,7 @@ query:
             select distinct 
                 decidim_user_id, 
                 session_token,
+                ip_hash,
                 question_type,
                 decidim_forms_questions.position as "position",
                 decidim_forms_answer_choices.body::text as "answer",
@@ -62,6 +65,7 @@ query:
             select distinct
                 decidim_user_id,
                 session_token,
+                ip_hash,
                 question_type,
                 decidim_forms_questions.position as "position",
                 file as "answer",
@@ -79,6 +83,7 @@ query:
     select 
         decidim_user_id,
         session_token,
+        ip_hash,
         question_type,
         body->>'$LANGUAGE_CODE' as question_title,
         btrim(answer, '"') as answer,
