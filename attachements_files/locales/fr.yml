@@ -1,0 +1,10 @@
+---
+name: Pièces jointes
+description: >
+  Toutes les pièces jointes téléchargées sur la plateforme
+meta:
+  columns:
+    id: ID
+    attached_to_id: ID de la resource concernée
+    attached_to_type: Type de la resource concernée
+    url: URL de la pièce jointe
