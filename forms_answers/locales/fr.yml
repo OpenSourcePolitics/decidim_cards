@@ -6,6 +6,7 @@ meta:
   columns:
     decidim_user_id: ID de l’utilisateur
     session_token: Jeton de session
+    ip_hash: IP hash
     question_type: Type de question
     question_title: Titre de la question
     answer: Réponse
