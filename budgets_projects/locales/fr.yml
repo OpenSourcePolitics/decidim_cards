@@ -8,6 +8,7 @@ meta:
     id: ID
     title: Titre
     description: Description
+    created_at: Date de création
     decidim_scope_id: ID du périmètre d'application
     project_amount: Montant du projet
     budget_id: ID du budget
