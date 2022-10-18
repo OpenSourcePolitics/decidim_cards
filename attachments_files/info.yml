@@ -1,0 +1,15 @@
+---
+resource: attachments_files
+query:
+  model: true
+  sql: |
+    select id,
+        file,
+        attached_to_id,
+        attached_to_type,
+        concat('https://',(select host from {{#organizations}} organization), '/uploads/decidim/attachment/file/',id, '/', file) as url
+    from decidim_attachments
+  info:
+    meta:
+      depends_on:
+        - organizations
