@@ -10,7 +10,7 @@ query:
                 ip_hash,
                 question_type,
                 position,
-                (case when decidim_forms_answers.body = '' then 'Pas de réponse' else decidim_forms_answers.body end) as "answer",
+                coalesce(nullif(decidim_forms_answers.body,''), 'Pas de réponse') as "answer",
                 '' as sub_matrix_question,
                 '' as custom_body,
                 -1 as sorting_position,
