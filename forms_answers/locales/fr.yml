@@ -13,6 +13,7 @@ meta:
     custom_body: Corps personnalisé
     sorting_position: Position de tri
     decidim_questionnaire_id: ID du questionnaire
+    form_title: Form title
     decidim_component_id: ID du composant
     sorting_points: Points de classement
     position: Position
