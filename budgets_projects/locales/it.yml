@@ -7,6 +7,7 @@ meta:
     id: ID
     title: Title
     description: Description
+    created_at: Created at
     decidim_scope_id: Scope ID
     project_amount: Project amount
     budget_id: Budget ID
