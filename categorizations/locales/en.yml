@@ -6,7 +6,7 @@ description: >
 meta:
   columns:
     id: ID
-    name: Name
+    category_name: Name of the category
     child_id: Category child ID
     child_name: Category child name
     categorizable_id: Categorizable ID
