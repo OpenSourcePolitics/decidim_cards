@@ -13,6 +13,7 @@ meta:
     custom_body: Custom body
     sorting_position: Sorting position
     decidim_questionnaire_id: Form ID
+    form_title: Form title
     decidim_component_id: Component ID
     sorting_points: Sorting points
     position: Position
