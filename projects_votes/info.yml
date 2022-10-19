@@ -10,7 +10,7 @@ query:
         decidim_budgets_projects.id as "project_id",
         decidim_budgets_projects.title as "project_title",
         decidim_budgets_projects.decidim_component_id,
-        created_at,
+        decidim_budgets_orders.created_at,
         checked_out_at,
         (case when checked_out_at is null then false else true end) as vote_finished,
         project_url
