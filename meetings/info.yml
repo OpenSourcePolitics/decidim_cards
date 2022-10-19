@@ -26,7 +26,7 @@ query:
     from decidim_meetings_meetings
         join {{#components}} as decidim_components on decidim_meetings_meetings.decidim_component_id = decidim_components.id
         left join (
-          select array_agg(name) as categories, 
+          select array_agg(category_name) as categories, 
               array_agg(child_name) as sub_categories,
               categorizable_id
           from {{#categorizations}} categorizations
