@@ -32,8 +32,7 @@ query:
     )
     select 
         decidim_components.id,
-        manifest_name,
-        (case manifest_name when 'blogs' then 'posts' else manifest_name end) as manifest_name_for_url,
+        (case manifest_name when 'blogs' then 'posts' else manifest_name end) as manifest_name,
         published_at,
         decidim_components.created_at,
         concat('https://',decidim_organizations.host,'/', ps_space_type_slug, '/',ps_slug,'/f/',decidim_components.id) as "component_url",

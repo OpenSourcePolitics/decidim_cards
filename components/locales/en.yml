@@ -5,7 +5,6 @@ meta:
   columns:
     id: ID
     manifest_name: Manifest name
-    manifest_name_for_url: Parsed manifest name
     published_at: Date of publication
     created_at: Date of creation
     component_url: Component URL
