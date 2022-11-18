@@ -4,6 +4,8 @@ description: >
   Toutes les actions de suivis effectuées sur la plateforme.
 meta:
   columns:
+    id: ID
+    decidim_component_id: Component ID
     decidim_user_id: ID du participant
     root_decidim_followable_id: ID de la participation suivie 
     root_decidim_followable_type: Type de participation suivie
