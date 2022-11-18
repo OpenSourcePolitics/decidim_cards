@@ -85,6 +85,7 @@ query:
           select * from ancestor_follow
       )
       select id,
+          decidim_component_id,
           decidim_user_id,
           root_decidim_followable_id,
           root_decidim_followable_type,
