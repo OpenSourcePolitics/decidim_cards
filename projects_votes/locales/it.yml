@@ -13,3 +13,4 @@ meta:
     checked_out_at: Date of vote validation
     vote_finished: Vote finished ?
     project_url: Project URL
+    decidim_budgets_budget_id: Budget ID
