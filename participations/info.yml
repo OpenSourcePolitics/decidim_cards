@@ -35,9 +35,9 @@ query:
                 'Decidim::Proposals::ProposalVote' as "participation_type",
                 decidim_proposals_proposal_votes.id::text as "participation_id",
                 decidim_proposals_proposal_votes.created_at as participation_date
-            from decidim_proposals_proposal_votes
+            from {{#proposals_votes}} as decidim_proposals_proposal_votes
                 join decidim_users on decidim_users.id = decidim_author_id
-                join {{#proposals_votes}} as decidim_proposals_proposals on decidim_proposals_proposal_votes.decidim_proposal_id = decidim_proposals_proposals.id 
+                join {{#proposals}} as decidim_proposals_proposals on decidim_proposals_proposal_votes.decidim_proposal_id = decidim_proposals_proposals.id 
     ), participations_answers as (
             select distinct
                 decidim_user_id,
@@ -52,7 +52,7 @@ query:
                 'Decidim::Debates::Debate' as "participation_type",
                 id::text as participation_id,
                 created_at as participation_date
-            from {{#3462}} decidim_debates_debates
+            from {{#debates}} decidim_debates_debates
     ), participations_budgets_projects_votes as (
             select 
                 decidim_user_id,

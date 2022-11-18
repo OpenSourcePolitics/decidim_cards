@@ -4,6 +4,8 @@ description: >
   All actions of followings made on the platform.
 meta:
   columns:
+    id: ID
+    decidim_component_id: Component ID
     decidim_user_id: User ID
     root_decidim_followable_id: Root followable ID
     root_decidim_followable_type: Root followable type
