@@ -43,7 +43,7 @@ query:
                 decidim_user_id,
                 decidim_component_id,
                 'Decidim::Forms::Answer' as "participation_type",
-              decidim_forms_answers.session_token as "participation_id",
+              ('x'||lpad(decidim_forms_answers.session_token,16,'0'))::bit(64)::bigint::text as "participation_id",
               decidim_forms_answers.created_at::date as participation_date
             from {{#forms_answers}} as decidim_forms_answers
     ), participations_debates as (
