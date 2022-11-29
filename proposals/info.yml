@@ -44,7 +44,7 @@ query:
           where categorizations.categorizable_type = 'Decidim::Proposals::Proposal'
           group by categorizable_id
         ) as categorizations on categorizations.categorizable_id = decidim_proposals_proposals.id,
-        lateral (select coalesce(nullif(state, null), 'Pas d''état') as parsed_state) t_parsed_state
+        lateral (select coalesce(nullif(state, null), 'Pas d''état') as state) t_parsed_state
     where true
         and not(hidden_at is not null and decidim_reportable_type = 'Decidim::Proposals::Proposal')
         and decidim_proposals_proposals.published_at is not null
