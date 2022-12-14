@@ -1,14 +1,27 @@
 ---
 name: Votes on proposals
-description: >
-  All votes made on proposals
+description: All votes made on proposals
 viz_settings:
 meta:
   columns:
-    id: ID
-    created_at: Date of creation
-    decidim_author_id: Author ID
-    decidim_proposal_id: Proposal ID
-    decidim_component_id: Component ID
-    proposal_title: Proposal title
-    proposal_url: Proposal URL
+    id:
+      name: ID
+      description: ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    decidim_proposal_id:
+      name: Proposal ID
+      description: Proposal ID
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    proposal_title:
+      name: Proposal title
+      description: Proposal title
+    proposal_url:
+      name: Proposal URL
+      description: Proposal URL

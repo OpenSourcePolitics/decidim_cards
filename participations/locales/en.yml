@@ -1,12 +1,22 @@
 ---
 name: Participations
-description: >
-  All participations made on the platform : proposals, endorsements, proposals' votes, debates, answers to surveys and comments. 
-  ⚠️ Please note that it also counts answers of unregistered users, in this case they're identified by their session_id.
+description: 'All participations made on the platform : proposals, endorsements, proposals''
+  votes, debates, answers to surveys and comments.  ⚠️ Please note that it also counts
+  answers of unregistered users, in this case they''re identified by their session_id.'
 meta:
   columns:
-    user_id: User ID
-    participation_id: Participation ID
-    decidim_component_id: Component ID
-    participation_type: Participation type
-    participation_date: Participation date
+    user_id:
+      name: User ID
+      description: User ID
+    participation_id:
+      name: Participation ID
+      description: Participation ID
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    participation_type:
+      name: Participation type
+      description: Participation type
+    participation_date:
+      name: Participation date
+      description: Participation date

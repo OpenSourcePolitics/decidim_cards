@@ -1,18 +1,39 @@
 ---
 name: Suivis
-description: >
-  Toutes les actions de suivis effectuées sur la plateforme.
+description: Toutes les actions de suivis effectuées sur la plateforme.
 viz_settings:
 meta:
   columns:
-    decidim_user_id: ID du participant
-    root_decidim_followable_id: ID de la participation suivie 
-    root_decidim_followable_type: Type de participation suivie
-    root_followable_title: Titre de la participation suivie
-    created_at: Date de création
-    updated_at: Date de mise à jour
-    root_following_url: URL de la participation suivie
-    decidim_followable_id: ID de la participation suivie
-    decidim_followable_type: Type de la participation suivie
-    followable_url: URL du suivi
-    following_way: Niveau de suivi
+    decidim_user_id:
+      name: ID du participant
+      description: ID du participant
+    root_decidim_followable_id:
+      name: ID de la participation suivie
+      description: ID de la participation suivie
+    root_decidim_followable_type:
+      name: Type de participation suivie
+      description: Type de participation suivie
+    root_followable_title:
+      name: Titre de la participation suivie
+      description: Titre de la participation suivie
+    created_at:
+      name: Date de création
+      description: Date de création
+    updated_at:
+      name: Date de mise à jour
+      description: Date de mise à jour
+    root_following_url:
+      name: URL de la participation suivie
+      description: URL de la participation suivie
+    decidim_followable_id:
+      name: ID de la participation suivie
+      description: ID de la participation suivie
+    decidim_followable_type:
+      name: Type de la participation suivie
+      description: Type de la participation suivie
+    followable_url:
+      name: URL du suivi
+      description: URL du suivi
+    following_way:
+      name: Niveau de suivi
+      description: Niveau de suivi

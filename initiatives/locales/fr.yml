@@ -1,38 +1,100 @@
 ---
 name: Initiatives
-description: >
-  Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives créées, quel que soit leur état.
+description: Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives
+  créées, quel que soit leur état.
 viz_settings:
 meta:
   columns:
-    id: ID
-    title: Titre
-    description: Description
-    decidim_author_id: ID de l'auteur
-    published_at: Date de publication
-    parsed_state: État réel
-    state: État
-    signature_type: Type de signature
-    signature_start_date: Date de début de signature
-    signature_end_date: Date de fin de la signature
-    answer: Réponse
-    answered_at: Date de la réponse
-    answer_url: URL de la réponse
-    created_at: Date de création
-    updated_at: Date de mise à jour
-    decidim_user_group_id: ID du groupe utilisateur
-    hashtag: Hashtag
-    scoped_type_id: ID du type de périmètre d'application
-    decidim_author_type: Type d’auteur
-    parsed_online_votes: Votes en ligne
-    parsed_offline_votes: Votes hors ligne
-    sum_votes: Somme des votes
-    comments_count: Nombre de commentaires
-    follows_count: Nombre de suivis
-    url: URL de l’initiative
-    supports_required: Supports requis
-    area_id: ID de catégorie
-    area_name: Nom de la catégorie
-    area_type_name: Nom du type de catégorie
-    resource_type: Type de participation
-    id_as_text: ID textuel
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Titre
+      description: Titre
+    description:
+      name: Description
+      description: Description
+    decidim_author_id:
+      name: ID de l'auteur
+      description: ID de l'auteur
+    published_at:
+      name: Date de publication
+      description: Date de publication
+    parsed_state:
+      name: État réel
+      description: État réel
+    state:
+      name: État
+      description: État
+    signature_type:
+      name: Type de signature
+      description: Type de signature
+    signature_start_date:
+      name: Date de début de signature
+      description: Date de début de signature
+    signature_end_date:
+      name: Date de fin de la signature
+      description: Date de fin de la signature
+    answer:
+      name: Réponse
+      description: Réponse
+    answered_at:
+      name: Date de la réponse
+      description: Date de la réponse
+    answer_url:
+      name: URL de la réponse
+      description: URL de la réponse
+    created_at:
+      name: Date de création
+      description: Date de création
+    updated_at:
+      name: Date de mise à jour
+      description: Date de mise à jour
+    decidim_user_group_id:
+      name: ID du groupe utilisateur
+      description: ID du groupe utilisateur
+    hashtag:
+      name: Hashtag
+      description: Hashtag
+    scoped_type_id:
+      name: ID du type de périmètre d'application
+      description: ID du type de périmètre d'application
+    decidim_author_type:
+      name: Type d’auteur
+      description: Type d’auteur
+    parsed_online_votes:
+      name: Votes en ligne
+      description: Votes en ligne
+    parsed_offline_votes:
+      name: Votes hors ligne
+      description: Votes hors ligne
+    sum_votes:
+      name: Somme des votes
+      description: Somme des votes
+    comments_count:
+      name: Nombre de commentaires
+      description: Nombre de commentaires
+    follows_count:
+      name: Nombre de suivis
+      description: Nombre de suivis
+    url:
+      name: URL de l’initiative
+      description: URL de l’initiative
+    supports_required:
+      name: Supports requis
+      description: Supports requis
+    area_id:
+      name: ID de catégorie
+      description: ID de catégorie
+    area_name:
+      name: Nom de la catégorie
+      description: Nom de la catégorie
+    area_type_name:
+      name: Nom du type de catégorie
+      description: Nom du type de catégorie
+    resource_type:
+      name: Type de participation
+      description: Type de participation
+    id_as_text:
+      name: ID textuel
+      description: ID textuel

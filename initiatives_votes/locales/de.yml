@@ -1,15 +1,30 @@
 ---
 name: Initiatives votes
-description: >
-  All initiatives votes made on the platform.
+description: All initiatives votes made on the platform.
 viz_settings:
 meta:
   columns:
-    id: ID
-    decidim_initiative_id: Initiative ID
-    decidim_author_id: Author ID
-    created_at: Date of creation
-    updated_at: Date of update
-    hash_id: Hash ID
-    decidim_scope_id: Scope ID
-    initiative_url: Initiative URL
+    id:
+      name: ID
+      description: ID
+    decidim_initiative_id:
+      name: Initiative ID
+      description: Initiative ID
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    hash_id:
+      name: Hash ID
+      description: Hash ID
+    decidim_scope_id:
+      name: Scope ID
+      description: Scope ID
+    initiative_url:
+      name: Initiative URL
+      description: Initiative URL

@@ -1,16 +1,35 @@
 ---
 name: Votes on projects
-description: >
-  All votes made on the platform on participatory budgets' projects
+description: All votes made on the platform on participatory budgets' projects
 meta:
   columns:
-    id: ID
-    decidim_user_id: User ID
-    project_id: Project ID
-    project_title: Project title
-    decidim_component_id: Component ID
-    created_at: Date of creation
-    checked_out_at: Date of vote validation
-    vote_finished: Vote finished ?
-    project_url: Project URL
-    decidim_budgets_budget_id: Budget ID
+    id:
+      name: ID
+      description: ID
+    decidim_user_id:
+      name: User ID
+      description: User ID
+    project_id:
+      name: Project ID
+      description: Project ID
+    project_title:
+      name: Project title
+      description: Project title
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    checked_out_at:
+      name: Date of vote validation
+      description: Date of vote validation
+    vote_finished:
+      name: Vote finished ?
+      description: Vote finished ?
+    project_url:
+      name: Project URL
+      description: Project URL
+    decidim_budgets_budget_id:
+      name: Budget ID
+      description: Budget ID

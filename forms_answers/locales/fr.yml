@@ -1,22 +1,52 @@
 ---
 name: Réponses aux questionnaires
-description: >
-  Toutes les réponses des participants aux questionnaires publiés sur la plateforme
+description: Toutes les réponses des participants aux questionnaires publiés sur la
+  plateforme
 viz_settings:
 meta:
   columns:
-    decidim_user_id: ID de l’utilisateur
-    session_token: Jeton de session
-    ip_hash: Hachage IP
-    question_type: Type de question
-    question_title: Titre de la question
-    answer: Réponse
-    sub_matrix_question: Question sous-matricielle
-    custom_body: Corps personnalisé
-    sorting_position: Position de tri
-    decidim_questionnaire_id: ID du questionnaire
-    form_title: Titre du questionnaire
-    decidim_component_id: ID du composant
-    sorting_points: Points de classement
-    position: Position
-    created_at: Date de création
+    decidim_user_id:
+      name: ID de l’utilisateur
+      description: ID de l’utilisateur
+    session_token:
+      name: Jeton de session
+      description: Jeton de session
+    ip_hash:
+      name: Hachage IP
+      description: Hachage IP
+    question_type:
+      name: Type de question
+      description: Type de question
+    question_title:
+      name: Titre de la question
+      description: Titre de la question
+    answer:
+      name: Réponse
+      description: Réponse
+    sub_matrix_question:
+      name: Question sous-matricielle
+      description: Question sous-matricielle
+    custom_body:
+      name: Corps personnalisé
+      description: Corps personnalisé
+    sorting_position:
+      name: Position de tri
+      description: Position de tri
+    decidim_questionnaire_id:
+      name: ID du questionnaire
+      description: ID du questionnaire
+    form_title:
+      name: Titre du questionnaire
+      description: Titre du questionnaire
+    decidim_component_id:
+      name: ID du composant
+      description: ID du composant
+    sorting_points:
+      name: Points de classement
+      description: Points de classement
+    position:
+      name: Position
+      description: Position
+    created_at:
+      name: Date de création
+      description: Date de création
