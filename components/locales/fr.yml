@@ -4,18 +4,48 @@ description: Tous les composants publiés sur votre plateforme
 viz_settings:
 meta:
   columns:
-    id: ID
-    manifest_name: Type de composant
-    published_at: Date de publication
-    created_at: Date de création
-    component_url: URL du composant
-    ps_id: ID d'espace participatif
-    ps_published_at: Date de publication de l'espace participatif
-    ps_title: Titre de l'espace de participation
-    ps_subtitle: Sous-titre de l'espace participatif
-    ps_slug: Slug de l'espace participatif
-    ps_type: Type de l'espace participatif
-    ps_space_type_slug: Slug du type d'espace participatif
-    ps_url: URL d'espace participatif
-    decidim_organization_id: ID de l'organisation
-    organization_host: Domaine de l'organisation
+    id:
+      name: ID
+      description: ID
+    manifest_name:
+      name: Type de composant
+      description: Type de composant
+    published_at:
+      name: Date de publication
+      description: Date de publication
+    created_at:
+      name: Date de création
+      description: Date de création
+    component_url:
+      name: URL du composant
+      description: URL du composant
+    ps_id:
+      name: ID d'espace participatif
+      description: ID d'espace participatif
+    ps_published_at:
+      name: Date de publication de l'espace participatif
+      description: Date de publication de l'espace participatif
+    ps_title:
+      name: Titre de l'espace de participation
+      description: Titre de l'espace de participation
+    ps_subtitle:
+      name: Sous-titre de l'espace participatif
+      description: Sous-titre de l'espace participatif
+    ps_slug:
+      name: Slug de l'espace participatif
+      description: Slug de l'espace participatif
+    ps_type:
+      name: Type de l'espace participatif
+      description: Type de l'espace participatif
+    ps_space_type_slug:
+      name: Slug du type d'espace participatif
+      description: Slug du type d'espace participatif
+    ps_url:
+      name: URL d'espace participatif
+      description: URL d'espace participatif
+    decidim_organization_id:
+      name: ID de l'organisation
+      description: ID de l'organisation
+    organization_host:
+      name: Domaine de l'organisation
+      description: Domaine de l'organisation

@@ -1,26 +1,63 @@
 ---
 name: Rencontres
-description: >
-  Toutes les rencontres publiées sur la plateforme
+description: Toutes les rencontres publiées sur la plateforme
 viz_settings:
 meta:
   columns:
-    id: ID
-    title: Titre
-    description: Description
-    address: Adresse
-    attendees_count: Nombre de participants
-    created_at: Date de création
-    decidim_scope_id: ID du périmètre d'application
-    decidim_component_id: ID du composant
-    start_time: Date de début
-    end_time: Date de fin
-    registration_url: URL d'inscription
-    meeting_url: URL de la réunion
-    private_meeting: Réunion privée ?
-    decidim_author_id: ID de l'auteur
-    resource_type: Type de la participation
-    categories: Catégories
-    first_category: Catégorie
-    sub_categories: Sous-catégories
-    first_sub_category: Sous-catégorie
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Titre
+      description: Titre
+    description:
+      name: Description
+      description: Description
+    address:
+      name: Adresse
+      description: Adresse
+    attendees_count:
+      name: Nombre de participants
+      description: Nombre de participants
+    created_at:
+      name: Date de création
+      description: Date de création
+    decidim_scope_id:
+      name: ID du périmètre d'application
+      description: ID du périmètre d'application
+    decidim_component_id:
+      name: ID du composant
+      description: ID du composant
+    start_time:
+      name: Date de début
+      description: Date de début
+    end_time:
+      name: Date de fin
+      description: Date de fin
+    registration_url:
+      name: URL d'inscription
+      description: URL d'inscription
+    meeting_url:
+      name: URL de la réunion
+      description: URL de la réunion
+    private_meeting:
+      name: Réunion privée ?
+      description: Réunion privée ?
+    decidim_author_id:
+      name: ID de l'auteur
+      description: ID de l'auteur
+    resource_type:
+      name: Type de la participation
+      description: Type de la participation
+    categories:
+      name: Catégories
+      description: Catégories
+    first_category:
+      name: Catégorie
+      description: Catégorie
+    sub_categories:
+      name: Sous-catégories
+      description: Sous-catégories
+    first_sub_category:
+      name: Sous-catégorie
+      description: Sous-catégorie

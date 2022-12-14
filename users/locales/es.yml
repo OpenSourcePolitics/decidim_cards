@@ -1,42 +1,112 @@
 ---
 name: Users
-description: >
-  All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
+description: All created users on your platform (includes admins, invited, managed,
+  reported, blocked and deleted users)
 viz_settings:
 meta:
   columns:
-    id: ID
-    email: Email
-    sign_in_count: Signin count
-    last_sign_in_at: Last signin date
-    created_at: Date of creation
-    updated_at: Date of update
-    invitation_created_at: Date of invitation creation
-    invitation_sent_at: Date of invitation sending
-    invitation_accepted_at: Date of accepted invitation
-    invited_by_id: ID of inviter
-    invited_by_type: Type of the inviter
-    decidim_organization_id: ID of organization
-    confirmed_at: Confirmation date
-    confirmation_token: Confirmation token
-    unconfirmed_email: Email not confirmed ?
-    name: Name
-    locale: Locale
-    deleted_at: Date of account deletion
-    admin: Is admin ?
-    managed: Is managed ?
-    roles: Roles
-    email_on_notification: Email on notification ?
-    nickname: Nickname
-    accepted_tos_version: Version of TOS accepted
-    type: Type
-    following_count: Followings count
-    followers_count: Followers count
-    failed_attempts: Failed signin count
-    locked_at: Locking date
-    admin_terms_accepted_at: Date of admin terms acceptation
-    blocked: Is blocked ?
-    blocked_at: Blocking date
-    confirmed: Is confirmed ?
-    url: Profile URL
-    extended_data: Extended data
+    id:
+      name: ID
+      description: ID
+    email:
+      name: Email
+      description: Email
+    sign_in_count:
+      name: Signin count
+      description: Signin count
+    last_sign_in_at:
+      name: Last signin date
+      description: Last signin date
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    invitation_created_at:
+      name: Date of invitation creation
+      description: Date of invitation creation
+    invitation_sent_at:
+      name: Date of invitation sending
+      description: Date of invitation sending
+    invitation_accepted_at:
+      name: Date of accepted invitation
+      description: Date of accepted invitation
+    invited_by_id:
+      name: ID of inviter
+      description: ID of inviter
+    invited_by_type:
+      name: Type of the inviter
+      description: Type of the inviter
+    decidim_organization_id:
+      name: ID of organization
+      description: ID of organization
+    confirmed_at:
+      name: Confirmation date
+      description: Confirmation date
+    confirmation_token:
+      name: Confirmation token
+      description: Confirmation token
+    unconfirmed_email:
+      name: Email not confirmed ?
+      description: Email not confirmed ?
+    name:
+      name: Name
+      description: Name
+    locale:
+      name: Locale
+      description: Locale
+    deleted_at:
+      name: Date of account deletion
+      description: Date of account deletion
+    admin:
+      name: Is admin ?
+      description: Is admin ?
+    managed:
+      name: Is managed ?
+      description: Is managed ?
+    roles:
+      name: Roles
+      description: Roles
+    email_on_notification:
+      name: Email on notification ?
+      description: Email on notification ?
+    nickname:
+      name: Nickname
+      description: Nickname
+    accepted_tos_version:
+      name: Version of TOS accepted
+      description: Version of TOS accepted
+    type:
+      name: Type
+      description: Type
+    following_count:
+      name: Followings count
+      description: Followings count
+    followers_count:
+      name: Followers count
+      description: Followers count
+    failed_attempts:
+      name: Failed signin count
+      description: Failed signin count
+    locked_at:
+      name: Locking date
+      description: Locking date
+    admin_terms_accepted_at:
+      name: Date of admin terms acceptation
+      description: Date of admin terms acceptation
+    blocked:
+      name: Is blocked ?
+      description: Is blocked ?
+    blocked_at:
+      name: Blocking date
+      description: Blocking date
+    confirmed:
+      name: Is confirmed ?
+      description: Is confirmed ?
+    url:
+      name: Profile URL
+      description: Profile URL
+    extended_data:
+      name: Extended data
+      description: Extended data

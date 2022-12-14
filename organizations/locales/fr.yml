@@ -4,19 +4,51 @@ description: Informations à propos de l'organisation principale sur votre
 viz_settings:
 meta:
   columns:
-    id: ID
-    name: Nom
-    host: Domaine
-    default_locale: Langue par défaut
-    available_locales: Langues disponibles
-    created_at: Date de création
-    updated_at: Date de dernière mise à jour
-    description: Description
-    secondary_hosts: Domaines secondaires
-    available_authorizations: Autorisations disponibles
-    header_snippets: Code d'en-tête
-    tos_version: Version des CGU
-    badges_enabled: Badges activés
-    send_welcome_notification: Envoi une notification de bienvenue ?
-    users_registration_mode: Mode d'inscription des utilisateurs
-    time_zone: Fuseau horaire
+    id:
+      name: ID
+      description: ID
+    name:
+      name: Nom
+      description: Nom
+    host:
+      name: Domaine
+      description: Domaine
+    default_locale:
+      name: Langue par défaut
+      description: Langue par défaut
+    available_locales:
+      name: Langues disponibles
+      description: Langues disponibles
+    created_at:
+      name: Date de création
+      description: Date de création
+    updated_at:
+      name: Date de dernière mise à jour
+      description: Date de dernière mise à jour
+    description:
+      name: Description
+      description: Description
+    secondary_hosts:
+      name: Domaines secondaires
+      description: Domaines secondaires
+    available_authorizations:
+      name: Autorisations disponibles
+      description: Autorisations disponibles
+    header_snippets:
+      name: Code d'en-tête
+      description: Code d'en-tête
+    tos_version:
+      name: Version des CGU
+      description: Version des CGU
+    badges_enabled:
+      name: Badges activés
+      description: Badges activés
+    send_welcome_notification:
+      name: Envoi une notification de bienvenue ?
+      description: Envoi une notification de bienvenue ?
+    users_registration_mode:
+      name: Mode d'inscription des utilisateurs
+      description: Mode d'inscription des utilisateurs
+    time_zone:
+      name: Fuseau horaire
+      description: Fuseau horaire

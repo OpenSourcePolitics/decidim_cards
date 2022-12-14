@@ -1,21 +1,50 @@
 ---
 name: Budgets projects
-description: >
-  All projects contained in budgets created on the platform
+description: All projects contained in budgets created on the platform
 meta:
   columns:
-    id: ID 
-    title: Title
-    description: Description
-    created_at: Created at
-    decidim_scope_id: Scope ID 
-    project_amount: Project amount 
-    budget_id: Budget ID
-    budget_title: Budget title
-    decidim_component_id: Component ID
-    project_url: Project URL
-    resource_type: Resource type
-    categories: Categories
-    first_category: Category
-    sub_categories: Sub categories
-    first_sub_category: Subcategory
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Title
+      description: Title
+    description:
+      name: Description
+      description: Description
+    created_at:
+      name: Created at
+      description: Created at
+    decidim_scope_id:
+      name: Scope ID
+      description: Scope ID
+    project_amount:
+      name: Project amount
+      description: Project amount
+    budget_id:
+      name: Budget ID
+      description: Budget ID
+    budget_title:
+      name: Budget title
+      description: Budget title
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    project_url:
+      name: Project URL
+      description: Project URL
+    resource_type:
+      name: Resource type
+      description: Resource type
+    categories:
+      name: Categories
+      description: Categories
+    first_category:
+      name: Category
+      description: Category
+    sub_categories:
+      name: Sub categories
+      description: Sub categories
+    first_sub_category:
+      name: Subcategory
+      description: Subcategory
