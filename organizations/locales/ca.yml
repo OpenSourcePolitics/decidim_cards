@@ -3,19 +3,115 @@ name: Organizations
 description: Informations about of the main organization on your
 meta:
   columns:
-    id: ID
-    name: Name
-    host: Host
-    default_locale: Default locale
-    available_locales: Availables locales
-    created_at: Date of creation
-    updated_at: Last update date
-    description: Description
-    secondary_hosts: Secondary hosts
-    available_authorizations: Available authorizations
-    header_snippets: Header snippet
-    tos_version: Version of TOS
-    badges_enabled: Badges enabled
-    send_welcome_notification: Sending welcome notification
-    users_registration_mode: Users' registration mode
-    time_zone: Time zone
+    id:
+      name:
+        name: ID
+        description: ID of the Decidim organization
+      description:
+        name: ID
+        description: ID of the Decidim organization
+    name:
+      name:
+        name: Name
+        description: Name of the Decidim organization
+      description:
+        name: Name
+        description: Name of the Decidim organization
+    host:
+      name:
+        name: Host
+        description: 'Host of the Decidim organization. Usually similar to the URL from which we access the platform '
+      description:
+        name: Host
+        description: Host of the Decidim organization. Usually similar to the URL from which we access the platform 
+    default_locale:
+      name:
+        name: Default locale
+        description: Default language for the Decidim instance
+      description:
+        name: Default locale
+        description: Default language for the Decidim instance
+    available_locales:
+      name:
+        name: Availables locales
+        description: All available languages that can be enabled on the platform
+      description:
+        name: Availables locales
+        description: All available languages that can be enabled on the platform
+    created_at:
+      name:
+        name: Date of creation
+        description: Date on which the platform was created
+      description:
+        name: Date of creation
+        description: Date on which the platform was created
+    updated_at:
+      name:
+        name: Last update date
+        description: Last time the organization was updated
+      description:
+        name: Last update date
+        description: Last time the organization was updated
+    description:
+      name:
+        name: Description
+        description: Description of the organization
+      description:
+        name: Description
+        description: Description of the organization
+    secondary_hosts:
+      name:
+        name: Secondary hosts
+        description: List of all hosts from which the organization can be accessible
+      description:
+        name: Secondary hosts
+        description: List of all hosts from which the organization can be accessible
+    available_authorizations:
+      name:
+        name: Available authorizations
+        description: List of all available authorizations
+      description:
+        name: Available authorizations
+        description: List of all available authorizations
+    header_snippets:
+      name:
+        name: Header snippet
+        description: 'The header snippet is a chunk of code that can be embedded on all of the webpages of the organization. '
+      description:
+        name: Header snippet
+        description: The header snippet is a chunk of code that can be embedded on all of the webpages of the organization. 
+    tos_version:
+      name:
+        name: Version of TOS
+        description: Number of version of the Terms of Services
+      description:
+        name: Version of TOS
+        description: Number of version of the Terms of Services
+    badges_enabled:
+      name:
+        name: Badges enabled
+        description: Whether or not badges are enabled
+      description:
+        name: Badges enabled
+        description: Whether or not badges are enabled
+    send_welcome_notification:
+      name:
+        name: Sending welcome notification
+        description: Whether or not a welcome notification is sent to new participants
+      description:
+        name: Sending welcome notification
+        description: Whether or not a welcome notification is sent to new participants
+    users_registration_mode:
+      name:
+        name: Users' registration mode
+        description: 'There''s two way a user can be registered on the platform: either by itself, either by an invitation '
+      description:
+        name: Users' registration mode
+        description: 'There''s two way a user can be registered on the platform: either by itself, either by an invitation '
+    time_zone:
+      name:
+        name: Time zone
+        description: Time zone set for the organization
+      description:
+        name: Time zone
+        description: Time zone set for the organization
