@@ -1,6 +1,6 @@
 ---
-name: Attachments files
-description: All attachments files downloaded on the platform
+name: Pièces jointes
+description: Toutes les pièces jointes téléchargées sur la plateforme
 meta:
   columns:
     id:
