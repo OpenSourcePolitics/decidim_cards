@@ -1,13 +1,26 @@
 ---
 name: Votes sur les propositions
-description: >
-  Tous les votes effectués sur les propositions
+description: Tous les votes effectués sur les propositions
 meta:
   columns:
-    id: ID
-    created_at: Date de création
-    decidim_author_id: ID de l'auteur
-    decidim_proposal_id: ID de la proposition
-    decidim_component_id: ID du composant
-    proposal_title: Titre de la proposition
-    proposal_url: URL de la proposition
+    id:
+      name: ID
+      description: ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    decidim_proposal_id:
+      name: Proposal ID
+      description: Proposal ID
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    proposal_title:
+      name: Proposal title
+      description: Proposal title
+    proposal_url:
+      name: Proposal URL
+      description: Proposal URL
