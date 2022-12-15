@@ -1,19 +1,44 @@
 ---
 name: Suivis
-description: >
-  Toutes les actions de suivis effectuées sur la plateforme.
+description: Toutes les actions de suivis effectuées sur la plateforme.
 meta:
   columns:
-    id: ID
-    decidim_component_id: Component ID
-    decidim_user_id: ID du participant
-    root_decidim_followable_id: ID de la participation suivie 
-    root_decidim_followable_type: Type de participation suivie
-    root_followable_title: Titre de la participation suivie
-    created_at: Date de création
-    updated_at: Date de mise à jour
-    root_following_url: URL de la participation suivie
-    decidim_followable_id: ID de la participation suivie
-    decidim_followable_type: Type de la participation suivie
-    followable_url: URL du suivi
-    following_way: Niveau de suivi
+    id:
+      name: ID
+      description: ID
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    decidim_user_id:
+      name: User ID
+      description: User ID
+    root_decidim_followable_id:
+      name: Root followable ID
+      description: Root followable ID
+    root_decidim_followable_type:
+      name: Root followable type
+      description: Root followable type
+    root_followable_title:
+      name: Root followable title
+      description: Root followable title
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of udpate
+      description: Date of udpate
+    root_following_url:
+      name: Root following URL
+      description: Root following URL
+    decidim_followable_id:
+      name: Followable ID
+      description: Followable ID
+    decidim_followable_type:
+      name: Followable Type
+      description: Followable Type
+    followable_url:
+      name: Followable URL
+      description: Followable URL
+    following_way:
+      name: Following way
+      description: Following way
