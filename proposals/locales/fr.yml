@@ -1,27 +1,68 @@
 ---
 name: Propositions
-description: >
-  Ensemble des propositions créées sur la plateforme. Sont prises en compte les propositions acceptées, refusées ou en cours d'évalutation. Les propositions retirées sont également prises en compte. Sont exclues les propositions cachées (modérées) et non publiées (à noter qu'un espace participatif et un composant peuvent être publiés ou non publiés).
+description: 'Ensemble des propositions créées sur la plateforme. Sont prises en compte les propositions acceptées, refusées ou en cours d''évalutation. Les propositions retirées sont également prises en compte. Sont exclues les propositions cachées (modérées) et non publiées (à noter qu''un espace participatif et un composant peuvent être publiés ou non publiés).'
 meta:
   columns:
-    id: ID
-    decidim_participatory_space_id: ID d'espace participatif
-    decidim_participatory_space_slug: Slug d'espace participatif
-    decidim_scope_name: Périmètre d'application
-    title: Titre
-    body: Corps
-    resource_type: Type de la participation
-    url: URL de la proposition
-    decidim_component_id: ID du composant
-    created_at: Date de création
-    published_at: Date de publication
-    state: État
-    authors_ids: IDs des auteurs
-    first_author_id: ID du premier auteur
-    address: Adresse
-    categories: Catégories
-    first_category: Catégorie
-    sub_categories: Sous-catégories
-    first_sub_category: Sous-catégorie
-    comments_count: Number of comments
-    endorsements_count: Number of endorsements
+    id:
+      name: ID
+      description: ID
+    decidim_participatory_space_id:
+      name: Participatory space ID
+      description: Participatory space ID
+    decidim_participatory_space_slug:
+      name: Participatory space slug
+      description: Participatory space slug
+    decidim_scope_name:
+      name: Scope name
+      description: Scope name
+    title:
+      name: Title
+      description: Title
+    body:
+      name: Body
+      description: Body
+    resource_type:
+      name: Resource type
+      description: Resource type
+    url:
+      name: Proposal URL
+      description: Proposal URL
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    published_at:
+      name: Date of publication
+      description: Date of publication
+    state:
+      name: State
+      description: State
+    authors_ids:
+      name: Authors IDs
+      description: Authors IDs
+    first_author_id:
+      name: First author ID
+      description: First author ID
+    address:
+      name: Address
+      description: Address
+    categories:
+      name: Categories
+      description: Categories
+    first_category:
+      name: Category
+      description: Category
+    sub_categories:
+      name: Subcategories
+      description: Subcategories
+    first_sub_category:
+      name: Subcategory
+      description: Subcategory
+    comments_count:
+      name: Number of comments
+      description: Number of comments
+    endorsements_count:
+      name: Number of endorsements
+      description: Number of endorsements
