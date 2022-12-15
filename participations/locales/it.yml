@@ -5,16 +5,16 @@ meta:
   columns:
     user_id:
       name: User ID
-      description: User ID
+      description: ID of the user that participated
     participation_id:
       name: Participation ID
-      description: Participation ID
+      description: ID of the participation resource
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component in which the participation was made
     participation_type:
       name: Participation type
-      description: Participation type
+      description: Type of the participation
     participation_date:
       name: Participation date
-      description: Participation date
+      description: Date of the participation
