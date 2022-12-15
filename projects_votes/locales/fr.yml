@@ -1,16 +1,35 @@
 ---
 name: Votes sur les projets
-description: >
-  Tous les votes effectués sur la plateforme sur les projets de budgets participatifs
+description: Tous les votes effectués sur la plateforme sur les projets de budgets participatifs
 meta:
   columns:
-    id: ID
-    decidim_user_id: ID de l’utilisateur
-    project_id: ID du projet
-    project_title: Titre du projet
-    decidim_component_id: ID du composant
-    created_at: Date de création
-    checked_out_at: Date de validation du vote
-    vote_finished: Vote finished ?
-    project_url: URL du projet
-    decidim_budgets_budget_id: Budget ID
+    id:
+      name: ID
+      description: ID
+    decidim_user_id:
+      name: User ID
+      description: User ID
+    project_id:
+      name: Project ID
+      description: Project ID
+    project_title:
+      name: Project title
+      description: Project title
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    checked_out_at:
+      name: Date of vote validation
+      description: Date of vote validation
+    vote_finished:
+      name: Vote finished ?
+      description: Vote finished ?
+    project_url:
+      name: Project URL
+      description: Project URL
+    decidim_budgets_budget_id:
+      name: Budget ID
+      description: Budget ID
