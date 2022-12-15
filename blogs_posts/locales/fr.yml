@@ -1,15 +1,32 @@
 ---
 name: Articles de blog
-description: >
-  Tous les articles de blog sur la plateforme
+description: Tous les articles de blog sur la plateforme
 meta:
   columns:
-    id: ID
-    title: Titre
-    body: Corps
-    decidim_component_id: ID du composant
-    created_at: Date de création
-    updated_at: Date de dernière mise à jour
-    decidim_author_id: ID de l’auteur
-    post_url: URL du post
-    resource_type: Type de participation
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Title
+      description: Title
+    body:
+      name: Body
+      description: Body
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Last date of update
+      description: Last date of update
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    post_url:
+      name: Post URL
+      description: Post URL
+    resource_type:
+      name: Type of resource
+      description: Type of resource
