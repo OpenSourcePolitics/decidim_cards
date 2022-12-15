@@ -3,18 +3,48 @@ name: Components
 description: All components published on your plattform
 meta:
   columns:
-    id: ID
-    manifest_name: Manifest name
-    published_at: Date of publication
-    created_at: Date of creation
-    component_url: Component URL
-    ps_id: Participatory space ID
-    ps_published_at: Participatory space date of publication
-    ps_title: Participatory space title
-    ps_subtitle: Participatory space subtitle
-    ps_slug: Participatory space slug
-    ps_type: Participatory space type
-    ps_space_type_slug: Participatory space type slug
-    ps_url: Participatory space URL
-    decidim_organization_id: Organization ID
-    organization_host: Organization host
+    id:
+      name: ID
+      description: ID
+    manifest_name:
+      name: Manifest name
+      description: Manifest name
+    published_at:
+      name: Date of publication
+      description: Date of publication
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    component_url:
+      name: Component URL
+      description: Component URL
+    ps_id:
+      name: Participatory space ID
+      description: Participatory space ID
+    ps_published_at:
+      name: Participatory space date of publication
+      description: Participatory space date of publication
+    ps_title:
+      name: Participatory space title
+      description: Participatory space title
+    ps_subtitle:
+      name: Participatory space subtitle
+      description: Participatory space subtitle
+    ps_slug:
+      name: Participatory space slug
+      description: Participatory space slug
+    ps_type:
+      name: Participatory space type
+      description: Participatory space type
+    ps_space_type_slug:
+      name: Participatory space type slug
+      description: Participatory space type slug
+    ps_url:
+      name: Participatory space URL
+      description: Participatory space URL
+    decidim_organization_id:
+      name: Organization ID
+      description: Organization ID
+    organization_host:
+      name: Organization host
+      description: Organization host
