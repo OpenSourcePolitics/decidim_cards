@@ -5,31 +5,31 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the proposal
     decidim_participatory_space_id:
       name: Participatory space ID
-      description: Participatory space ID
+      description: ID of the participatory space to which belong the proposal
     decidim_participatory_space_slug:
       name: Participatory space slug
-      description: Participatory space slug
+      description: Slug of the participatory space to which belong the proposal
     decidim_scope_name:
       name: Scope name
-      description: Scope name
+      description: Name of the scope for the proposal
     title:
       name: Title
-      description: Title
+      description: Title of the proposal
     body:
       name: Body
-      description: Body
+      description: Body of the proposal
     resource_type:
       name: Resource type
       description: Resource type
     url:
-      name: Proposal URL
-      description: Proposal URL
+      name: URL
+      description: URL of the proposal
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component to which belong the proposal
     created_at:
       name: Date of creation
       description: Date of creation
@@ -38,31 +38,32 @@ meta:
       description: Date of publication
     state:
       name: State
-      description: State
+      description: State of the proposal
     authors_ids:
       name: Authors IDs
-      description: Authors IDs
+      description: IDs of all authors involved in the creation of the proposal
     first_author_id:
       name: First author ID
-      description: First author ID
+      description: >
+        ID of the first author for this proposal, since most of the proposals have a single author.
     address:
       name: Address
-      description: Address
+      description: Address referred in the proposal
     categories:
       name: Categories
-      description: Categories
+      description: Categories of the proposal
     first_category:
       name: Category
-      description: Category
+      description: Category of the proposal
     sub_categories:
       name: Subcategories
-      description: Subcategories
+      description: Subcategories of the proposal
     first_sub_category:
       name: Subcategory
-      description: Subcategory
+      description: Subcategory of the proposal
     comments_count:
       name: Number of comments
-      description: Number of comments
+      description: Number of comments on the proposal
     endorsements_count:
       name: Number of endorsements
-      description: Number of endorsements
+      description: Number of endorsements on the proposal
