@@ -1,21 +1,50 @@
 ---
 name: Réponses aux questionnaires
-description: >
-  Toutes les réponses des participants aux questionnaires publiés sur la plateforme
+description: Toutes les réponses des participants aux questionnaires publiés sur la plateforme
 meta:
   columns:
-    decidim_user_id: ID de l’utilisateur
-    session_token: Jeton de session
-    ip_hash: IP hash
-    question_type: Type de question
-    question_title: Titre de la question
-    answer: Réponse
-    sub_matrix_question: Question sous-matricielle
-    custom_body: Corps personnalisé
-    sorting_position: Position de tri
-    decidim_questionnaire_id: ID du questionnaire
-    form_title: Form title
-    decidim_component_id: ID du composant
-    sorting_points: Points de classement
-    position: Position
-    created_at: Date de création
+    decidim_user_id:
+      name: User ID
+      description: User ID
+    session_token:
+      name: Session token
+      description: Session token
+    ip_hash:
+      name: IP hash
+      description: IP hash
+    question_type:
+      name: Question type
+      description: Question type
+    question_title:
+      name: Question title
+      description: Question title
+    answer:
+      name: Answer
+      description: Answer
+    sub_matrix_question:
+      name: Submatrix question
+      description: Submatrix question
+    custom_body:
+      name: Custom body
+      description: Custom body
+    sorting_position:
+      name: Sorting position
+      description: Sorting position
+    decidim_questionnaire_id:
+      name: Form ID
+      description: Form ID
+    form_title:
+      name: Form title
+      description: Form title
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    sorting_points:
+      name: Sorting points
+      description: Sorting points
+    position:
+      name: Position
+      description: Position
+    created_at:
+      name: Date of creation
+      description: Date of creation
