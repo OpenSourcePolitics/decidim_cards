@@ -1,37 +1,98 @@
 ---
 name: Initiatives
-description: >
-  Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives créées, quel que soit leur état.
+description: All initiatives created on the platform. Includes all created ones, whatever  their states.
 meta:
   columns:
-    id: ID
-    title: Titre
-    description: Description
-    decidim_author_id: ID de l'auteur
-    published_at: Date de publication
-    parsed_state: État réel
-    state: État
-    signature_type: Type de signature
-    signature_start_date: Date de début de signature
-    signature_end_date: Date de fin de la signature
-    answer: Réponse
-    answered_at: Date de la réponse
-    answer_url: URL de la réponse
-    created_at: Date de création
-    updated_at: Date de mise à jour
-    decidim_user_group_id: ID du groupe utilisateur
-    hashtag: Hashtag
-    scoped_type_id: ID du type de périmètre d'application
-    decidim_author_type: Type d’auteur
-    parsed_online_votes: Votes en ligne
-    parsed_offline_votes: Votes hors ligne
-    sum_votes: Somme des votes
-    comments_count: Nombre de commentaires
-    follows_count: Nombre de suivis
-    url: URL de l’initiative
-    supports_required: Supports requis
-    area_id: ID de catégorie
-    area_name: Nom de la catégorie
-    area_type_name: Nom du type de catégorie
-    resource_type: Type de participation
-    id_as_text: ID textuel
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Title
+      description: Title
+    description:
+      name: Description
+      description: Description
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    published_at:
+      name: Date of publication
+      description: Date of publication
+    parsed_state:
+      name: Parsed state
+      description: Parsed state
+    state:
+      name: State
+      description: State
+    signature_type:
+      name: Signature type
+      description: Signature type
+    signature_start_date:
+      name: Signature start date
+      description: Signature start date
+    signature_end_date:
+      name: Signature end date
+      description: Signature end date
+    answer:
+      name: Answer
+      description: Answer
+    answered_at:
+      name: Date of answer
+      description: Date of answer
+    answer_url:
+      name: Answer URL
+      description: Answer URL
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of udpate
+      description: Date of udpate
+    decidim_user_group_id:
+      name: User group ID
+      description: User group ID
+    hashtag:
+      name: Hashtag
+      description: Hashtag
+    scoped_type_id:
+      name: Scoped type id
+      description: Scoped type id
+    decidim_author_type:
+      name: Author Type
+      description: Author Type
+    parsed_online_votes:
+      name: Online votes
+      description: Online votes
+    parsed_offline_votes:
+      name: Offline votes
+      description: Offline votes
+    sum_votes:
+      name: Sum of votes
+      description: Sum of votes
+    comments_count:
+      name: Comments count
+      description: Comments count
+    follows_count:
+      name: Follows count
+      description: Follows count
+    url:
+      name: Initiative URL
+      description: Initiative URL
+    supports_required:
+      name: Supports required
+      description: Supports required
+    area_id:
+      name: Area ID
+      description: Area ID
+    area_name:
+      name: Area name
+      description: Area name
+    area_type_name:
+      name: Area type name
+      description: Area type name
+    resource_type:
+      name: Resource type
+      description: Resource type
+    id_as_text:
+      name: ID as text
+      description: ID as text
