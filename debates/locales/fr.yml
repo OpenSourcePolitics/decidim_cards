@@ -1,23 +1,54 @@
 ---
 name: Débats
-description: >
-  Tous les débats publiés sur la plateforme
+description: Tous les débats publiés sur la plateforme
 viz_settings:
 meta:
   columns:
-    id: ID
-    title: Titre
-    description: Description
-    start_time: Heure de début
-    end_time: Heure de fin
-    decidim_component_id: ID du composant
-    decidim_author_id: ID de l’auteur
-    created_at: Date de création
-    closed_at: Date de fermeture
-    ps_slug: Slug d'espace participatif
-    debate_url: URL du débat
-    resource_type: Type de participation
-    categories: Catégories
-    first_category: Catégorie
-    sub_categories: Sous-catégories
-    first_sub_category: Sous-catégorie
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Titre
+      description: Titre
+    description:
+      name: Description
+      description: Description
+    start_time:
+      name: Heure de début
+      description: Heure de début
+    end_time:
+      name: Heure de fin
+      description: Heure de fin
+    decidim_component_id:
+      name: ID du composant
+      description: ID du composant
+    decidim_author_id:
+      name: ID de l’auteur
+      description: ID de l’auteur
+    created_at:
+      name: Date de création
+      description: Date de création
+    closed_at:
+      name: Date de fermeture
+      description: Date de fermeture
+    ps_slug:
+      name: Slug d'espace participatif
+      description: Slug d'espace participatif
+    debate_url:
+      name: URL du débat
+      description: URL du débat
+    resource_type:
+      name: Type de participation
+      description: Type de participation
+    categories:
+      name: Catégories
+      description: Catégories
+    first_category:
+      name: Catégorie
+      description: Catégorie
+    sub_categories:
+      name: Sous-catégories
+      description: Sous-catégories
+    first_sub_category:
+      name: Sous-catégorie
+      description: Sous-catégorie

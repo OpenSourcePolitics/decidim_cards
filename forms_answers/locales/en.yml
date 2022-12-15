@@ -1,21 +1,50 @@
 ---
 name: Forms' answers
-description: >
-  All answers of participants to the published forms on the platform
+description: All answers of participants to the published forms on the platform
 meta:
   columns:
-    decidim_user_id: User ID
-    session_token: Session token
-    ip_hash: IP hash
-    question_type: Question type
-    question_title: Question title
-    answer: Answer
-    sub_matrix_question: Submatrix question
-    custom_body: Custom body
-    sorting_position: Sorting position
-    decidim_questionnaire_id: Form ID
-    form_title: Form title
-    decidim_component_id: Component ID
-    sorting_points: Sorting points
-    position: Position
-    created_at: Date of creation
+    decidim_user_id:
+      name: User ID
+      description: User ID
+    session_token:
+      name: Session token
+      description: Session token
+    ip_hash:
+      name: IP hash
+      description: IP hash
+    question_type:
+      name: Question type
+      description: Question type
+    question_title:
+      name: Question title
+      description: Question title
+    answer:
+      name: Answer
+      description: Answer
+    sub_matrix_question:
+      name: Submatrix question
+      description: Submatrix question
+    custom_body:
+      name: Custom body
+      description: Custom body
+    sorting_position:
+      name: Sorting position
+      description: Sorting position
+    decidim_questionnaire_id:
+      name: Form ID
+      description: Form ID
+    form_title:
+      name: Form title
+      description: Form title
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    sorting_points:
+      name: Sorting points
+      description: Sorting points
+    position:
+      name: Position
+      description: Position
+    created_at:
+      name: Date of creation
+      description: Date of creation
