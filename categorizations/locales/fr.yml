@@ -1,12 +1,23 @@
 ---
 name: Catégorisations
-description: >
-  Lien entre chaque entité classée sur la plateforme et ses catégories, si elles existent.
+description: Link between each categorized entity on the platform and its categories, if  they exist.
 meta:
   columns:
-    id: ID
-    category_name: Name of the category
-    child_id: ID de la catégorie enfant
-    child_name: Nom de la catégorie enfant
-    categorizable_id: ID de l'entité catégorisée
-    categorizable_type: Type de l'entité catégorisée
+    id:
+      name: ID
+      description: ID
+    category_name:
+      name: Name of the category
+      description: Name of the category
+    child_id:
+      name: Category child ID
+      description: Category child ID
+    child_name:
+      name: Category child name
+      description: Category child name
+    categorizable_id:
+      name: Categorizable ID
+      description: Categorizable ID
+    categorizable_type:
+      name: Categorizable type
+      description: Categorizable type
