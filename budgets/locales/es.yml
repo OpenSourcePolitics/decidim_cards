@@ -1,11 +1,20 @@
 ---
 name: Budgets
-description: >
-  All participatory budgets created on the platform
+description: All participatory budgets created on the platform
 meta:
   columns:
-    id: ID
-    title: Title
-    decidim_component_id: Component ID
-    url: URL of participatory budget
-    ps_slug: Slug of the participatory space
+    id:
+      name: ID
+      description: ID
+    title:
+      name: Title
+      description: Title
+    decidim_component_id:
+      name: Component ID
+      description: Component ID
+    url:
+      name: URL of participatory budget
+      description: URL of participatory budget
+    ps_slug:
+      name: Slug of the participatory space
+      description: Slug of the participatory space
