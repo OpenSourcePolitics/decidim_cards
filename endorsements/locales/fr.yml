@@ -1,13 +1,29 @@
 ---
 name: Soutiens
-description: "Soutiens faits sur la plateforme. À ne pas confondre avec les votes sur les propositions : les soutiens sont visibles et non anonymes, contrairement aux votes sur les propositions"
+description: 'Soutiens faits sur la plateforme. À ne pas confondre avec les votes sur les propositions : les soutiens sont visibles et non anonymes, contrairement aux votes sur les propositions'
 meta:
   columns:
-    id: ID
-    resource_type: Type de participation
-    resource_id: ID de la participation
-    decidim_author_type: Type d’auteur
-    decidim_author_id: ID de l'auteur
-    created_at: Date de création
-    updated_at: Date de mise à jour
-    decidim_component_id: ID du composant de la participation
+    id:
+      name: ID
+      description: ID
+    resource_type:
+      name: Resource type
+      description: Resource type
+    resource_id:
+      name: Resource ID
+      description: Resource ID
+    decidim_author_type:
+      name: Author type
+      description: Author type
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    decidim_component_id:
+      name: Resource component ID
+      description: Resource component ID
