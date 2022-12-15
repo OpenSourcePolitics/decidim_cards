@@ -1,14 +1,29 @@
 ---
 name: Votes sur les initiatives
-description: >
-  Tous les votes sur les initiatives reçus sur la plateforme.
+description: Tous les votes sur les initiatives reçus sur la plateforme.
 meta:
   columns:
-    id: ID
-    decidim_initiative_id: ID de l’initiative
-    decidim_author_id: ID de l’auteur
-    created_at: Date de création
-    updated_at: Date de mise à jour
-    hash_id: ID du hash
-    decidim_scope_id: ID du périmètre d'application
-    initiative_url: URL de l’initiative
+    id:
+      name: ID
+      description: ID
+    decidim_initiative_id:
+      name: Initiative ID
+      description: Initiative ID
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    hash_id:
+      name: Hash ID
+      description: Hash ID
+    decidim_scope_id:
+      name: Scope ID
+      description: Scope ID
+    initiative_url:
+      name: Initiative URL
+      description: Initiative URL
