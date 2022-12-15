@@ -45,7 +45,7 @@ meta:
       name: Badges enabled
       description: Whether or not badges are enabled
     send_welcome_notification:
-      name: Sending welcome notification
+      name: Sending welcome notification ?
       description: Whether or not a welcome notification is sent to new participants
     users_registration_mode:
       name: Users' registration mode
