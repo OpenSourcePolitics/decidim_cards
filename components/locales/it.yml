@@ -5,10 +5,11 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the component
     manifest_name:
       name: Manifest name
-      description: Manifest name
+      description: >
+        Programmatic name of the component in Decidim
     published_at:
       name: Date of publication
       description: Date of publication
@@ -16,35 +17,36 @@ meta:
       name: Date of creation
       description: Date of creation
     component_url:
-      name: Component URL
-      description: Component URL
+      name: URL
+      description: URL of the component
     ps_id:
       name: Participatory space ID
-      description: Participatory space ID
+      description: ID of the participatory space to which belong this component
     ps_published_at:
       name: Participatory space date of publication
-      description: Participatory space date of publication
+      description: >
+        Date of publication of the participatory process to which belong this component
     ps_title:
       name: Participatory space title
-      description: Participatory space title
+      description: Title of the participatory space to which belong this component
     ps_subtitle:
       name: Participatory space subtitle
-      description: Participatory space subtitle
+      description: Subtitle of the participatory space  to which belong this component
     ps_slug:
       name: Participatory space slug
-      description: Participatory space slug
+      description: Slug of the participatory space to which belong this component
     ps_type:
       name: Participatory space type
-      description: Participatory space type
+      description: Type of the participatory space to which belong this component
     ps_space_type_slug:
       name: Participatory space type slug
-      description: Participatory space type slug
+      description: Slug of the participatory space type to which belong this component
     ps_url:
       name: Participatory space URL
-      description: Participatory space URL
+      description: URL of the participatory space  to which belong this component
     decidim_organization_id:
       name: Organization ID
-      description: Organization ID
+      description: ID of the organization to which belong the participatory space to which belong this component
     organization_host:
       name: Organization host
-      description: Organization host
+      description: Host of the organization. Generally equal to the URL of the platform.
