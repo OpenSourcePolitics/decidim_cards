@@ -1,29 +1,31 @@
 ---
 name: Initiatives votes
-description: All initiatives votes made on the platform.
+description: > 
+  All initiatives votes made on the platform. Therefore, it does not take offline 
+  votes into account
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the initiative vote
     decidim_initiative_id:
       name: Initiative ID
-      description: Initiative ID
+      description: ID of the initiative that was voted
     decidim_author_id:
-      name: Author ID
-      description: Author ID
+      name: Voter ID
+      description: ID of the participant that voted
     created_at:
       name: Date of creation
-      description: Date of creation
+      description: Date of creation of the vote
     updated_at:
       name: Date of update
       description: Date of update
     hash_id:
       name: Hash ID
-      description: Hash ID
+      description: Hash ID of the vote
     decidim_scope_id:
       name: Scope ID
-      description: Scope ID
+      description: ID the scope in which the vote was made
     initiative_url:
       name: Initiative URL
-      description: Initiative URL
+      description: URL of the initiative voted
