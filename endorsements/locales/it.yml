@@ -1,13 +1,29 @@
 ---
 name: Endorsements
-description: "Endorsements made on the platform. Not to be confused with proposal votes: endorsements are visible and not anonymous contrary to proposal votes"
+description: 'Endorsements made on the platform. Not to be confused with proposal votes: endorsements are visible and not anonymous contrary to proposal votes'
 meta:
   columns:
-    id: ID
-    resource_type: Resource type
-    resource_id: Resource ID
-    decidim_author_type: Author type
-    decidim_author_id: Author ID
-    created_at: Date of creation
-    updated_at: Date of update
-    decidim_component_id: Resource component ID
+    id:
+      name: ID
+      description: ID
+    resource_type:
+      name: Resource type
+      description: Resource type
+    resource_id:
+      name: Resource ID
+      description: Resource ID
+    decidim_author_type:
+      name: Author type
+      description: Author type
+    decidim_author_id:
+      name: Author ID
+      description: Author ID
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    decidim_component_id:
+      name: Resource component ID
+      description: Resource component ID
