@@ -5,22 +5,22 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the vote on proposal
     created_at:
       name: Date of creation
       description: Date of creation
     decidim_author_id:
       name: Author ID
-      description: Author ID
+      description: ID of the participant who voted on the proposal
     decidim_proposal_id:
       name: Proposal ID
-      description: Proposal ID
+      description: ID of the proposal
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component linked to the voted proposal
     proposal_title:
       name: Proposal title
-      description: Proposal title
+      description: Title of the voted proposal
     proposal_url:
       name: Proposal URL
-      description: Proposal URL
+      description: URL of the voted proposal
