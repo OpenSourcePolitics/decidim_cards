@@ -1,10 +1,17 @@
 ---
 name: Attachments files
-description: >
-  All attachments files downloaded on the platform
+description: All attachments files downloaded on the platform
 meta:
   columns:
-    id: ID
-    attached_to_id: ID of attached resource
-    attached_to_type: Type of attached resource
-    url: URL of attachment file
+    id:
+      name: ID
+      description: ID
+    attached_to_id:
+      name: ID of attached resource
+      description: ID of attached resource
+    attached_to_type:
+      name: Type of attached resource
+      description: Type of attached resource
+    url:
+      name: URL of attachment file
+      description: URL of attachment file
