@@ -5,64 +5,65 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de la proposition
     decidim_participatory_space_id:
-      name: Participatory space ID
-      description: Participatory space ID
+      name: ID d'espace participatif
+      description: ID de l'espace participatif auquel appartient la proposition
     decidim_participatory_space_slug:
-      name: Participatory space slug
-      description: Participatory space slug
+      name: Slug de l'espace participatif
+      description: Slug de l'espace participatif auquel appartient la proposition
     decidim_scope_name:
-      name: Scope name
-      description: Scope name
+      name: Périmètre d'application
+      description: Nom du périmêtre d'application de la proposition
     title:
-      name: Title
-      description: Title
+      name: Titre
+      description: Titre de la proposition
     body:
-      name: Body
-      description: Body
+      name: Corps
+      description: Corps de la proposition
     resource_type:
-      name: Resource type
-      description: Resource type
+      name: Type de la participation
+      description: Type de la participation
     url:
-      name: Proposal URL
-      description: Proposal URL
+      name: URL
+      description: URL de la proposition
     decidim_component_id:
-      name: Component ID
-      description: Component ID
+      name: ID du composant
+      description: ID du composant auquel appartient la proposition
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Date de création
+      description: Date de création
     published_at:
-      name: Date of publication
-      description: Date of publication
+      name: Date de publication
+      description: Date de publication
     state:
-      name: State
-      description: State
+      name: État
+      description: État de la proposition
     authors_ids:
-      name: Authors IDs
-      description: Authors IDs
+      name: IDs des auteurs
+      description: IDs de tous les auteurs impliqués dans la création de la proposition
     first_author_id:
-      name: First author ID
-      description: First author ID
+      name: ID du premier auteur
+      description: >
+        ID du premier auteur de cette proposition, puisque la plupart des propositions n'ont qu'un seul auteur.
     address:
-      name: Address
-      description: Address
+      name: Adresse
+      description: Adresse mentionnée dans la proposition
     categories:
-      name: Categories
-      description: Categories
+      name: Catégories
+      description: Catégories de la proposition
     first_category:
-      name: Category
-      description: Category
+      name: Catégorie
+      description: Catégorie de la proposition
     sub_categories:
-      name: Subcategories
-      description: Subcategories
+      name: Sous-catégories
+      description: Sous-catégories de la proposition
     first_sub_category:
-      name: Subcategory
-      description: Subcategory
+      name: Sous-catégorie
+      description: Sous-catégorie de la proposition
     comments_count:
-      name: Number of comments
-      description: Number of comments
+      name: Nombre de commentaires
+      description: Nombre de commentaires sur la proposition
     endorsements_count:
-      name: Number of endorsements
-      description: Number of endorsements
+      name: Nombre de soutiens
+      description: Nombre de soutiens de la proposition
