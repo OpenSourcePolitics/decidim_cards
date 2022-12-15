@@ -5,16 +5,16 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID du budget
     title:
-      name: Title
-      description: Title
+      name: Titre
+      description: Titre du budget
     decidim_component_id:
-      name: Component ID
-      description: Component ID
+      name: ID du composant
+      description: ID du composant lié à ce budget
     url:
-      name: URL of participatory budget
-      description: URL of participatory budget
+      name: URL
+      description: URL du budget
     ps_slug:
-      name: Slug of the participatory space
-      description: Slug of the participatory space
+      name: Slug de l'espace participatif
+      description: Slug de l’espace participatif auquel appartient ce budget
