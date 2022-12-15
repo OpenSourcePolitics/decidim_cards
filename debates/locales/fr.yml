@@ -5,49 +5,49 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the debate
     title:
       name: Title
-      description: Title
+      description: Title of the debate
     description:
       name: Description
-      description: Description
+      description: Description of the debate
     start_time:
       name: Start time
-      description: Start time
+      description: Start time of the debate
     end_time:
       name: End time
-      description: End time
+      description: End time of the debate
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component to which belong the debate
     decidim_author_id:
       name: Author ID
-      description: Author ID
+      description: ID of the creator of the debate
     created_at:
       name: Date of creation
       description: Date of creation
     closed_at:
       name: Closed at
-      description: Closed at
+      description: Datetime at which this debate was closed
     ps_slug:
       name: Participatory space slug
-      description: Participatory space slug
+      description: Slug of the participatory space to which belong this debate
     debate_url:
-      name: Debate URL
-      description: Debate URL
+      name: URL
+      description: URL of the debate
     resource_type:
       name: Resource type
       description: Resource type
     categories:
       name: Categories
-      description: Categories
+      description: Categories of the debate
     first_category:
       name: Category
-      description: Category
+      description: Category of the debate
     sub_categories:
       name: Subcategories
-      description: Subcategories
+      description: Subcategories of the debate
     first_sub_category:
       name: Subcategory
-      description: Subcategory
+      description: Subcategory of the debate
