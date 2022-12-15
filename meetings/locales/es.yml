@@ -6,58 +6,58 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the meeting
     title:
       name: Title
-      description: Title
+      description: Title of the meeting
     description:
       name: Description
-      description: Description
+      description: Description of the meeting
     address:
       name: Address
-      description: Address
+      description: Address of the meeting
     attendees_count:
-      name: Attendees_count
-      description: Attendees_count
+      name: Attendees count
+      description: Number of attendees of the meeting
     created_at:
       name: Date of creation
       description: Date of creation
     decidim_scope_id:
       name: Scope ID
-      description: Scope ID
+      description: ID of the scope of the meeting
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component to which belong the meeting
     start_time:
       name: Start time
-      description: Start time
+      description: Start time of the meeting
     end_time:
       name: End time
-      description: End time
+      description: End time of the meeting
     registration_url:
       name: Registration URL
-      description: Registration URL
+      description: Registration URL for the meeting
     meeting_url:
       name: Meeting URL
-      description: Meeting URL
+      description: Meeting URL for the meeting
     private_meeting:
       name: Is private meeting?
-      description: Is private meeting?
+      description: Whether or not the meeting is private
     decidim_author_id:
       name: Author ID
-      description: Author ID
+      description: ID of the participant that created the meeting
     resource_type:
       name: Resource type
       description: Resource type
     categories:
       name: Categories
-      description: Categories
+      description: Categories of the meeting
     first_category:
       name: Category
-      description: Category
+      description: Category of the meeting
     sub_categories:
       name: Subcategories
-      description: Subcategories
+      description: Subcategories of the meeting
     first_sub_category:
       name: Subcategory
-      description: Subcategory
+      description: Subcategory of the meeting
