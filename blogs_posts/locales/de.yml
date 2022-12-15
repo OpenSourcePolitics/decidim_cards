@@ -5,28 +5,28 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID of the blog post
     title:
       name: Title
-      description: Title
+      description: Title of the blog post
     body:
       name: Body
-      description: Body
+      description: Body of the blog post
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component to which belong this blog post
     created_at:
       name: Date of creation
       description: Date of creation
     updated_at:
       name: Last date of update
-      description: Last date of update
+      description: Last date of update of the blog post
     decidim_author_id:
       name: Author ID
-      description: Author ID
+      description: ID of the author of the blog post
     post_url:
-      name: Post URL
-      description: Post URL
+      name: URL
+      description: URL of the blog post
     resource_type:
       name: Type of resource
-      description: Type of resource
+      description: Type of the resource
