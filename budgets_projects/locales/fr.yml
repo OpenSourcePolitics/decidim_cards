@@ -5,36 +5,36 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the project
+      description: Nom du projet
     title:
-      name: Title
-      description: Title of the project
+      name: Titre
+      description: Titre du projet
     description:
       name: Description
-      description: Description of the project
+      description: Description du projet
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Date de création
+      description: Date de création
     decidim_scope_id:
       name: Scope ID
       description: Scope ID
     project_amount:
-      name: Project amount
-      description: Cost of the project
+      name: Coût du projet
+      description: Coût du projet
     budget_id:
-      name: Budget ID
-      description: ID of the budget linked to this project
+      name: ID du budget
+      description: ID du budget lié à ce projet
     budget_title:
-      name: Budget title
-      description: Title of the budget linked to this project
+      name: Titre du budget
+      description: Titre du budget lié à ce projet
     decidim_component_id:
-      name: Component ID
-      description: ID of the component linked to this project
+      name: ID du composant
+      description: ID du composant lié à ce projet
     project_url:
       name: URL
-      description: URL of the project
+      description: URL du projet
     resource_type:
-      name: Resource type
+      name: Type de Ressource
       description: Resource type
     categories:
       name: Categories
