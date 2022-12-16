@@ -26,7 +26,7 @@ meta:
       description: >
         Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'utilisateur a été créé
     invitation_sent_at:
-      name: Date of invitation sending
+      name: Date d'envoi d'invitation
       description: >
         Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the time the invitation of the user was sent
     invitation_accepted_at:
