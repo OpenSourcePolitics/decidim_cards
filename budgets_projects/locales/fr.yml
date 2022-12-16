@@ -35,16 +35,16 @@ meta:
       description: URL du projet
     resource_type:
       name: Type de Ressource
-      description: Resource type
+      description: Type de ressource
     categories:
-      name: Categories
-      description: Categories of this project
+      name: Catégories
+      description: Catégories pour ce projet
     first_category:
-      name: Category
-      description: Category of the project
+      name: Catégorie
+      description: Catégorie du projet
     sub_categories:
-      name: Sub categories
-      description: Sub categories of the project
+      name: Sous-catégories
+      description: Sous-catégories du projet
     first_sub_category:
-      name: Subcategory
-      description: Subcategory of the project
+      name: Sous-catégorie
+      description: Sous-catégorie du projet
