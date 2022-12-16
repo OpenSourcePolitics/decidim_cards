@@ -5,14 +5,14 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the attachment file
+      description: ID de la pièce jointe
     attached_to_id:
-      name: ID of attached resource
+      name: ID de la ressource attachée
       description: >
-        ID of the resource linked to this attachment. It could be a meeting, a cold page, a proposal,...
+        ID de la ressource liée à cette pièce jointe. Il peut s'agir d'une réunion, d'une page froide, d'une proposition...
     attached_to_type:
-      name: Type of attached resource
-      description: Type of resource linked to this attachment
+      name: Type de ressource attachée
+      description: Type de ressource liée à cette pièce jointe
     url:
       name: URL
-      description: URL of the attachment file on the platform
+      description: URL du fichier attaché sur la plateforme
