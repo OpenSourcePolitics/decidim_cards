@@ -5,49 +5,49 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the debate
+      description: ID du débat
     title:
-      name: Title
-      description: Title of the debate
+      name: Titre
+      description: Titre du débat
     description:
       name: Description
-      description: Description of the debate
+      description: Description du débat
     start_time:
-      name: Start time
-      description: Start time of the debate
+      name: Heure de début
+      description: Heure de début du débat
     end_time:
-      name: End time
-      description: End time of the debate
+      name: Heure de fin
+      description: Heure de fin du débat
     decidim_component_id:
-      name: Component ID
-      description: ID of the component to which belong the debate
+      name: ID du composant
+      description: ID du composant auquel appartient le débat
     decidim_author_id:
-      name: Author ID
-      description: ID of the creator of the debate
+      name: ID de l’auteur
+      description: ID du créateur du débat
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Date de création
+      description: Date de création
     closed_at:
-      name: Closed at
-      description: Datetime at which this debate was closed
+      name: Date de fermeture
+      description: Date à laquelle ce débat a été clos
     ps_slug:
-      name: Participatory space slug
-      description: Slug of the participatory space to which belong this debate
+      name: Slug de l'espace participatif
+      description: Slug de l'espace participatif auquel appartient ce débat
     debate_url:
       name: URL
-      description: URL of the debate
+      description: URL du débat
     resource_type:
-      name: Resource type
-      description: Resource type
+      name: Type de ressource
+      description: Type de ressource
     categories:
-      name: Categories
-      description: Categories of the debate
+      name: Catégories
+      description: Catégories du débat
     first_category:
-      name: Category
-      description: Category of the debate
+      name: Catégorie
+      description: Catégorie du débat
     sub_categories:
-      name: Subcategories
-      description: Subcategories of the debate
+      name: Sous-Catégories
+      description: Sous-catégories du débat
     first_sub_category:
-      name: Subcategory
-      description: Subcategory of the debate
+      name: Sous-catégorie
+      description: Sous-catégorie de débat
