@@ -28,96 +28,96 @@ meta:
     invitation_sent_at:
       name: Date d'envoi d'invitation
       description: >
-        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the time the invitation of the user was sent
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'invitation de l'utilisateur a été créé
     invitation_accepted_at:
-      name: Date of accepted invitation
+      name: Date d'acceptation de l'invitation
       description: >
-        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the time the invitation of the user was accepted
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'utilisateur a accepté son inscription
     invited_by_id:
-      name: ID of inviter
-      description: ID of the user that invited that user
+      name: ID de l'inviteur
+      description: ID de l'utilisateur qui a invité cet utilisateur
     invited_by_type:
-      name: Type of the inviter
+      name: Type d'inviteur
       description: >
-        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the type of the inviter (whether an organization, a single user etc.)
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera le type l'inviteur (organisation, utilisateur simple, etc.)
     decidim_organization_id:
-      name: ID of organization
-      description: ID of organization to which belong the user
+      name: ID de l'organisation
+      description: ID de l'organisation à laquelle appartient l'utilisateur
     confirmed_at:
-      name: Confirmation date
+      name: Date de confirmation
       description: Date at which the user confirmed its account
     confirmation_token:
-      name: Confirmation token
-      description: Token of account confirmation
+      name: Jeton de confirmation
+      description: Jeton de confirmation du compte
     unconfirmed_email:
-      name: Email not confirmed ?
-      description: Whether or not the user has confirmed its email.
+      name: E-mail non confirmé ?
+      description: Si l'utilisateur a confirmé ou non son email.
     name:
-      name: Name
-      description: Name of the user
+      name: Nom
+      description: Nom de l'utilisateur
     locale:
-      name: Locale
-      description: Locale used by the user
+      name: Langue
+      description: Langue utilisée par l'utilisateur
     deleted_at:
-      name: Date of account deletion
+      name: Date de suppression du compte
       description: >
-        A user can choose to delete its account. If empty, it means the user still has an account. If not, it gives the time at which the user deleted it.
+        Un utilisateur peut choisir de supprimer son compte. Si ce champ est vide, cela signifie que l'utilisateur a toujours un compte. Si ce n'est pas le cas, cela donne l'heure à laquelle l'utilisateur l'a supprimé.
     admin:
-      name: Is admin ?
-      description: Whether or not the user is administrator of the platform
+      name: Est administrateur ?
+      description: Si l'utilisateur est administrateur de la plateforme ou non
     managed:
-      name: Is managed ?
+      name: Est utilisateur représenté ?
       description: >
-        A user can be managed. It means that someone else can participate in its name. This field indicate whether or not the user is managed
+        Un utilisateur peut être représenté. Cela signifie que quelqu'un d'autre peut participer à son nom. Ce champ indique si l'utilisateur est géré ou non
     roles:
-      name: Roles
+      name: Rôles
       description: >
-        A user can have different roles inside a Decidim platform. This field list all roles that the user have
+        Un utilisateur peut avoir des rôles différents à l'intérieur d'une plateforme Decidim. Ce champ liste tous les rôles que l'utilisateur a
     email_on_notification:
-      name: Email on notification ?
+      name: Notifications par email ?
       description: >
-        Whether or not the user receive a mail when he/she's notified on the platform
+        Si l'utilisateur reçoit ou non un mail lorsqu'il est notifié sur la plateforme
     nickname:
-      name: Nickname
-      description: Nickname of the user
+      name: Surnom
+      description: Surnom de l'utilisateur
     accepted_tos_version:
-      name: Version of TOS accepted
+      name: Version des CGU acceptée
       description: >
-        When registering on the platform, a user must accept the Terms of Services. These terms can be versionized. This field give the version of the Terms of Services that was accepted
+        Lors de l'inscription sur la plateforme, un utilisateur doit accepter les conditions d'utilisation. Ces conditions peuvent être versionnées. Ce champ donne la version des conditions d'utilisation qui ont été acceptées
     type:
       name: Type
       description: >
-        Type of user: can be a group, a single person, etc.
+        Type d'utilisateur: peut être un groupe, une seule personne, etc.
     following_count:
-      name: Followings count
-      description: Number of resources followed by the user
+      name: Nombre de suivis
+      description: Nombre de ressources suivies par l'utilisateur
     followers_count:
-      name: Followers count
-      description: Number of people that follows the user
+      name: Nombre d’abonnés
+      description: Nombre de personnes qui suivent l'utilisateur
     failed_attempts:
-      name: Failed signin count
-      description: Number of time the user failed to sign in
+      name: Nombre d'échecs de connexion
+      description: Nombre de fois où l'utilisateur n'a pas pu se connecter
     locked_at:
-      name: Locking date
-      description: Datetime at which the user was blocked
+      name: Date de vérouillage
+      description: Date à laquelle l'utilisateur a été bloqué
     admin_terms_accepted_at:
-      name: Date of admin terms acceptation
+      name: Date d'acceptation des conditions d'administration
       description: >
-        If the user is an admin, gives the datetime at which he/she accepted the terms of use
+        Si l'utilisateur est un administrateur, donnez la date à laquelle il/elle a accepté les conditions d'utilisation
     blocked:
-      name: Is blocked ?
-      description: Whether or not the user was blocked
+      name: Est bloqué ?
+      description: Si l'utilisateur a été bloqué ou non
     blocked_at:
-      name: Blocking date
-      description: Datetime at which the user was blocked. Empty if not blocked
+      name: Date de blocage
+      description: Date à laquelle l'utilisateur a été bloqué. Vide si non bloqué
     confirmed:
-      name: Is confirmed ?
+      name: Est confirmé ?
       description: >
-        Whether or not the account of the registration of the user was confirmed
+        Si le compte de l'inscription de l'utilisateur a été confirmé ou non
     url:
       name: URL
-      description: URL of the user profile
+      description: URL de la page de profil de l'utilisateur
     extended_data:
-      name: Extended data
+      name: Données supplémentaires
       description: >
-        Decidim stores in this field all data related to the user that doesn't fit into a specific column. Used in multiple Decidim modules to describe the user more precisely
+        Decidim stocke dans ce champ toutes les données relatives à l'utilisateur qui ne correspondent pas à une colonne spécifique. Ce champ est utilisé dans plusieurs modules Decidim pour décrire plus précisément l'utilisateur
