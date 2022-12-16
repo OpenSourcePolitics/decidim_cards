@@ -5,46 +5,46 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the comment
+      description: ID du commentaire
     decidim_commentable_id:
-      name: Commentable ID
-      description: ID of the commentable resource
+      name: ID de la participation commentée
+      description: ID de la ressource commentée
     decidim_commentable_type:
-      name: Commentable type
-      description: Type of the commentable resource
+      name: Type de la ressource commentée
+      description: Type de la ressource commentable
     decidim_author_id:
-      name: Author ID
-      description: ID of the author of the comment
+      name: ID de l’auteur
+      description: ID de l'auteur du commentaire
     created_at:
-      name: Date of creation
-      description: Date of creation of the comment
+      name: Date de création
+      description: Date de création du commentaire
     depth:
-      name: Depth
+      name: Profondeur
       description: >
-        Depth of the comment. If equal to 0, it means the comment was directly made on the resource. If equal to 1, it means the comment is a reaction to a previous comment made on the resource etc.
+        Profondeur du commentaire. Si égal à 0, cela signifie que le commentaire a été directement fait sur la ressource. Si égal à 1, cela signifie que le commentaire est une réaction à un commentaire précédent fait sur la ressource, etc.
     alignment:
-      name: Alignment
+      name: Alignement
       description: >
-        Alignment of the comment. If equal to 1, it means the author self-described its comment as a positive one. If equal -1, it means the author self-described its comment as a negative one. If equal to 0, it either means the author didn't categorize its comment or described it as neutral
+        Alignement du commentaire. Si égal à 1, cela signifie que l'auteur a décrit son commentaire comme un commentaire positif. Si égal -1, cela signifie que l'auteur a décrit son commentaire comme un commentaire négatif. Si égal à 0, cela signifie que l'auteur n'a pas catégorisé son commentaire ou l'a décrit comme neutre
     decidim_root_commentable_id:
-      name: Root commentable ID
-      description: ID of the root resource that was commented
+      name: ID de la ressource racine commentée
+      description: ID de la ressource racine qui a été commentée
     decidim_root_commentable_type:
-      name: Root commentable type
-      description: Type of the resource that was originaly commented
+      name: Type de la ressource racine commentée
+      description: Type de la ressource qui a été commentée initialement
     decidim_author_type:
-      name: Author type
+      name: Type d’auteur
       description: >
-        Type of the author : it can be an organization, a single user, etc.
+        Type de l'auteur : il peut s'agir d'une organisation, d'un seul utilisateur, etc.
     body:
-      name: Body
-      description: Body of the comment
+      name: Corps
+      description: Corps du commentaire
     decidim_component_id:
-      name: Component ID
-      description: ID of the component on which this comment was made
+      name: ID du composant
+      description: ID du composant sur lequel ce commentaire a été fait
     ps_slug:
-      name: Participatory space slug
-      description: Slug of the participatory process on which this comment was made
+      name: Slug de l'espace participatif
+      description: Slug du processus participatif sur lequel ce commentaire a été fait
     comment_url:
       name: URL
-      description: Comment URL
+      description: URL du commentaire
