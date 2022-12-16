@@ -1,20 +1,20 @@
 ---
 name: Participations
-description: 'All participations made on the platform : proposals, endorsements, proposals'' votes, debates, answers to surveys and comments.  ⚠️ Please note that it also counts answers of unregistered users, in this case they''re identified by their session_id.'
+description: 'Toutes les participations faites sur la plateforme : propositions, soutiens, votes sur les propositions, débats, réponses aux sondages et commentaires. ⚠️ Notez que sont aussi comptés les réponses des utilisateurs non enregistrés ; ils sont dans ce cas identifiés par leur Id de session.'
 meta:
   columns:
     user_id:
-      name: User ID
-      description: ID of the user that participated
+      name: ID du participant
+      description: ID de l'utilisateur qui a participé
     participation_id:
-      name: Participation ID
-      description: ID of the participation resource
+      name: ID de la participation
+      description: ID de la ressource de participation
     decidim_component_id:
-      name: Component ID
-      description: ID of the component in which the participation was made
+      name: ID du composant
+      description: ID du composant dans lequel la participation a été faite
     participation_type:
-      name: Participation type
-      description: Type of the participation
+      name: Type de participation
+      description: Type de la participation
     participation_date:
-      name: Participation date
-      description: Date of the participation
+      name: Date de la participation
+      description: Date de la participation
