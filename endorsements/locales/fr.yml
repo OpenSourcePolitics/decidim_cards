@@ -5,25 +5,25 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the endorsement
+      description: ID du soutien
     resource_type:
-      name: Resource type
+      name: Type de ressource
       description: Type of the endorsed resource
     resource_id:
-      name: Resource ID
-      description: ID of the resource endorsed
+      name: ID de ressource
+      description: ID de la ressource soutenue
     decidim_author_type:
-      name: Author type
-      description: Type of the author. It could be an organization, a single user, etc.
+      name: Type d’auteur
+      description: 'Type de l''auteur : il peut s''agir d''une organisation, d''un seul utilisateur, etc.'
     decidim_author_id:
-      name: Author ID
-      description: ID of the author of the endorsement
+      name: ID de l’auteur
+      description: ID de l'auteur du soutien
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Date de création
+      description: Date de création
     updated_at:
-      name: Date of update
-      description: Date of update
+      name: Date de mise à jour
+      description: Date de mise à jour
     decidim_component_id:
-      name: Resource component ID
-      description: ID of the component to which belong the endorsed resource
+      name: ID du composant de ressources
+      description: ID du composant auquel appartient la ressource soutenue
