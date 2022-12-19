@@ -8,13 +8,15 @@ meta:
       description: ID de l'utilisateur qui a participé
     participation_id:
       name: ID de la participation
-      description: ID de la ressource de participation
+      description: >
+        ID of the participation.
     decidim_component_id:
       name: ID du composant
       description: ID du composant dans lequel la participation a été faite
     participation_type:
       name: Type de participation
-      description: Type de la participation
+      description: >
+        Type of the participation.  A resource can be a proposal, a comment, an endorsement, etc.
     participation_date:
       name: Date de la participation
       description: Date de la participation
