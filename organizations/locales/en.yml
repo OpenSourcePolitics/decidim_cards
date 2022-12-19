@@ -1,6 +1,6 @@
 ---
 name: Organizations
-description: Informations about of the main organization on your
+description: Informations about of the main organization on your Decidim platform
 meta:
   columns:
     id:
@@ -21,10 +21,7 @@ meta:
       description: All available languages that can be enabled on the platform
     created_at:
       name: Date of creation
-      description: Date on which the platform was created
-    updated_at:
-      name: Last update date
-      description: Last time the organization was updated
+      description: Date on which the organization was created
     description:
       name: Description
       description: Description of the organization
