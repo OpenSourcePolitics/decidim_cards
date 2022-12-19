@@ -1,6 +1,6 @@
 ---
 name: Organisations
-description: Informations about of the main organization on your Decidim platform
+description: Informations à propos de l'organisation principale sur votre plateforme Decidim
 meta:
   columns:
     id:
@@ -20,7 +20,7 @@ meta:
       description: Toutes les langues disponibles qui peuvent être activées sur la plateforme
     created_at:
       name: Date de création
-      description: Date on which the organization was created
+      description: Date à laquelle l'organisation a été créée
     description:
       name: Description
       description: Description de l'organisation
