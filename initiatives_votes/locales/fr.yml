@@ -1,30 +1,30 @@
 ---
 name: Votes sur les initiatives
 description: >
-  All initiatives votes made on the platform. Therefore, it does not take offline votes into account
+  Tous les votes d'initiatives effectués sur la plateforme. Par conséquent, il ne prend pas en compte les votes hors ligne
 meta:
   columns:
     id:
       name: ID
-      description: ID of the initiative vote
+      description: ID du vote d'initiative
     decidim_initiative_id:
-      name: Initiative ID
-      description: ID of the initiative that was voted
+      name: ID de l’initiative
+      description: ID de l'initiative qui a été votée
     decidim_author_id:
-      name: Voter ID
-      description: ID of the participant that voted
+      name: ID du votant
+      description: ID du participant qui a voté
     created_at:
-      name: Date of creation
-      description: Date of creation of the vote
+      name: Date de création
+      description: Date de création du vote
     updated_at:
       name: Date of update
       description: Date of update
     hash_id:
-      name: Hash ID
-      description: Hash ID of the vote
+      name: Hachage ID
+      description: Hachage ID du vote
     decidim_scope_id:
-      name: Scope ID
-      description: ID the scope in which the vote was made
+      name: ID du périmètre d'application
+      description: ID du périmêtre d'application dans lequel le vote a été fait
     initiative_url:
-      name: Initiative URL
-      description: URL of the initiative voted
+      name: URL de l’initiative
+      description: URL de l'initiative votée
