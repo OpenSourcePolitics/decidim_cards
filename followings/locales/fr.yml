@@ -16,7 +16,7 @@ meta:
     root_decidim_followable_id:
       name: ID de la ressource racine suivie
       description: >
-        ID of the root resource that was followed i.e the proposals
+        ID of the root resource that was followed. Resources that can be followed are proposals, components, etc.
     root_decidim_followable_type:
       name: Type de participation racine suivie
       description: Type de la ressource racine qui a été suivie
