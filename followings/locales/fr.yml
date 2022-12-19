@@ -11,25 +11,25 @@ meta:
       description: ID du composant auquel appartient la ressource suivie
     decidim_user_id:
       name: ID de l’utilisateur
-      description: ID of the user who made the follow action
+      description: ID de l'utilisateur qui a fait l'action Suivre
     root_decidim_followable_id:
-      name: Root followable ID
-      description: ID of the root resource that was followed
+      name: ID de la ressource racine suivie
+      description: ID de la ressource racine qui a été suivie
     root_decidim_followable_type:
-      name: Root followable type
-      description: Type of the root resource that was followed
+      name: Type de participation racine suivie
+      description: Type de la ressource racine qui a été suivie
     root_followable_title:
-      name: Root followable title
-      description: Title of the root resource that was followed
+      name: Titre de la ressource racine suivie
+      description: Titre de la ressource racine qui a été suivie
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Date de création
+      description: Date de création
     updated_at:
       name: Date of udpate
       description: Date of udpate
     root_following_url:
-      name: Root following URL
-      description: URL of the root resource that was followed
+      name: URL de la resource racine suivis
+      description: URL de la ressource racine qui a été suivie
     decidim_followable_id:
       name: Followable ID
       description: ID of the directly followed resource
