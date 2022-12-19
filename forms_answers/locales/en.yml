@@ -6,7 +6,7 @@ meta:
     decidim_user_id:
       name: User ID
       description: >
-        ID of the user of made the answer. If equal, it means the respondant 
+        ID of the user of made the answer. If empty, it means the respondant 
         was not registered on the platform at the time answers were made
     session_token:
       name: Session token
