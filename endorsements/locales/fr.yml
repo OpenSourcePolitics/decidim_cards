@@ -8,7 +8,7 @@ meta:
       description: ID du soutien
     resource_type:
       name: Type de ressource
-      description: Type of the endorsed resource
+      description: Type de la ressource soutenue
     resource_id:
       name: ID de ressource
       description: ID de la ressource soutenue
