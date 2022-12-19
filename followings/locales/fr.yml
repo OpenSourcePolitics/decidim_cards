@@ -28,18 +28,18 @@ meta:
       name: Date of udpate
       description: Date of udpate
     root_following_url:
-      name: URL de la resource racine suivis
+      name: URL de la resource racine suivie
       description: URL de la ressource racine qui a été suivie
     decidim_followable_id:
-      name: Followable ID
-      description: ID of the directly followed resource
+      name: ID de la ressource suivie
+      description: ID de la ressource directement suivie
     decidim_followable_type:
-      name: Followable Type
-      description: Type of the directly followed resource
+      name: Type de la participation suivie
+      description: Type de la ressource directement suivie
     followable_url:
-      name: Followable URL
-      description: URL of the direcly followed resource
+      name: URL de la ressource suivie
+      description: URL de la ressource directement suivie
     following_way:
-      name: Following way
+      name: Niveau de suivi
       description: >
-        Way this following was counted: if equal to 'real_follow', it means the user followed this resource in particular. When equal to 'ancestor_follow', it means that the user choosed to follow the component of participatory space to which belong this resource, therefore Decidim consider this user also follows the resources inside that component or participatory space
+        Manière dont ce suivi a été compté : si égal à 'real_follow', cela signifie que l'utilisateur a suivi cette ressource en particulier. Lorsqu'il est égal à 'ancestor_follow', cela signifie que l'utilisateur a choisi de suivre le composant de l'espace participatif auquel appartient cette ressource. Par conséquent, Decidim considère que cet utilisateur suit également les ressources à l'intérieur de ce composant ou de cet espace participatif
