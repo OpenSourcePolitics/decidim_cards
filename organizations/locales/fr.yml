@@ -35,7 +35,7 @@ meta:
       description: 'Le snippet d''en-tête est un bout de code qui peut être intégré sur toutes les pages web de l''organisation.'
     tos_version:
       name: Version des CGU
-      description: Numéro de version des CGU
+      description: Numéro de version des Conditions Générales d'Utilisation
     badges_enabled:
       name: Badges activés
       description: Si les badges sont activés ou non
