@@ -25,7 +25,6 @@ query:
         answered_at,
         answer_url,
         decidim_initiatives.created_at,
-        decidim_initiatives.updated_at,
         decidim_user_group_id,
         hashtag,
         scoped_type_id,
