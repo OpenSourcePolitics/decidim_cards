@@ -34,7 +34,7 @@ meta:
       name: URL
       description: URL du projet
     resource_type:
-      name: Type de Ressource
+      name: Type de ressource
       description: Type de ressource
     categories:
       name: Catégories
