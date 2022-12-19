@@ -57,8 +57,8 @@ meta:
       name: Name
       description: Name of the user
     locale:
-      name: Locale
-      description: Locale used by the user
+      name: Language
+      description: Language used by the user
     deleted_at:
       name: Date of account deletion
       description: >
