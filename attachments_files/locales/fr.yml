@@ -11,8 +11,8 @@ meta:
       description: >
         ID de la ressource liée à cette pièce jointe. Il peut s'agir d'une réunion, d'une page froide, d'une proposition...
     attached_to_type:
-      name: Type de ressource attachée
+      name: Type de ressource jointe
       description: Type de ressource liée à cette pièce jointe
     url:
       name: URL
-      description: URL du fichier attaché sur la plateforme
+      description: URL du fichier joint sur la plateforme
