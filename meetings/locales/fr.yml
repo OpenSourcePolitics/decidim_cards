@@ -6,58 +6,58 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the meeting
+      description: ID de la rencontre
     title:
-      name: Title
-      description: Title of the meeting
+      name: Titre
+      description: Titre de la rencontre
     description:
       name: Description
-      description: Description of the meeting
+      description: Description de la rencontre
     address:
-      name: Address
-      description: Address of the meeting
+      name: Adresse
+      description: Adresse de la rencontre
     attendees_count:
-      name: Attendees count
-      description: Number of attendees of the meeting
+      name: Nombre de participants
+      description: Nombre de participants à la rencontre
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Date de création
+      description: Date de création
     decidim_scope_id:
-      name: Scope ID
-      description: ID of the scope of the meeting
+      name: ID du périmètre d'application
+      description: ID du périmètre d'application de la rencontre
     decidim_component_id:
-      name: Component ID
-      description: ID of the component to which belong the meeting
+      name: ID du composant
+      description: ID du composant auquel appartient la rencontre
     start_time:
-      name: Start time
-      description: Start time of the meeting
+      name: Heure de début
+      description: Horodatage de début de la rencontre
     end_time:
-      name: End time
-      description: End time of the meeting
+      name: Heure de fin
+      description: Horodatage de fin de la rencontre
     registration_url:
-      name: Registration URL
-      description: Registration URL for the meeting
+      name: URL d'inscription
+      description: URL d'inscription pour la rencontre
     meeting_url:
-      name: Meeting URL
-      description: Meeting URL for the meeting
+      name: URL de la rencontre
+      description: URL de la rencontre
     private_meeting:
-      name: Is private meeting?
-      description: Whether or not the meeting is private
+      name: Rencontre privée ?
+      description: Si la rencontre est privée ou non
     decidim_author_id:
-      name: Author ID
-      description: ID of the participant that created the meeting
+      name: ID de l’auteur
+      description: ID du participant qui a créé la rencontre
     resource_type:
-      name: Resource type
-      description: Resource type
+      name: Type de ressource
+      description: Type de ressource
     categories:
-      name: Categories
-      description: Categories of the meeting
+      name: Catégories
+      description: Catégorie de la rencontre
     first_category:
-      name: Category
-      description: Category of the meeting
+      name: Catégorie
+      description: Catégorie de la rencontre
     sub_categories:
-      name: Subcategories
-      description: Subcategories of the meeting
+      name: Sous-catégories
+      description: Sous-catégories de la rencontre
     first_sub_category:
-      name: Subcategory
-      description: Subcategory of the meeting
+      name: Sous-catégorie
+      description: Sous-catégorie de la rencontre
