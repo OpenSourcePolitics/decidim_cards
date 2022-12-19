@@ -1,7 +1,6 @@
 ---
 name: Rencontres
 description: Toutes les rencontres publiées sur la plateforme
-viz_settings:
 meta:
   columns:
     id:
@@ -38,8 +37,8 @@ meta:
       name: URL d'inscription
       description: URL d'inscription pour la rencontre
     meeting_url:
-      name: URL de la rencontre
-      description: URL de la rencontre
+      name: URL
+      description: URL for the meeting
     private_meeting:
       name: Rencontre privée ?
       description: Si la rencontre est privée ou non
