@@ -6,7 +6,7 @@ meta:
     decidim_user_id:
       name: ID de l’utilisateur
       description: >
-        ID of the user of made the answer. If empty, it means the respondant was not registered on the platform at the time answers were made
+        ID of the user of made the answer. If equal, it means the respondant was not registered on the platform at the time answers were made
     session_token:
       name: Jeton de session
       description: Jeton de session du répondant
@@ -30,16 +30,17 @@ meta:
       description: Corps personnalisé
     sorting_position:
       name: Position de tri
-      description: Position de tri
+      description: >
+        Sorting position. If answer corresponds to a sorting question, gives the position of that assertion in the ranking: 0 means first choice, 1 means second position etc.
     decidim_questionnaire_id:
       name: ID du questionnaire
-      description: ID du questionnaire auquel appartient cette réponse
+      description: ID of the form to which belong the answer
     form_title:
       name: Titre du questionnaire
-      description: Titre du questionnaire auquel appartient cette réponse
+      description: Title of the form to which belong the answer
     decidim_component_id:
       name: ID du composant
-      description: ID of the component to which belong this answer
+      description: ID of the component to which belong the answer
     sorting_points:
       name: Points de classement
       description: >
