@@ -12,7 +12,7 @@ meta:
         Nom programmatique du composant dans Decidim
     published_at:
       name: Date de publication
-      description: Date de publication
+      description: Date of publication of the component
     created_at:
       name: Date de création
       description: Date de création
@@ -21,32 +21,33 @@ meta:
       description: URL du composant
     ps_id:
       name: ID d'espace participatif
-      description: ID de l'espace participatif auquel appartient ce composant
+      description: ID of the participatory space to which belong the component
     ps_published_at:
       name: Date de publication de l'espace participatif
       description: >
-        Date of publication of the participatory process to which belong this component
+        Date of publication of the participatory space to which belong the component
     ps_title:
       name: Titre de l'espace de participatif
-      description: Titre de l'espace participatif auquel appartient ce composant
+      description: Title of the participatory space to which belong the component
     ps_subtitle:
       name: Sous-titre de l'espace participatif
-      description: Sous-titre de l'espace participatif auquel appartient ce composant
+      description: Subtitle of the participatory space  to which belong the component
     ps_slug:
       name: Slug de l'espace participatif
-      description: Slug de l'espace participatif auquel appartient ce composant
+      description: Slug of the participatory space to which belong the component
     ps_type:
       name: Type de l'espace participatif
-      description: Titre de l'espace participatif auquel appartient ce composant
+      description: Type of the participatory space to which belong the component
     ps_space_type_slug:
       name: Slug du type de l'espace participatif
-      description: Slug du type d'espace participatif auquel appartiennent ce composant
+      description: Slug of the participatory space type to which belong the component
     ps_url:
       name: URL de l'espace participatif
-      description: URL de l'espace participatif auquel appartient ce composant
+      description: URL of the participatory space  to which belong the component
     decidim_organization_id:
       name: ID de l’organisation
-      description: ID de l'organisation à laquelle appartient l'espace participatif auquel appartient ce composant
+      description: >
+        ID of the organization to which belong the component: a component is first linked to its participatory space, itself linked to an organization
     organization_host:
       name: Domaine de l'organisation
-      description: Hôte de l'organisation. En général égal à l'URL de la plateforme.
+      description: Host of the organization. Generally equal to the URL of the platform
