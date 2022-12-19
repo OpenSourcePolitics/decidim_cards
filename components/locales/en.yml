@@ -12,7 +12,7 @@ meta:
         Programmatic name of the component in Decidim
     published_at:
       name: Date of publication
-      description: Date of publication
+      description: Date of publication of the component
     created_at:
       name: Date of creation
       description: Date of creation
@@ -25,7 +25,7 @@ meta:
     ps_published_at:
       name: Participatory space date of publication
       description: >
-        Date of publication of the participatory process to which belong this component
+        Date of publication of the participatory space to which belong this component
     ps_title:
       name: Participatory space title
       description: Title of the participatory space to which belong this component
