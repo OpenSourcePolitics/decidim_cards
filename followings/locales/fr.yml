@@ -11,7 +11,7 @@ meta:
       description: ID du composant auquel appartient la ressource suivie
     decidim_user_id:
       name: ID de l’utilisateur
-      description: ID de l'utilisateur qui a fait l'action Suivre
+      description: ID de l'utilisateur qui a fait l'action de suivi
     root_decidim_followable_id:
       name: ID de la ressource racine suivie
       description: ID de la ressource racine qui a été suivie
