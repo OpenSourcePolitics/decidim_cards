@@ -7,7 +7,7 @@ meta:
       name: ID
       description: ID de la pièce jointe
     attached_to_id:
-      name: ID de la ressource attachée
+      name: ID de la ressource jointe
       description: >
         ID de la ressource liée à cette pièce jointe. Il peut s'agir d'une réunion, d'une page froide, d'une proposition...
     attached_to_type:
