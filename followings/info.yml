@@ -91,7 +91,6 @@ query:
           root_decidim_followable_type,
           root_followable_title,
           created_at,
-          updated_at,
           root_following_url,
           decidim_followable_id,
           decidim_followable_type,

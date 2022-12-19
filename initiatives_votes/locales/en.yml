@@ -17,9 +17,6 @@ meta:
     created_at:
       name: Date of creation
       description: Date of creation of the vote
-    updated_at:
-      name: Date of update
-      description: Date of update
     hash_id:
       name: Hash ID
       description: Hash ID of the vote

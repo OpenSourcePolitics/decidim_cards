@@ -18,7 +18,7 @@ meta:
       description: ID of the user that created the initiative
     published_at:
       name: Date of publication
-      description: Date of publication
+      description: Date of publication of the initiative
     parsed_state:
       name: Parsed state
       description: >
@@ -47,14 +47,11 @@ meta:
       name: Date of answer
       description: Date of the answer of the administrator to the initiative (if any)
     answer_url:
-      name: Answer
+      name: Answer URL
       description: URL of the answer to the initiative (if any)
     created_at:
       name: Date of creation
       description: Date of creation
-    updated_at:
-      name: Date of udpate
-      description: Date of udpate
     decidim_user_group_id:
       name: User group ID
       description: ID of the user group (if any)
@@ -62,8 +59,8 @@ meta:
       name: Hashtag
       description: Hashtag
     scoped_type_id:
-      name: Scoped type id
-      description: ID of the type of scope of the type of initiative
+      name: Scoped type ID
+      description: ID of the type of scope of the initiative
     decidim_author_type:
       name: Author Type
       description: Type of the author that wrote the initiative
@@ -72,7 +69,7 @@ meta:
       description: Number of online votes made on the initiative
     parsed_offline_votes:
       name: Offline votes
-      description: Number of offline votes made on tje initiative
+      description: Number of offline votes made on the initiative
     sum_votes:
       name: Sum of votes
       description: Sum of the votes made the initiative (both online and offline)

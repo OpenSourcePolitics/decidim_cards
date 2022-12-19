@@ -54,7 +54,9 @@ meta:
       description: ID of organization to which belong the user
     confirmed_at:
       name: Confirmation date
-      description: Date at which the user confirmed its account
+      description: >
+        Date at which the user confirmed its account. Empty if the account was not 
+        confirmed
     confirmation_token:
       name: Confirmation token
       description: Token of account confirmation
