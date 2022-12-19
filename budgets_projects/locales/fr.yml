@@ -5,7 +5,7 @@ meta:
   columns:
     id:
       name: ID
-      description: Nom du projet
+      description: ID du projet
     title:
       name: Titre
       description: Titre du projet
@@ -16,8 +16,8 @@ meta:
       name: Date de création
       description: Date de création
     decidim_scope_id:
-      name: Scope ID
-      description: Scope ID
+      name: ID du périmètre d'application
+      description: ID du périmètre d'application du projet
     project_amount:
       name: Coût du projet
       description: Coût du projet
@@ -38,7 +38,7 @@ meta:
       description: Type de ressource
     categories:
       name: Catégories
-      description: Catégories pour ce projet
+      description: Catégories de ce projet
     first_category:
       name: Catégorie
       description: Catégorie du projet
