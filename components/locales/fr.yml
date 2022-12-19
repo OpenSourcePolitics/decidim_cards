@@ -7,7 +7,7 @@ meta:
       name: ID
       description: ID du composant
     manifest_name:
-      name: Manifeste
+      name: Nom du manifeste
       description: >
         Nom programmatique du composant dans Decidim
     published_at:
@@ -31,7 +31,7 @@ meta:
       description: Titre de l'espace participatif auquel appartient ce composant
     ps_subtitle:
       name: Sous-titre de l'espace participatif
-      description: Sous-titre de l'espace participatif auquel appartiennent ce composant
+      description: Sous-titre de l'espace participatif auquel appartient ce composant
     ps_slug:
       name: Slug de l'espace participatif
       description: Slug de l'espace participatif auquel appartient ce composant
@@ -39,14 +39,14 @@ meta:
       name: Type de l'espace participatif
       description: Titre de l'espace participatif auquel appartient ce composant
     ps_space_type_slug:
-      name: Slug du type d'espace participatif
+      name: Slug du type de l'espace participatif
       description: Slug du type d'espace participatif auquel appartiennent ce composant
     ps_url:
       name: URL de l'espace participatif
-      description: URL de l'espace participatif auquel appartiennent ce composant
+      description: URL de l'espace participatif auquel appartient ce composant
     decidim_organization_id:
       name: ID de l’organisation
       description: ID de l'organisation à laquelle appartient l'espace participatif auquel appartient ce composant
     organization_host:
       name: Domaine de l'organisation
-      description: Hôte de l'organisation. En général égal à l'URL de la plate-forme.
+      description: Hôte de l'organisation. En général égal à l'URL de la plateforme.
