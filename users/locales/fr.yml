@@ -24,7 +24,7 @@ meta:
     invitation_created_at:
       name: Date de création de l'invitation
       description: >
-        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'utilisateur a été créé
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'utilisateur a été créé
     invitation_sent_at:
       name: Date d'envoi d'invitation
       description: >
@@ -57,8 +57,8 @@ meta:
       name: Nom
       description: Nom de l'utilisateur
     locale:
-      name: Langue
-      description: Langue utilisée par l'utilisateur
+      name: Language
+      description: Language used by the user
     deleted_at:
       name: Date de suppression du compte
       description: >
@@ -67,7 +67,7 @@ meta:
       name: Est administrateur ?
       description: Si l'utilisateur est administrateur de la plateforme ou non
     managed:
-      name: Est utilisateur représenté ?
+      name: Est représenté ?
       description: >
         Un utilisateur peut être représenté. Cela signifie que quelqu'un d'autre peut participer à son nom. Ce champ indique si l'utilisateur est géré ou non
     roles:
@@ -88,18 +88,18 @@ meta:
     type:
       name: Type
       description: >
-        Type d'utilisateur: peut être un groupe, une seule personne, etc.
+        Type d'utilisateur : peut être un groupe, une seule personne, etc.
     following_count:
       name: Nombre de suivis
       description: Nombre de ressources suivies par l'utilisateur
     followers_count:
-      name: Nombre d’abonnés
+      name: Nombre d'abonnés
       description: Nombre de personnes qui suivent l'utilisateur
     failed_attempts:
       name: Nombre d'échecs de connexion
       description: Nombre de fois où l'utilisateur n'a pas pu se connecter
     locked_at:
-      name: Date de vérouillage
+      name: Date de verrouillage
       description: Date à laquelle l'utilisateur a été bloqué
     admin_terms_accepted_at:
       name: Date d'acceptation des conditions d'administration
