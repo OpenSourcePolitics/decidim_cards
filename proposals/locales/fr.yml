@@ -1,40 +1,35 @@
 ---
 name: Propositions
-description: Ensemble des propositions créées sur la plateforme. Sont prises en compte
-  les propositions acceptées, refusées ou en cours d'évalutation. Les propositions
-  retirées sont également prises en compte. Sont exclues les propositions cachées
-  (modérées) et non publiées (à noter qu'un espace participatif et un composant peuvent
-  être publiés ou non publiés).
-viz_settings:
+description: 'Toutes les propositions créées sur votre plateforme. Cela inclut les propositions avec l''état suivant : accepté, évalué, rejeté et retiré. Cela n''inclut pas les propositions cachées (modération) et les propositions non publiées (rappel: un espace participatif et un composant peuvent être publiés ou non publiés).'
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de la proposition
     decidim_participatory_space_id:
       name: ID d'espace participatif
-      description: ID d'espace participatif
+      description: ID de l'espace participatif auquel appartient la proposition
     decidim_participatory_space_slug:
-      name: Slug d'espace participatif
-      description: Slug d'espace participatif
+      name: Slug de l'espace participatif
+      description: Slug de l'espace participatif auquel appartient la proposition
     decidim_scope_name:
       name: Périmètre d'application
-      description: Périmètre d'application
+      description: Nom du périmêtre d'application de la proposition
     title:
       name: Titre
-      description: Titre
+      description: Titre de la proposition
     body:
       name: Corps
-      description: Corps
+      description: Corps de la proposition
     resource_type:
       name: Type de la participation
       description: Type de la participation
     url:
-      name: URL de la proposition
+      name: URL
       description: URL de la proposition
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID du composant auquel appartient la proposition
     created_at:
       name: Date de création
       description: Date de création
@@ -43,31 +38,32 @@ meta:
       description: Date de publication
     state:
       name: État
-      description: État
+      description: État de la proposition
     authors_ids:
       name: IDs des auteurs
-      description: IDs des auteurs
+      description: IDs de tous les auteurs impliqués dans la création de la proposition
     first_author_id:
       name: ID du premier auteur
-      description: ID du premier auteur
+      description: >
+        ID du premier auteur de cette proposition, puisque la plupart des propositions n'ont qu'un seul auteur.
     address:
       name: Adresse
-      description: Adresse
+      description: Adresse mentionnée dans la proposition
     categories:
       name: Catégories
-      description: Catégories
+      description: Catégories de la proposition
     first_category:
       name: Catégorie
-      description: Catégorie
+      description: Catégorie de la proposition
     sub_categories:
       name: Sous-catégories
-      description: Sous-catégories
+      description: Sous-catégories de la proposition
     first_sub_category:
       name: Sous-catégorie
-      description: Sous-catégorie
+      description: Sous-catégorie de la proposition
     comments_count:
       name: Nombre de commentaires
-      description: Nombre de commentaires
+      description: Nombre de commentaires sur la proposition
     endorsements_count:
       name: Nombre de soutiens
-      description: Nombre de soutiens
+      description: Nombre de soutiens de la proposition

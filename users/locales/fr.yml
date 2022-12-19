@@ -1,22 +1,20 @@
 ---
 name: Utilisateurs
-description: Tous les comptes utilisateurs créés sur votre plateforme (y compris les
-  administrateurs, les utilisateurs invités, gérés, signalés, bloqués et supprimés)
-viz_settings:
+description: "Tous les comptes utilisateurs créés sur votre plateforme (y compris les\nadministrateurs, les utilisateurs invités, gérés, signalés, bloqués et\nsupprimés)"
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de l'utilisateur
     email:
       name: Email
-      description: Email
+      description: E-mail de l'utilisateur
     sign_in_count:
       name: Nombre de connexions
-      description: Nombre de connexions
+      description: Nombre de fois où l'utilisateur s'est connecté sur la plateforme
     last_sign_in_at:
       name: Date de dernière connexion
-      description: Date de dernière connexion
+      description: Dernière fois que l'utilisateur s'est connecté sur la plateforme
     created_at:
       name: Date de création
       description: Date de création
@@ -25,88 +23,102 @@ meta:
       description: Date de mise à jour
     invitation_created_at:
       name: Date de création de l'invitation
-      description: Date de création de l'invitation
+      description: >
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'utilisateur a été créé
     invitation_sent_at:
       name: Date d'envoi d'invitation
-      description: Date d'envoi d'invitation
+      description: >
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'invitation de l'utilisateur a été créé
     invitation_accepted_at:
       name: Date d'acceptation de l'invitation
-      description: Date d'acceptation de l'invitation
+      description: >
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera la date à laquelle l'utilisateur a accepté son inscription
     invited_by_id:
       name: ID de l'inviteur
-      description: ID de l'inviteur
+      description: ID de l'utilisateur qui a invité cet utilisateur
     invited_by_type:
       name: Type d'inviteur
-      description: Type d'inviteur
+      description: >
+        Les utilisateurs peuvent soit s'inscrire sur la plate-forme par eux-mêmes, soit être invités. Si ce champ est vide, cela signifie que l'utilisateur s'est inscrit de lui-même. Sinon, cela donnera le type l'inviteur (organisation, utilisateur simple, etc.)
     decidim_organization_id:
       name: ID de l'organisation
-      description: ID de l'organisation
+      description: ID de l'organisation à laquelle appartient l'utilisateur
     confirmed_at:
       name: Date de confirmation
-      description: Date de confirmation
+      description: >
+        Date à laquelle l'utilisateur a confirmé son compte. Vide si le compte n'a pas été confirmé
     confirmation_token:
       name: Jeton de confirmation
-      description: Jeton de confirmation
+      description: Jeton de confirmation du compte
     unconfirmed_email:
       name: E-mail non confirmé ?
-      description: E-mail non confirmé ?
+      description: Si l'utilisateur a confirmé ou non son email.
     name:
       name: Nom
-      description: Nom
+      description: Nom de l'utilisateur
     locale:
-      name: Langue
-      description: Langue
+      name: Language
+      description: Language used by the user
     deleted_at:
       name: Date de suppression du compte
-      description: Date de suppression du compte
+      description: >
+        Un utilisateur peut choisir de supprimer son compte. Si ce champ est vide, cela signifie que l'utilisateur a toujours un compte. Si ce n'est pas le cas, cela donne l'heure à laquelle l'utilisateur l'a supprimé.
     admin:
       name: Est administrateur ?
-      description: Est administrateur ?
+      description: Si l'utilisateur est administrateur de la plateforme ou non
     managed:
-      name: Est utilisateur géré ?
-      description: Est utilisateur géré ?
+      name: Est représenté ?
+      description: >
+        Un utilisateur peut être représenté. Cela signifie que quelqu'un d'autre peut participer à son nom. Ce champ indique si l'utilisateur est géré ou non
     roles:
       name: Rôles
-      description: Rôles
+      description: >
+        Un utilisateur peut avoir des rôles différents à l'intérieur d'une plateforme Decidim. Ce champ liste tous les rôles que l'utilisateur a
     email_on_notification:
       name: Notifications par email ?
-      description: Notifications par email ?
+      description: >
+        Si l'utilisateur reçoit ou non un mail lorsqu'il est notifié sur la plateforme
     nickname:
       name: Surnom
-      description: Surnom
+      description: Surnom de l'utilisateur
     accepted_tos_version:
-      name: Version des CGV acceptée
-      description: Version des CGV acceptée
+      name: Version des CGU acceptée
+      description: >
+        Lors de l'inscription sur la plateforme, un utilisateur doit accepter les conditions d'utilisation. Ces conditions peuvent être versionnées. Ce champ donne la version des conditions d'utilisation qui ont été acceptées
     type:
       name: Type
-      description: Type
+      description: >
+        Type d'utilisateur : peut être un groupe, une seule personne, etc.
     following_count:
       name: Nombre de suivis
-      description: Nombre de suivis
+      description: Nombre de ressources suivies par l'utilisateur
     followers_count:
-      name: Nombre d’abonnés
-      description: Nombre d’abonnés
+      name: Nombre d'abonnés
+      description: Nombre de personnes qui suivent l'utilisateur
     failed_attempts:
       name: Nombre d'échecs de connexion
-      description: Nombre d'échecs de connexion
+      description: Nombre de fois où l'utilisateur n'a pas pu se connecter
     locked_at:
-      name: Date de blocage
-      description: Date de blocage
+      name: Date de verrouillage
+      description: Date à laquelle l'utilisateur a été bloqué
     admin_terms_accepted_at:
       name: Date d'acceptation des conditions d'administration
-      description: Date d'acceptation des conditions d'administration
+      description: >
+        Si l'utilisateur est un administrateur, donnez la date à laquelle il/elle a accepté les conditions d'utilisation
     blocked:
       name: Est bloqué ?
-      description: Est bloqué ?
+      description: Si l'utilisateur a été bloqué ou non
     blocked_at:
       name: Date de blocage
-      description: Date de blocage
+      description: Date à laquelle l'utilisateur a été bloqué. Vide si non bloqué
     confirmed:
       name: Est confirmé ?
-      description: Est confirmé ?
+      description: >
+        Si le compte de l'inscription de l'utilisateur a été confirmé ou non
     url:
-      name: URL du profil
-      description: URL du profil
+      name: URL
+      description: URL de la page de profil de l'utilisateur
     extended_data:
       name: Données supplémentaires
-      description: Données supplémentaires
+      description: >
+        Decidim stocke dans ce champ toutes les données relatives à l'utilisateur qui ne correspondent pas à une colonne spécifique. Ce champ est utilisé dans plusieurs modules Decidim pour décrire plus précisément l'utilisateur

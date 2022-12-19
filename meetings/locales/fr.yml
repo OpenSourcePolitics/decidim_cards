@@ -1,63 +1,62 @@
 ---
 name: Rencontres
 description: Toutes les rencontres publiées sur la plateforme
-viz_settings:
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de la rencontre
     title:
       name: Titre
-      description: Titre
+      description: Titre de la rencontre
     description:
       name: Description
-      description: Description
+      description: Description de la rencontre
     address:
       name: Adresse
-      description: Adresse
+      description: Adresse de la rencontre
     attendees_count:
       name: Nombre de participants
-      description: Nombre de participants
+      description: Nombre de participants à la rencontre
     created_at:
       name: Date de création
       description: Date de création
     decidim_scope_id:
       name: ID du périmètre d'application
-      description: ID du périmètre d'application
+      description: ID du périmètre d'application de la rencontre
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID du composant auquel appartient la rencontre
     start_time:
-      name: Date de début
-      description: Date de début
+      name: Heure de début
+      description: Horodatage de début de la rencontre
     end_time:
-      name: Date de fin
-      description: Date de fin
+      name: Heure de fin
+      description: Horodatage de fin de la rencontre
     registration_url:
       name: URL d'inscription
-      description: URL d'inscription
+      description: URL d'inscription pour la rencontre
     meeting_url:
-      name: URL de la réunion
-      description: URL de la réunion
+      name: URL
+      description: URL de la rencontre
     private_meeting:
-      name: Réunion privée ?
-      description: Réunion privée ?
+      name: Rencontre privée ?
+      description: Si la rencontre est privée ou non
     decidim_author_id:
-      name: ID de l'auteur
-      description: ID de l'auteur
+      name: ID de l’auteur
+      description: ID du participant qui a créé la rencontre
     resource_type:
-      name: Type de la participation
-      description: Type de la participation
+      name: Type de ressource
+      description: Type de ressource
     categories:
       name: Catégories
-      description: Catégories
+      description: Catégorie de la rencontre
     first_category:
       name: Catégorie
-      description: Catégorie
+      description: Catégorie de la rencontre
     sub_categories:
       name: Sous-catégories
-      description: Sous-catégories
+      description: Sous-catégories de la rencontre
     first_sub_category:
       name: Sous-catégorie
-      description: Sous-catégorie
+      description: Sous-catégorie de la rencontre

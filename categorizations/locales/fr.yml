@@ -1,15 +1,13 @@
 ---
 name: Catégorisations
-description: Lien entre chaque entité classée sur la plateforme et ses catégories,
-  si elles existent.
-viz_settings:
+description: Lien entre chaque entité classée sur la plateforme et ses catégories, si elles existent.
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de la catégorisation
     category_name:
-      name: Nom de la catégorie
+      name: Nom
       description: Nom de la catégorie
     child_id:
       name: ID de la catégorie enfant
@@ -19,7 +17,7 @@ meta:
       description: Nom de la catégorie enfant
     categorizable_id:
       name: ID de l'entité catégorisée
-      description: ID de l'entité catégorisée
+      description: ID de la ressource liée à cette catégorisation
     categorizable_type:
       name: Type de l'entité catégorisée
-      description: Type de l'entité catégorisée
+      description: Type de ressource liée à cette catégorisation

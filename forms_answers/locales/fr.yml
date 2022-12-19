@@ -1,25 +1,24 @@
 ---
 name: Réponses aux questionnaires
-description: Toutes les réponses des participants aux questionnaires publiés sur la
-  plateforme
-viz_settings:
+description: Toutes les réponses des participants aux questionnaires publiés sur la plateforme
 meta:
   columns:
     decidim_user_id:
       name: ID de l’utilisateur
-      description: ID de l’utilisateur
+      description: >
+        ID of the user who answered. If empty, it means the respondant was not registered on the platform at the time they answered
     session_token:
       name: Jeton de session
-      description: Jeton de session
+      description: Jeton de session du répondant
     ip_hash:
       name: Hachage IP
-      description: Hachage IP
+      description: Hachage de l'adresse IP du répondant
     question_type:
       name: Type de question
-      description: Type de question
+      description: Type de la question
     question_title:
       name: Titre de la question
-      description: Titre de la question
+      description: Intitulé de la question
     answer:
       name: Réponse
       description: Réponse
@@ -31,22 +30,24 @@ meta:
       description: Corps personnalisé
     sorting_position:
       name: Position de tri
-      description: Position de tri
+      description: >
+        Position de tri. Si la réponse correspond à une question de tri, donne la position de cette assertion dans le classement : 0 signifie première position, 1 signifie deuxième position, etc.
     decidim_questionnaire_id:
       name: ID du questionnaire
-      description: ID du questionnaire
+      description: ID of the form to which the answer belongs
     form_title:
       name: Titre du questionnaire
-      description: Titre du questionnaire
+      description: Title of the form to which the answer belongs
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID of the component to which the answer belongs
     sorting_points:
       name: Points de classement
-      description: Points de classement
+      description: >
+        Points de classement : afin de faciliter le processus récapitulatif des réponses des questions de classement, chaque réponse rassemble un certain nombre de points en fonction de son rang dans le tri. Par défaut, la première réponse rassemble 10 points, la seconde 9 pts, etc.
     position:
       name: Position
-      description: Position
+      description: Position de la question de la réponse dans le questionnaire
     created_at:
       name: Date de création
-      description: Date de création
+      description: Date de la création de la réponse

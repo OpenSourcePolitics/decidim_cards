@@ -1,54 +1,53 @@
 ---
 name: Débats
 description: Tous les débats publiés sur la plateforme
-viz_settings:
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID du débat
     title:
       name: Titre
-      description: Titre
+      description: Titre du débat
     description:
       name: Description
-      description: Description
+      description: Description du débat
     start_time:
       name: Heure de début
-      description: Heure de début
+      description: Heure de début du débat
     end_time:
       name: Heure de fin
-      description: Heure de fin
+      description: Heure de fin du débat
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID du composant auquel appartient le débat
     decidim_author_id:
       name: ID de l’auteur
-      description: ID de l’auteur
+      description: ID du créateur du débat
     created_at:
       name: Date de création
       description: Date de création
     closed_at:
       name: Date de fermeture
-      description: Date de fermeture
+      description: Date à laquelle ce débat a été clos
     ps_slug:
-      name: Slug d'espace participatif
-      description: Slug d'espace participatif
+      name: Slug de l'espace participatif
+      description: Slug de l'espace participatif auquel appartient ce débat
     debate_url:
-      name: URL du débat
+      name: URL
       description: URL du débat
     resource_type:
-      name: Type de participation
-      description: Type de participation
+      name: Type de ressource
+      description: Type de ressource
     categories:
       name: Catégories
-      description: Catégories
+      description: Catégories du débat
     first_category:
       name: Catégorie
-      description: Catégorie
+      description: Catégorie du débat
     sub_categories:
-      name: Sous-catégories
-      description: Sous-catégories
+      name: Sous-Catégories
+      description: Sous-catégories du débat
     first_sub_category:
       name: Sous-catégorie
-      description: Sous-catégorie
+      description: Sous-catégorie de débat

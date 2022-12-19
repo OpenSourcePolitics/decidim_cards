@@ -1,39 +1,44 @@
 ---
 name: Suivis
-description: Toutes les actions de suivis effectuées sur la plateforme.
-viz_settings:
+description: >
+  Toutes les actions de suivi effectuées sur la plateforme. Pour rappel, Decidim compte les suivis de deux manières différentes : suivis sur une ressource spécifique (proposition, commentaire, etc.). , appelée "real follow" et les suivis faits sur un composant. Dans ce cas-là, toutes les ressources qu'il contient sont comptées comme suit. Par conséquent, une "ressource suivable" signifie la ressource que l'utilisateur choisit de suivre directement, alors qu'une "ressource racine suivable" est un composant auquel appartient la ressource suivie.
 meta:
   columns:
+    id:
+      name: ID
+      description: ID du suivi
+    decidim_component_id:
+      name: ID du composant
+      description: ID du composant auquel appartient la ressource soutenue
     decidim_user_id:
-      name: ID du participant
-      description: ID du participant
+      name: ID de l’utilisateur
+      description: ID de l'utilisateur qui a fait l'action de suivi
     root_decidim_followable_id:
-      name: ID de la participation suivie
-      description: ID de la participation suivie
+      name: ID de la ressource racine suivie
+      description: >
+        ID de la ressource racine qui a été suivie. Les ressources qui peuvent être suivies sont des propositions, des composants, etc.
     root_decidim_followable_type:
-      name: Type de participation suivie
-      description: Type de participation suivie
+      name: Type de participation racine suivie
+      description: Type de la ressource racine qui a été suivie
     root_followable_title:
-      name: Titre de la participation suivie
-      description: Titre de la participation suivie
+      name: Titre de la ressource racine suivie
+      description: Titre de la ressource racine qui a été suivie
     created_at:
       name: Date de création
       description: Date de création
-    updated_at:
-      name: Date de mise à jour
-      description: Date de mise à jour
     root_following_url:
-      name: URL de la participation suivie
-      description: URL de la participation suivie
+      name: URL de la ressource racine suivie
+      description: URL de la ressource racine qui a été suivie
     decidim_followable_id:
-      name: ID de la participation suivie
-      description: ID de la participation suivie
+      name: ID de la ressource suivie
+      description: ID de la ressource directement suivie
     decidim_followable_type:
       name: Type de la participation suivie
-      description: Type de la participation suivie
+      description: Type de la ressource directement suivie
     followable_url:
-      name: URL du suivi
-      description: URL du suivi
+      name: URL de la ressource suivie
+      description: URL de la ressource directement suivie
     following_way:
-      name: Niveau de suivi
-      description: Niveau de suivi
+      name: Manière de suivi
+      description: >
+        Manière dont ce suivi a été compté : si égal à 'real_follow', cela signifie que l'utilisateur a suivi cette ressource en particulier. Lorsqu'il est égal à 'ancestor_follow', cela signifie que l'utilisateur a choisi de suivre le composant de l'espace participatif auquel appartient cette ressource. Par conséquent, Decidim considère que cet utilisateur suit également les ressources à l'intérieur de ce composant ou de cet espace participatif

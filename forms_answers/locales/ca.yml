@@ -1,21 +1,24 @@
 ---
 name: Forms' answers
 description: All answers of participants to the published forms on the platform
-viz_settings:
 meta:
   columns:
     decidim_user_id:
       name: User ID
-      description: User ID
+      description: >
+        ID of the user who answered. If empty, it means the respondant was not registered on the platform at the time they answered
     session_token:
       name: Session token
-      description: Session token
+      description: Session token of the respondant
+    ip_hash:
+      name: IP hash
+      description: Hash of the IP address of the respondant
     question_type:
       name: Question type
-      description: Question type
+      description: Type of the question
     question_title:
       name: Question title
-      description: Question title
+      description: Title of the question
     answer:
       name: Answer
       description: Answer
@@ -27,19 +30,24 @@ meta:
       description: Custom body
     sorting_position:
       name: Sorting position
-      description: Sorting position
+      description: >
+        Sorting position. If answer corresponds to a sorting question, gives the position of that assertion in the ranking: 0 means first choice, 1 means second position etc.
     decidim_questionnaire_id:
       name: Form ID
-      description: Form ID
+      description: ID of the form to which the answer belongs
+    form_title:
+      name: Form title
+      description: Title of the form to which the answer belongs
     decidim_component_id:
       name: Component ID
-      description: Component ID
+      description: ID of the component to which the answer belongs
     sorting_points:
       name: Sorting points
-      description: Sorting points
+      description: >
+        Sorting points: in order to ease the process of summarizing answers of ranking questions, each answer gathers a number of points depending on its rank in the sorting. By default, the first answer gathers 10 points, the second one 9 pts etc.
     position:
       name: Position
-      description: Position
+      description: Position of the answer's question in the form
     created_at:
       name: Date of creation
-      description: Date of creation
+      description: Date of creation of the answer

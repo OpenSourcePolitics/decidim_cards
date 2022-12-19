@@ -1,25 +1,23 @@
 ---
 name: Categorizations
-description: Link between each categorized entity on the platform and its categories,
-  if they exist.
-viz_settings:
+description: Link between each categorized entity on the platform and its categories, if  they exist.
 meta:
   columns:
     id:
       name: ID
-      description: ID
-    name:
+      description: ID of the categorization
+    category_name:
       name: Name
-      description: Name
+      description: Name of the category
     child_id:
       name: Category child ID
-      description: Category child ID
+      description: ID of the child category
     child_name:
       name: Category child name
-      description: Category child name
+      description: Name of the child category
     categorizable_id:
       name: Categorizable ID
-      description: Categorizable ID
+      description: ID of the resource linked to this categorization
     categorizable_type:
       name: Categorizable type
-      description: Categorizable type
+      description: Type of the resource linked to this categorization

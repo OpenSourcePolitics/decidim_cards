@@ -1,51 +1,50 @@
 ---
 name: Projets des budgets
 description: Tous les projets compris dans les budgets créés sur la plateforme
-viz_settings:
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID du projet
     title:
       name: Titre
-      description: Titre
+      description: Titre du projet
     description:
       name: Description
-      description: Description
+      description: Description du projet
     created_at:
       name: Date de création
       description: Date de création
     decidim_scope_id:
       name: ID du périmètre d'application
-      description: ID du périmètre d'application
+      description: ID du périmètre d'application du projet
     project_amount:
-      name: Montant du projet
-      description: Montant du projet
+      name: Coût du projet
+      description: Coût du projet
     budget_id:
       name: ID du budget
-      description: ID du budget
+      description: ID du budget lié à ce projet
     budget_title:
       name: Titre du budget
-      description: Titre du budget
+      description: Titre du budget lié à ce projet
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID du composant lié à ce projet
     project_url:
-      name: URL du projet
+      name: URL
       description: URL du projet
     resource_type:
-      name: Type de participation
-      description: Type de participation
+      name: Type de ressource
+      description: Type de ressource
     categories:
       name: Catégories
-      description: Catégories
+      description: Catégories de ce projet
     first_category:
       name: Catégorie
-      description: Catégorie
+      description: Catégorie du projet
     sub_categories:
       name: Sous-catégories
-      description: Sous-catégories
+      description: Sous-catégories du projet
     first_sub_category:
       name: Sous-catégorie
-      description: Sous-catégorie
+      description: Sous-catégorie du projet

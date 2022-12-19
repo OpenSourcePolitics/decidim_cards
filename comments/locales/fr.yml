@@ -1,48 +1,50 @@
 ---
 name: Commentaires
 description: Tous les commentaires faits sur la plateforme.
-viz_settings:
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID du commentaire
     decidim_commentable_id:
       name: ID de la participation commentée
-      description: ID de la participation commentée
+      description: ID de la ressource commentée
     decidim_commentable_type:
       name: Type de la ressource commentée
-      description: Type de la ressource commentée
+      description: Type de la ressource commentable
     decidim_author_id:
-      name: ID de l'auteur
-      description: ID de l'auteur
+      name: ID de l’auteur
+      description: ID de l'auteur du commentaire
     created_at:
       name: Date de création
-      description: Date de création
+      description: Date de création du commentaire
     depth:
-      name: Niveau du commentaire
-      description: Niveau du commentaire
+      name: Profondeur
+      description: >
+        Profondeur du commentaire. Si égal à 0, cela signifie que le commentaire a été directement fait sur la ressource. Si égal à 1, cela signifie que le commentaire est une réaction à un commentaire précédent fait sur la ressource, etc.
     alignment:
-      name: Sentiment
-      description: Sentiment
+      name: Alignement
+      description: >
+        Alignement du commentaire. Si égal à 1, cela signifie que l'auteur a décrit son commentaire comme un commentaire positif. Si égal -1, cela signifie que l'auteur a décrit son commentaire comme un commentaire négatif. Si égal à 0, cela signifie que l'auteur n'a pas catégorisé son commentaire ou l'a décrit comme neutre
     decidim_root_commentable_id:
-      name: ID de la participation racine commentée
-      description: ID de la participation racine commentée
+      name: ID de la ressource racine commentée
+      description: ID de la ressource racine qui a été commentée
     decidim_root_commentable_type:
       name: Type de la ressource racine commentée
-      description: Type de la ressource racine commentée
+      description: Type de la ressource qui a été commentée initialement
     decidim_author_type:
       name: Type d’auteur
-      description: Type d’auteur
+      description: >
+        Type de l'auteur : il peut s'agir d'une organisation, d'un seul utilisateur, etc.
     body:
       name: Corps
-      description: Corps
+      description: Corps du commentaire
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID du composant sur lequel ce commentaire a été fait
     ps_slug:
       name: Slug de l'espace participatif
-      description: Slug de l'espace participatif
+      description: Slug du processus participatif sur lequel ce commentaire a été fait
     comment_url:
-      name: URL du commentaire
+      name: URL
       description: URL du commentaire

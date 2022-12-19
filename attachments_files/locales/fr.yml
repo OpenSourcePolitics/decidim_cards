@@ -5,13 +5,14 @@ meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de la pièce jointe
     attached_to_id:
-      name: ID de la resource concernée
-      description: ID de la resource concernée
+      name: ID de la ressource jointe
+      description: >
+        ID de la ressource liée à cette pièce jointe. Il peut s'agir d'une réunion, d'une page froide, d'une proposition...
     attached_to_type:
-      name: Type de la resource concernée
-      description: Type de la resource concernée
+      name: Type de ressource jointe
+      description: Type de ressource liée à cette pièce jointe
     url:
-      name: URL de la pièce jointe
-      description: URL de la pièce jointe
+      name: URL
+      description: URL du fichier joint sur la plateforme

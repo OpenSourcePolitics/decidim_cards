@@ -1,54 +1,50 @@
 ---
 name: Organisations
-description: Informations à propos de l'organisation principale sur votre
-viz_settings:
+description: Informations à propos de l'organisation principale sur votre plateforme Decidim
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de l'organisation Decidim
     name:
       name: Nom
-      description: Nom
+      description: Nom de l'organisation Decidim
     host:
-      name: Domaine
-      description: Domaine
+      name: Hôte
+      description: 'Hôte de l''organisation Decidim. Habituellement similaire à l''URL à partir de laquelle on accède à la plate-forme'
     default_locale:
       name: Langue par défaut
-      description: Langue par défaut
+      description: Langue par défaut pour l'instance Decidim
     available_locales:
       name: Langues disponibles
-      description: Langues disponibles
+      description: Toutes les langues disponibles qui peuvent être activées sur la plateforme
     created_at:
       name: Date de création
-      description: Date de création
-    updated_at:
-      name: Date de dernière mise à jour
-      description: Date de dernière mise à jour
+      description: Date à laquelle l'organisation a été créée
     description:
       name: Description
-      description: Description
+      description: Description de l'organisation
     secondary_hosts:
-      name: Domaines secondaires
-      description: Domaines secondaires
+      name: Hôtes secondaires
+      description: Liste de tous les domaines à partir desquels l'organisation peut être accessible
     available_authorizations:
       name: Autorisations disponibles
-      description: Autorisations disponibles
+      description: Liste de toutes les autorisations disponibles
     header_snippets:
       name: Code d'en-tête
-      description: Code d'en-tête
+      description: 'Le snippet d''en-tête est un bout de code qui peut être intégré sur toutes les pages web de l''organisation.'
     tos_version:
       name: Version des CGU
-      description: Version des CGU
+      description: Numéro de version des Conditions Générales d'Utilisation
     badges_enabled:
       name: Badges activés
-      description: Badges activés
+      description: Si les badges sont activés ou non
     send_welcome_notification:
       name: Envoi une notification de bienvenue ?
-      description: Envoi une notification de bienvenue ?
+      description: Si oui ou non une notification de bienvenue est envoyée aux nouveaux participants
     users_registration_mode:
       name: Mode d'inscription des utilisateurs
-      description: Mode d'inscription des utilisateurs
+      description: 'Il y a deux façons qu''un utilisateur peut être enregistré sur la plateforme : soit par lui-même, soit par une invitation'
     time_zone:
       name: Fuseau horaire
-      description: Fuseau horaire
+      description: Fuseau horaire défini pour l'organisation

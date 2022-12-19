@@ -1,24 +1,22 @@
 ---
 name: Participations
-description: 'Toutes les participations faites sur la plateforme : propositions, soutiens,
-  votes sur les propositions, débats, réponses aux sondages et commentaires. ⚠️ Notez
-  que sont aussi comptés les réponses des utilisateurs non enregistrés ; ils sont
-  dans ce cas identifiés par leur ID de session.'
-viz_settings:
+description: 'Toutes les participations faites sur la plateforme : propositions, soutiens, votes sur les propositions, débats, réponses aux sondages et commentaires. ⚠️ Notez que sont aussi comptés les réponses des utilisateurs non enregistrés ; ils sont dans ce cas identifiés par leur Id de session.'
 meta:
   columns:
     user_id:
-      name: ID de l’utilisateur
-      description: ID de l’utilisateur
+      name: ID du participant
+      description: ID de l'utilisateur qui a participé
     participation_id:
       name: ID de la participation
-      description: ID de la participation
+      description: >
+        ID de la participation
     decidim_component_id:
       name: ID du composant
-      description: ID du composant
+      description: ID du composant dans lequel la participation a été faite
     participation_type:
       name: Type de participation
-      description: Type de participation
+      description: >
+        Le type de participation. Une participation peut être une proposition, un commentaire, un soutien, etc.
     participation_date:
       name: Date de la participation
       description: Date de la participation

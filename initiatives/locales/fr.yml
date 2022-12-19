@@ -1,100 +1,99 @@
 ---
 name: Initiatives
-description: Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives
-  créées, quel que soit leur état.
-viz_settings:
+description: Toutes les initiatives créées sur la plateforme. Inclut toutes les initiatives créées, quel que soit leur état.
 meta:
   columns:
     id:
       name: ID
-      description: ID
+      description: ID de l'initiative
     title:
       name: Titre
-      description: Titre
+      description: Titre de l'initiative
     description:
       name: Description
-      description: Description
+      description: Description de l'initiative
     decidim_author_id:
-      name: ID de l'auteur
-      description: ID de l'auteur
+      name: ID de l’auteur
+      description: ID de l'utilisateur qui a créé l'initiative
     published_at:
       name: Date de publication
-      description: Date de publication
+      description: Date de publication de l'initiative
     parsed_state:
       name: État réel
-      description: État réel
+      description: >
+        État analysé : comme Decidim utilise un entier pour détecter l'état d'une initiative (en évaluation, acceptée, ...), cette colonne fait la correspondance pour faciliter le processus de visualisation
     state:
       name: État
-      description: État
+      description: État (tel qu'enregistré dans Decidim)
     signature_type:
       name: Type de signature
-      description: Type de signature
+      description: >
+        Manière dont cette initiative peut être signée. Si 0, cela signifie qu'il ne peut être signé en ligne, si égal à 1, cela signifie qu'il peut seulement être signé hors ligne. Si égal à 2, elle peut être signée des deux manières
     signature_start_date:
       name: Date de début de signature
-      description: Date de début de signature
+      description: Date à partir de laquelle nous pouvons signer l'initiative
     signature_end_date:
       name: Date de fin de la signature
-      description: Date de fin de la signature
+      description: Date à partir de laquelle nous ne pouvons plus signer l'initiative
     answer:
       name: Réponse
-      description: Réponse
+      description: Réponse des administrateurs à l'initiative (le cas échéant)
     answered_at:
       name: Date de la réponse
-      description: Date de la réponse
+      description: Date de la réponse de l'administrateur à l'initiative (le cas échéant)
     answer_url:
       name: URL de la réponse
-      description: URL de la réponse
+      description: URL de la réponse à l'initiative (le cas échéant)
     created_at:
       name: Date de création
       description: Date de création
-    updated_at:
-      name: Date de mise à jour
-      description: Date de mise à jour
     decidim_user_group_id:
       name: ID du groupe utilisateur
-      description: ID du groupe utilisateur
+      description: ID du groupe d'utilisateurs (le cas échéant)
     hashtag:
       name: Hashtag
       description: Hashtag
     scoped_type_id:
       name: ID du type de périmètre d'application
-      description: ID du type de périmètre d'application
+      description: ID du type de périmètre d'application de l'initiative
     decidim_author_type:
       name: Type d’auteur
-      description: Type d’auteur
+      description: Type de l'auteur qui a écrit l'initiative
     parsed_online_votes:
       name: Votes en ligne
-      description: Votes en ligne
+      description: Nombre de votes en ligne effectués sur l'initiative
     parsed_offline_votes:
       name: Votes hors ligne
-      description: Votes hors ligne
+      description: Nombre de votes en ligne effectués sur l'initiative
     sum_votes:
       name: Somme des votes
-      description: Somme des votes
+      description: Somme des votes effectués sur l'initiative (en ligne et hors ligne)
     comments_count:
       name: Nombre de commentaires
-      description: Nombre de commentaires
+      description: Nombre de votes en ligne effectués sur l'initiative
     follows_count:
       name: Nombre de suivis
-      description: Nombre de suivis
+      description: Nombre de participants qui suivent l'initiative
     url:
-      name: URL de l’initiative
-      description: URL de l’initiative
+      name: URL
+      description: URL de l'initiative
     supports_required:
       name: Supports requis
-      description: Supports requis
+      description: >
+        Nombre de votes que l'initiative doit réunir pour être validée
     area_id:
       name: ID de catégorie
-      description: ID de catégorie
+      description: ID de la catégorie de l'initiative
     area_name:
       name: Nom de la catégorie
-      description: Nom de la catégorie
+      description: Nom de la catégorie de l'initiative
     area_type_name:
       name: Nom du type de catégorie
-      description: Nom du type de catégorie
+      description: Nom du type de catégorie de l'initiative
     resource_type:
-      name: Type de participation
-      description: Type de participation
+      name: Type de ressource
+      description: Type de ressource
     id_as_text:
       name: ID textuel
-      description: ID textuel
+      description: >
+        In order to link an initiative to its visits, we must cast the ID of the initiative into text
