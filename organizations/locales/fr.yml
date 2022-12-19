@@ -5,49 +5,49 @@ meta:
   columns:
     id:
       name: ID
-      description: ID of the Decidim organization
+      description: ID de l'organisation Decidim
     name:
-      name: Name
-      description: Name of the Decidim organization
+      name: Nom
+      description: Nom de l'organisation Decidim
     host:
-      name: Host
-      description: 'Host of the Decidim organization. Usually similar to the URL from which we access the platform'
+      name: Hôte
+      description: 'Hôte de l''organisation Decidim. Habituellement similaire à l''URL à partir de laquelle on accède à la plate-forme'
     default_locale:
-      name: Default locale
-      description: Default language for the Decidim instance
+      name: Langue par défaut
+      description: Langue par défaut pour l'instance Decidim
     available_locales:
-      name: Availables locales
-      description: All available languages that can be enabled on the platform
+      name: Langues disponibles
+      description: Toutes les langues disponibles qui peuvent être activées sur la plateforme
     created_at:
-      name: Date of creation
+      name: Date de création
       description: Date on which the platform was created
     updated_at:
       name: Last update date
       description: Last time the organization was updated
     description:
       name: Description
-      description: Description of the organization
+      description: Description de l'organisation
     secondary_hosts:
-      name: Secondary hosts
-      description: List of all hosts from which the organization can be accessible
+      name: Hôtes secondaires
+      description: Liste de tous les domaines à partir desquels l'organisation peut être accessible
     available_authorizations:
-      name: Available authorizations
-      description: List of all available authorizations
+      name: Autorisations disponibles
+      description: Liste de toutes les autorisations disponibles
     header_snippets:
-      name: Header snippet
-      description: 'The header snippet is a chunk of code that can be embedded on all of the webpages of the organization.'
+      name: Code d'en-tête
+      description: 'Le snippet d''en-tête est un chunk de code qui peut être intégré sur toutes les pages Web de l''organisation.'
     tos_version:
-      name: Version of TOS
-      description: Number of version of the Terms of Services
+      name: Version des CGU
+      description: Numéro de version des CGU
     badges_enabled:
-      name: Badges enabled
-      description: Whether or not badges are enabled
+      name: Badges activés
+      description: Si les badges sont activés ou non
     send_welcome_notification:
-      name: Sending welcome notification ?
-      description: Whether or not a welcome notification is sent to new participants
+      name: Envoi une notification de bienvenue ?
+      description: Si oui ou non une notification de bienvenue est envoyée aux nouveaux participants
     users_registration_mode:
-      name: Users' registration mode
-      description: 'There''s two way a user can be registered on the platform: either by itself, either by an invitation'
+      name: Mode d'inscription des utilisateurs
+      description: 'Il y a deux façons qu''un utilisateur peut être enregistré sur la plateforme : soit par lui-même, soit par une invitation'
     time_zone:
-      name: Time zone
-      description: Time zone set for the organization
+      name: Fuseau horaire
+      description: Fuseau horaire défini pour l'organisation
