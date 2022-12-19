@@ -1,6 +1,6 @@
 ---
 name: Propositions
-description: 'Toutes les propositions créées sur votre plateforme. Cela comporte les propositions avec l''état suivant : accepté, évalué, rejeté et retiré. Cela n''inclut pas les propositions cachées (modération) et les propositions non publiées (rappel: un espace participatif et un composant peuvent être publiés ou non publiés).'
+description: 'Toutes les propositions créées sur votre plateforme. Cela inclut les propositions avec l''état suivant : accepté, évalué, rejeté et retiré. Cela n''inclut pas les propositions cachées (modération) et les propositions non publiées (rappel: un espace participatif et un composant peuvent être publiés ou non publiés).'
 meta:
   columns:
     id:
