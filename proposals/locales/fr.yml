@@ -1,6 +1,6 @@
 ---
 name: Propositions
-description: 'All proposals created on your platform. It includes : proposals with the following state : accepted, evaluated, rejected and withdrawn. It doesn''t include hidden proposals (moderation) and unpublished proposals (remember that a participatory space and component can be published or unpublished).'
+description: 'Toutes les propositions créées sur votre plateforme. Cela comporte les propositions avec l''état suivant : accepté, évalué, rejeté et retiré. Cela n''inclut pas les propositions cachées (modération) et les propositions non publiées (rappel: un espace participatif et un composant peuvent être publiés ou non publiés).'
 meta:
   columns:
     id:
