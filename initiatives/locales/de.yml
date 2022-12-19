@@ -80,7 +80,7 @@ meta:
     supports_required:
       name: Supports required
       description: >
-        Number of supports that the initiative must gather in order to be validated
+        Number of votes that the initiative must gather in order to be validated
     area_id:
       name: Area ID
       description: ID of the area of the initiative
