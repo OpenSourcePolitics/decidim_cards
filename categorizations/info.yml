@@ -3,21 +3,21 @@ resource: categorizations
 query:
   model: true
   sql: |
-    with participations_categorized as (
+    with main_categories as (
         select
             decidim_categories.id as id,
-            decidim_categories.name->>'$LANGUAGE_CODE' as name,
-            null as child_id,
-            null as child_name,
+            decidim_categories.name->>'$LANGUAGE_CODE' as category_name,
+            0 as child_id,
+            '' as child_name,
             categorizable_id,
             categorizable_type
         from decidim_categorizations
             join decidim_categories on decidim_categories.id = decidim_categorizations.decidim_category_id
         where decidim_categories.parent_id is null
-    union all
+    ), sub_categories as (  
         select
             parent_categories.id as id,
-            parent_categories.name->>'$LANGUAGE_CODE' as name,
+            parent_categories.name->>'$LANGUAGE_CODE' as category_name,
             decidim_categories.id as child_id,
             decidim_categories.name->>'$LANGUAGE_CODE' as child_name,
             categorizable_id,
@@ -26,11 +26,17 @@ query:
             join decidim_categories on decidim_categories.id = decidim_categorizations.decidim_category_id
             left join decidim_categories parent_categories on decidim_categories.parent_id = parent_categories.id
         where decidim_categories.parent_id is not null
+    ), categories as (
+        select * from main_categories union all
+        select * from sub_categories
     )
-    select *
-    from participations_categorized
+    select id,
+        category_name,
+        child_id,
+        child_name,
+        categorizable_id,
+        categorizable_type
+    from categories
   info:
     meta:
       depends_on:
-    filterables:
-    viz_settings:

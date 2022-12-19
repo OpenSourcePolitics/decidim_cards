@@ -48,17 +48,3 @@ query:
     meta:
       depends_on:
         - organizations
-    filterables:
-      date:
-        attr: created_at
-        required: false
-      integer:
-        attr: decidim_organization_id
-        required: true
-    viz_settings:
-      scalar:
-        - total
-      line:
-        - day
-        - week
-        - month

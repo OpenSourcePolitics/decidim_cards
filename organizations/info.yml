@@ -9,7 +9,6 @@ query:
         default_locale,
         available_locales,
         created_at,
-        updated_at,
         regexp_replace(description->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         secondary_hosts,
         available_authorizations,
@@ -21,9 +20,3 @@ query:
         time_zone
     from decidim_organizations
     where host = $HOST
-  info:
-    filterables:
-      text:
-        attr: HOST
-        required: true 
-    viz_settings:

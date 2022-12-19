@@ -8,7 +8,6 @@ query:
         decidim_initiative_id,
         decidim_initiatives_votes.decidim_author_id,
         decidim_initiatives_votes.created_at,
-        decidim_initiatives_votes.updated_at,
         hash_id, 
         decidim_scope_id,
         decidim_initiatives.url as initiative_url
@@ -19,5 +18,3 @@ query:
     meta:
       depends_on:
         - initiatives
-    filterables:
-    viz_settings:

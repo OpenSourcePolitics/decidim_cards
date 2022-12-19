@@ -1,0 +1,19 @@
+---
+name: Attachments files
+description: All attachments files downloaded on the platform
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the attachment file
+    attached_to_id:
+      name: ID of attached resource
+      description: >
+        ID of the resource linked to this attachment. It could be a meeting,
+        a cold page, a proposal,...
+    attached_to_type:
+      name: Type of attached resource
+      description: Type of resource linked to this attachment
+    url:
+      name: URL
+      description: URL of the attachment file on the platform

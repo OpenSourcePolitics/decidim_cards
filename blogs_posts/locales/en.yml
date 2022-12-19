@@ -1,16 +1,29 @@
 ---
 name: Blogs posts
-description: >
-  All blog posts on the platform
-viz_settings:
+description: All blog posts on the platform
 meta:
   columns:
-    id: ID
-    title: Title
-    body: Body
-    decidim_component_id: Component ID
-    created_at: Date of creation
-    updated_at: Last date of update
-    decidim_author_id: Author ID
-    post_url: Post URL
-    resource_type: Type of resource
+    id:
+      name: ID
+      description: ID of the blog post
+    title:
+      name: Title
+      description: Title of the blog post
+    body:
+      name: Body
+      description: Body of the blog post
+    decidim_component_id:
+      name: Component ID
+      description: ID of the component to which belong this blog post
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    decidim_author_id:
+      name: Author ID
+      description: ID of the author of the blog post
+    post_url:
+      name: URL
+      description: URL of the blog post
+    resource_type:
+      name: Type of resource
+      description: Type of the resource

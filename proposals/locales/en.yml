@@ -1,29 +1,73 @@
 ---
 name: Proposals
-description: >
-  All proposals created on your platform. It includes : proposals with the
-  following state : accepted, evaluated, rejected and withdrawn. It doesn't
-  include hidden proposals (moderation) and unpublished proposals (remember
-  the a participatory space and component can be published or unpublished).
-viz_settings:
+description: 'All proposals created on your platform. It includes : proposals with
+  the following state : accepted, evaluated, rejected and withdrawn. It doesn''t include
+  hidden proposals (moderation) and unpublished proposals (remember that a participatory
+  space and component can be published or unpublished).'
 meta:
   columns:
-    id: ID
-    decidim_participatory_space_id: Participatory space ID
-    decidim_participatory_space_slug: Participatory space slug
-    decidim_scope_name: Scope name
-    title: Title
-    body: Body
-    resource_type: Resource type
-    url: Proposal URL
-    decidim_component_id: Component ID
-    created_at: Date of creation
-    published_at: Date of publication
-    state: State
-    authors_ids: Authors IDs
-    first_author_id: First author ID
-    address: Address
-    categories: Categories
-    first_category: Category
-    sub_categories: Subcategories
-    first_sub_category:  Subcategory
+    id:
+      name: ID
+      description: ID of the proposal
+    decidim_participatory_space_id:
+      name: Participatory space ID
+      description: ID of the participatory space to which belong the proposal
+    decidim_participatory_space_slug:
+      name: Participatory space slug
+      description: Slug of the participatory space to which belong the proposal
+    decidim_scope_name:
+      name: Scope name
+      description: Name of the scope for the proposal
+    title:
+      name: Title
+      description: Title of the proposal
+    body:
+      name: Body
+      description: Body of the proposal
+    resource_type:
+      name: Resource type
+      description: Resource type
+    url:
+      name: URL
+      description: URL of the proposal
+    decidim_component_id:
+      name: Component ID
+      description: ID of the component to which belong the proposal
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    published_at:
+      name: Date of publication
+      description: Date of publication
+    state:
+      name: State
+      description: State of the proposal
+    authors_ids:
+      name: Authors IDs
+      description: IDs of all authors involved in the creation of the proposal
+    first_author_id:
+      name: First author ID
+      description: >
+        ID of the first author for this proposal, since most of the proposals 
+        have a single author.
+    address:
+      name: Address
+      description: Address referred in the proposal
+    categories:
+      name: Categories
+      description: Categories of the proposal 
+    first_category:
+      name: Category
+      description: Category of the proposal
+    sub_categories:
+      name: Subcategories
+      description: Subcategories of the proposal
+    first_sub_category:
+      name: Subcategory
+      description: Subcategory of the proposal
+    comments_count:
+      name: Number of comments
+      description: Number of comments on the proposal
+    endorsements_count:
+      name: Number of endorsements
+      description: Number of endorsements on the proposal

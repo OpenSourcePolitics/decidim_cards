@@ -4,24 +4,31 @@ query:
   model: true
   sql: |
     -- /!\ Warning : counts unfinished votes !
+    -- /!\ Warning : should be filtered on the corresponding budget to get the good values
     select
         decidim_budgets_orders.id,
         decidim_user_id,
-        decidim_budgets_projects.id as "project_id",
-        decidim_budgets_projects.title as "project_title",
-        decidim_budgets_projects.decidim_component_id,
+        project_id,
+        project_title,
+        decidim_component_id,
         created_at,
         checked_out_at,
-        project_url
-    from {{#budgets_projects}} as decidim_budgets_projects
-        join decidim_budgets_line_items on decidim_budgets_line_items.decidim_project_id = decidim_budgets_projects.id
-        join decidim_budgets_orders on decidim_budgets_orders.id = decidim_budgets_line_items.decidim_order_id
+        project_url,
+        vote_finished,
+        decidim_budgets_budget_id
+    from decidim_budgets_orders
+        left join (
+            select 
+                decidim_order_id,
+                decidim_budgets_projects.id as "project_id",
+                decidim_budgets_projects.title as "project_title",
+                decidim_component_id,
+                project_url
+            from decidim_budgets_line_items
+                join {{#budgets_projects}} decidim_budgets_projects on decidim_budgets_projects.id = decidim_budgets_line_items.decidim_project_id
+        ) _ on decidim_order_id = decidim_budgets_orders.id,
+        lateral (select (case when checked_out_at is null then false else true end) as vote_finished) as p_vote_finished
   info:
     meta:
       depends_on:
         - budgets_projects
-    filterables:
-      date:
-        attr: created_at
-        required: false
-    viz_settings:

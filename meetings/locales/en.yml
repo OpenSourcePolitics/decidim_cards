@@ -1,26 +1,62 @@
 ---
 name: Meetings
-description: >
-  All published meetings on the platform
-viz_settings:
+description: All published meetings on the platform
 meta:
   columns:
-    id: ID
-    title: Title
-    description: Description
-    address: Address
-    attendees_count: Attendees_count
-    created_at: Date of creation
-    decidim_scope_id: Scope ID
-    decidim_component_id: Component ID
-    start_time: Start time
-    end_time: End time
-    registration_url: Registration URL
-    meeting_url: Meeting URL
-    private_meeting: Is private meeting?
-    decidim_author_id: Author ID
-    resource_type: Resource type
-    categories: Categories
-    first_category: Category
-    sub_categories: Subcategories
-    first_sub_category: Subcategory
+    id:
+      name: ID
+      description: ID of the meeting
+    title:
+      name: Title
+      description: Title of the meeting
+    description:
+      name: Description
+      description: Description of the meeting
+    address:
+      name: Address
+      description: Address of the meeting
+    attendees_count:
+      name: Attendees count
+      description: Number of attendees of the meeting
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    decidim_scope_id:
+      name: Scope ID
+      description: ID of the scope of the meeting
+    decidim_component_id:
+      name: Component ID
+      description: ID of the component to which belong the meeting
+    start_time:
+      name: Start time
+      description: Start time of the meeting
+    end_time:
+      name: End time
+      description: End time of the meeting
+    registration_url:
+      name: Registration URL
+      description: Registration URL for the meeting
+    meeting_url:
+      name: URL
+      description: URL for the meeting
+    private_meeting:
+      name: Is private meeting?
+      description: Whether or not the meeting is private
+    decidim_author_id:
+      name: Author ID
+      description: ID of the participant that created the meeting
+    resource_type:
+      name: Resource type
+      description: Resource type
+    categories:
+      name: Categories
+      description: Categories of the meeting
+    first_category:
+      name: Category
+      description: Category of the meeting
+    sub_categories:
+      name: Subcategories
+      description: Subcategories of the meeting
+    first_sub_category:
+      name: Subcategory
+      description: Subcategory of the meeting

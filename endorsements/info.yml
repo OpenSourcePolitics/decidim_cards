@@ -3,40 +3,42 @@ resource: endorsements
 query:
   model: true
   sql: |
-      with contributions as (
+      with endorsements_proposals as (
               select decidim_endorsements.*, decidim_component_id
               from decidim_endorsements
                   join {{#proposals}} decidim_proposals_proposals on decidim_endorsements.resource_id = decidim_proposals_proposals.id
                       and decidim_proposals_proposals.resource_type = decidim_endorsements.resource_type
-          union all
+      ), endorsements_debates as (
               select decidim_endorsements.*,decidim_component_id
               from decidim_endorsements
                   join {{#debates}} as decidim_debates_debates on decidim_endorsements.resource_id = decidim_debates_debates.id
                       and decidim_debates_debates.resource_type = decidim_endorsements.resource_type
-          union all
+      ), endorsements_blogs_posts as (
               select decidim_endorsements.*,decidim_component_id
               from decidim_endorsements
                   join {{#blogs_posts}} as decidim_blogs_posts on decidim_endorsements.resource_id = decidim_blogs_posts.id
                       and decidim_blogs_posts.resource_type = decidim_endorsements.resource_type
-      ) 
+      ), endorsements as (
+          select * from endorsements_proposals union all
+          select * from endorsements_debates union all
+          select * from endorsements_blogs_posts
+      )
       select
-          contributions.id,
-          contributions.resource_type,
-          contributions.resource_id,
+          endorsements.id,
+          endorsements.resource_type,
+          endorsements.resource_id,
           decidim_author_type,
           decidim_author_id,
-          contributions.created_at,
-          contributions.updated_at,
+          endorsements.created_at,
+          endorsements.updated_at,
           decidim_component_id
-      from contributions
+      from endorsements
           left join decidim_moderations on resource_type = decidim_reportable_type
               and resource_id = decidim_reportable_id 
       where hidden_at is null
   info:
     meta:
       depends_on:
-        - components
         - blogs_posts
         - proposals
         - debates
-    viz_settings:
