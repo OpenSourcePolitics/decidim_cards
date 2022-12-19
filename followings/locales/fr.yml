@@ -1,7 +1,7 @@
 ---
 name: Suivis
 description: >
-  All actions of followings made on the platform. Mind that Decidim counts followings in two different way: following made on a specific resource (proposal, comment, etc.), called "direct follow" and following made on a component, in this case all resources inside it are counted as followed. Therefore, a "followable resource" means the resource that the user choose to follow directly, whereas a "root followable" is a component to which belong the followed resource.
+  Toutes les actions de suivi effectuées sur la plateforme. Pour rappel, Decidim compte les suivis de deux manières différentes : suivis sur une ressource spécifique (proposition, commentaire, etc.). , appelée "real follow" et les suivis faite sur un composant. Dans ce cas-là, toutes les ressources qu'il contient sont comptées comme suit. Par conséquent, une "ressource suive" signifie la ressource que l'utilisateur choisit de suivre directement, alors qu'une "racine racine" est un composant auquel appartient la ressource suivie.
 meta:
   columns:
     id:
@@ -9,14 +9,14 @@ meta:
       description: ID du suivi
     decidim_component_id:
       name: ID du composant
-      description: ID of the component to which belong the followed resource
+      description: ID du composant auquel appartient la ressource soutenue
     decidim_user_id:
       name: ID de l’utilisateur
       description: ID de l'utilisateur qui a fait l'action de suivi
     root_decidim_followable_id:
       name: ID de la ressource racine suivie
       description: >
-        ID of the root resource that was followed i.e
+        ID of the root resource that was followed i.e the proposals
     root_decidim_followable_type:
       name: Type de participation racine suivie
       description: Type de la ressource racine qui a été suivie
