@@ -19,7 +19,7 @@ meta:
       name: Date de création
       description: Date de création
     updated_at:
-      name: Date de dernière mise à jour
+      name: Date de dernière de mise à jour
       description: Dernière date de mise à jour du billet de blog
     decidim_author_id:
       name: ID de l’auteur
