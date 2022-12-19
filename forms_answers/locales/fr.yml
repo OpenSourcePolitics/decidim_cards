@@ -43,7 +43,7 @@ meta:
     sorting_points:
       name: Points de classement
       description: >
-        Points de classement : afin de faciliter le processus de récapitulatif des réponses des questions de classement, chaque réponse rassemble un certain nombre de points en fonction de son rang dans le tri. Par défaut, la première réponse rassemble 10 points, la seconde 9 pts, etc.
+        Points de classement : afin de faciliter le processus récapitulatif des réponses des questions de classement, chaque réponse rassemble un certain nombre de points en fonction de son rang dans le tri. Par défaut, la première réponse rassemble 10 points, la seconde 9 pts, etc.
     position:
       name: Position
       description: Position de la question de la réponse dans le questionnaire
