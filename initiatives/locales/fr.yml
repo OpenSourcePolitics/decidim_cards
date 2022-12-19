@@ -55,7 +55,7 @@ meta:
       description: Hashtag
     scoped_type_id:
       name: ID du type de périmètre d'application
-      description: ID du type de périmêtre d'application de l'initiative
+      description: ID du type de périmètre d'application de l'initiative
     decidim_author_type:
       name: Type d’auteur
       description: Type de l'auteur qui a écrit l'initiative
@@ -80,7 +80,7 @@ meta:
     supports_required:
       name: Supports requis
       description: >
-        Number of votes that the initiative must gather in order to be validated
+        Nombre de votes que l'initiative doit réunir pour être validée
     area_id:
       name: ID de catégorie
       description: ID de la catégorie de l'initiative
@@ -96,4 +96,4 @@ meta:
     id_as_text:
       name: ID textuel
       description: >
-        Afin de lier une initiative à ses visites, nous devons avoir l'ID de l'initiative comme texte
+        In order to link an initiative to its visits, we must cast the ID of the initiative into text
