@@ -4,49 +4,49 @@ description: Toutes les réponses des participants aux questionnaires publiés s
 meta:
   columns:
     decidim_user_id:
-      name: User ID
+      name: ID de l’utilisateur
       description: >
         ID of the user of made the answer. If empty, it means the respondant was not registered on the platform at the time answers were made
     session_token:
-      name: Session token
-      description: Session token of the respondant
+      name: Jeton de session
+      description: Jeton de session du répondant
     ip_hash:
-      name: IP hash
-      description: Hash of the IP address of the respondant
+      name: Hachage IP
+      description: Hachage de l'adresse IP du répondant
     question_type:
-      name: Question type
-      description: Type of the question
+      name: Type de question
+      description: Type de la question
     question_title:
-      name: Question title
-      description: Title of the question
+      name: Titre de la question
+      description: Intitulé de la question
     answer:
-      name: Answer
-      description: Answer
+      name: Réponse
+      description: Réponse
     sub_matrix_question:
-      name: Submatrix question
-      description: Submatrix question
+      name: Question sous-matricielle
+      description: Question sous-matricielle
     custom_body:
-      name: Custom body
-      description: Custom body
+      name: Corps personnalisé
+      description: Corps personnalisé
     sorting_position:
-      name: Sorting position
-      description: Sorting position
+      name: Position de tri
+      description: Position de tri
     decidim_questionnaire_id:
-      name: Form ID
-      description: ID of the form to which belong this answer
+      name: ID du questionnaire
+      description: ID du questionnaire auquel appartient cette réponse
     form_title:
-      name: Form title
-      description: Title of the form to which belong this answer
+      name: Titre du questionnaire
+      description: Titre du questionnaire auquel appartient cette réponse
     decidim_component_id:
-      name: Component ID
+      name: ID du composant
       description: ID of the component to which belong this answer
     sorting_points:
-      name: Sorting points
+      name: Points de classement
       description: >
-        Sorting points: in order to ease the process of summarizing answers of ranking questions, each answer gathers a number of points depending on its rank in the sorting. By default, the first answer gathers 10 points, the second one 9 pts etc.
+        Points de classement : afin de faciliter le processus de récapitulatif des réponses des questions de classement, chaque réponse rassemble un certain nombre de points en fonction de son rang dans le tri. Par défaut, la première réponse rassemble 10 points, la seconde 9 pts, etc.
     position:
       name: Position
-      description: Position of the answer's question in the form
+      description: Position de la question de la réponse dans le questionnaire
     created_at:
-      name: Date of creation
-      description: Date of creation of the answer
+      name: Date de création
+      description: Date de la création de la réponse
