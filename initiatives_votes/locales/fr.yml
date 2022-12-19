@@ -24,7 +24,7 @@ meta:
       description: Hachage ID du vote
     decidim_scope_id:
       name: ID du périmètre d'application
-      description: ID du périmêtre d'application dans lequel le vote a été fait
+      description: ID du périmètre d'application dans lequel le vote a été fait
     initiative_url:
       name: URL de l’initiative
       description: URL de l'initiative votée
