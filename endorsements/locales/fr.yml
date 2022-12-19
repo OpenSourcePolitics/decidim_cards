@@ -1,6 +1,7 @@
 ---
 name: Soutiens
-description: 'Soutiens faits sur la plateforme. À ne pas confondre avec les votes sur les propositions : les soutiens sont visibles et non anonymes, contrairement aux votes sur les propositions'
+description: >
+  Endorsements made on the platform. Not to be confused with proposal votes: each endorsement is displayed individually on the platform and not anonymously whereas proposal votes are resumed and anonymous
 meta:
   columns:
     id:
