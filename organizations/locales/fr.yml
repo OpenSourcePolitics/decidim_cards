@@ -1,6 +1,6 @@
 ---
 name: Organisations
-description: Informations à propos de l'organisation principale sur votre
+description: Informations about of the main organization on your Decidim platform
 meta:
   columns:
     id:
@@ -20,10 +20,7 @@ meta:
       description: Toutes les langues disponibles qui peuvent être activées sur la plateforme
     created_at:
       name: Date de création
-      description: Date on which the platform was created
-    updated_at:
-      name: Last update date
-      description: Last time the organization was updated
+      description: Date on which the organization was created
     description:
       name: Description
       description: Description de l'organisation
@@ -35,7 +32,7 @@ meta:
       description: Liste de toutes les autorisations disponibles
     header_snippets:
       name: Code d'en-tête
-      description: 'Le snippet d''en-tête est un chunk de code qui peut être intégré sur toutes les pages Web de l''organisation.'
+      description: 'Le snippet d''en-tête est un bout de code qui peut être intégré sur toutes les pages web de l''organisation.'
     tos_version:
       name: Version des CGU
       description: Numéro de version des CGU
