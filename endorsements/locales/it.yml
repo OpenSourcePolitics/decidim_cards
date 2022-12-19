@@ -1,6 +1,7 @@
 ---
 name: Endorsements
-description: 'Endorsements made on the platform. Not to be confused with proposal votes: endorsements are visible and not anonymous contrary to proposal votes'
+description: >
+  Endorsements made on the platform. Not to be confused with proposal votes: each endorsement is displayed individually on the platform and not anonymously whereas proposal votes are resumed and anonymous
 meta:
   columns:
     id:
