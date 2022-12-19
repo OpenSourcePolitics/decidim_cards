@@ -18,9 +18,6 @@ meta:
     created_at:
       name: Date of creation
       description: Date of creation
-    updated_at:
-      name: Last date of update
-      description: Last date of update of the blog post
     decidim_author_id:
       name: Author ID
       description: ID of the author of the blog post
