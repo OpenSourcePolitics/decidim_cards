@@ -1,6 +1,13 @@
 ---
 name: Followings
-description: All actions of followings made on the platform.
+description: >
+  All actions of followings made on the platform. Mind that Decidim counts 
+  followings in two different way: following made on a specific resource
+  (proposal, comment, etc.), called "direct follow" and following made on a 
+  component, in this case all resources inside it are counted as followed. 
+  Therefore, a "followable resource" means the resource that the user choose to 
+  follow directly, whereas a "root followable" is a component to which belong the 
+  followed resource.
 meta:
   columns:
     id:
@@ -8,13 +15,14 @@ meta:
       description: ID of the following
     decidim_component_id:
       name: Component ID
-      description: ID of the component to which belong the following object
+      description: ID of the component to which belong the followed resource
     decidim_user_id:
       name: User ID
       description: ID of the user who made the follow action
     root_decidim_followable_id:
       name: Root followable ID
-      description: ID of the root resource that was followed
+      description: > 
+        ID of the root resource that was followed i.e 
     root_decidim_followable_type:
       name: Root followable type
       description: Type of the root resource that was followed
@@ -24,9 +32,6 @@ meta:
     created_at:
       name: Date of creation
       description: Date of creation
-    updated_at:
-      name: Date of udpate
-      description: Date of udpate
     root_following_url:
       name: Root following URL
       description: URL of the root resource that was followed
