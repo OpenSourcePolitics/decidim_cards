@@ -46,7 +46,7 @@ meta:
     confirmed_at:
       name: Date de confirmation
       description: >
-        Date at which the user confirmed its account. Empty if the account was not confirmed
+        Date à laquelle l'utilisateur a confirmé son compte. Vide si le compte n'a pas été confirmé
     confirmation_token:
       name: Jeton de confirmation
       description: Jeton de confirmation du compte
