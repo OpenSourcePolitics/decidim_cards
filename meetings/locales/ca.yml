@@ -1,7 +1,6 @@
 ---
 name: Meetings
 description: All published meetings on the platform
-viz_settings:
 meta:
   columns:
     id:
@@ -38,8 +37,8 @@ meta:
       name: Registration URL
       description: Registration URL for the meeting
     meeting_url:
-      name: Meeting URL
-      description: Meeting URL for the meeting
+      name: URL
+      description: URL for the meeting
     private_meeting:
       name: Is private meeting?
       description: Whether or not the meeting is private
