@@ -38,7 +38,7 @@ meta:
       description: URL d'inscription pour la rencontre
     meeting_url:
       name: URL
-      description: URL for the meeting
+      description: URL de la rencontre
     private_meeting:
       name: Rencontre privée ?
       description: Si la rencontre est privée ou non
