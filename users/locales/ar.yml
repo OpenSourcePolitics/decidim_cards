@@ -1,0 +1,124 @@
+---
+name: Users
+description: All created users on your platform (includes admins, invited, managed, reported, blocked and deleted users)
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the user
+    email:
+      name: Email
+      description: Email of the user
+    sign_in_count:
+      name: Signin count
+      description: Number of times the user signed in on the platform
+    last_sign_in_at:
+      name: Last signin date
+      description: Last time the user signed in on the platform
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    invitation_created_at:
+      name: Date of invitation creation
+      description: >
+        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the time the invitation of the user was created
+    invitation_sent_at:
+      name: Date of invitation sending
+      description: >
+        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the time the invitation of the user was sent
+    invitation_accepted_at:
+      name: Date of accepted invitation
+      description: >
+        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the time the invitation of the user was accepted
+    invited_by_id:
+      name: ID of inviter
+      description: ID of the user that invited that user
+    invited_by_type:
+      name: Type of the inviter
+      description: >
+        Users can either register on the platform by themselved or by being invited. If empty, it means the user self-registered. Else it'll give the type of the inviter (whether an organization, a single user etc.)
+    decidim_organization_id:
+      name: ID of organization
+      description: ID of organization to which belong the user
+    confirmed_at:
+      name: Confirmation date
+      description: >
+        Date at which the user confirmed its account. Empty if the account was not confirmed
+    confirmation_token:
+      name: Confirmation token
+      description: Token of account confirmation
+    unconfirmed_email:
+      name: Email not confirmed ?
+      description: Whether or not the user has confirmed its email.
+    name:
+      name: Name
+      description: Name of the user
+    locale:
+      name: Language
+      description: Language used by the user
+    deleted_at:
+      name: Date of account deletion
+      description: >
+        A user can choose to delete its account. If empty, it means the user still has an account. If not, it gives the time at which the user deleted it.
+    admin:
+      name: Is admin ?
+      description: Whether or not the user is administrator of the platform
+    managed:
+      name: Is managed ?
+      description: >
+        A user can be managed. It means that someone else can participate in its name. This field indicate whether or not the user is managed
+    roles:
+      name: Roles
+      description: >
+        A user can have different roles inside a Decidim platform. This field list all roles that the user have
+    email_on_notification:
+      name: Email on notification ?
+      description: >
+        Whether or not the user receive a mail when he/she's notified on the platform
+    nickname:
+      name: Nickname
+      description: Nickname of the user
+    accepted_tos_version:
+      name: Version of TOS accepted
+      description: >
+        When registering on the platform, a user must accept the Terms of Services. These terms can be versionized. This field give the version of the Terms of Services that was accepted
+    type:
+      name: Type
+      description: >
+        Type of user: can be a group, a single person, etc.
+    following_count:
+      name: Followings count
+      description: Number of resources followed by the user
+    followers_count:
+      name: Followers count
+      description: Number of people that follows the user
+    failed_attempts:
+      name: Failed signin count
+      description: Number of time the user failed to sign in
+    locked_at:
+      name: Locking date
+      description: Datetime at which the user was blocked
+    admin_terms_accepted_at:
+      name: Date of admin terms acceptation
+      description: >
+        If the user is an admin, gives the datetime at which he/she accepted the terms of use
+    blocked:
+      name: Is blocked ?
+      description: Whether or not the user was blocked
+    blocked_at:
+      name: Blocking date
+      description: Datetime at which the user was blocked. Empty if not blocked
+    confirmed:
+      name: Is confirmed ?
+      description: >
+        Whether or not the account of the registration of the user was confirmed
+    url:
+      name: URL
+      description: URL of the user profile
+    extended_data:
+      name: Extended data
+      description: >
+        Decidim stores in this field all data related to the user that doesn't fit into a specific column. Used in multiple Decidim modules to describe the user more precisely
