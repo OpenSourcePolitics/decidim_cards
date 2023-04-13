@@ -1,0 +1,30 @@
+---
+name: Endorsements
+description: >
+  Endorsements made on the platform. Not to be confused with proposal votes: each endorsement is displayed individually on the platform and not anonymously whereas proposal votes are resumed and anonymous
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the endorsement
+    resource_type:
+      name: Resource type
+      description: Type of the endorsed resource
+    resource_id:
+      name: Resource ID
+      description: ID of the resource endorsed
+    decidim_author_type:
+      name: Author type
+      description: Type of the author. It could be an organization, a single user, etc.
+    decidim_author_id:
+      name: Author ID
+      description: ID of the author of the endorsement
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    updated_at:
+      name: Date of update
+      description: Date of update
+    decidim_component_id:
+      name: Resource component ID
+      description: ID of the component to which belong the endorsed resource
