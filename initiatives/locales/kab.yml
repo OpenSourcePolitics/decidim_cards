@@ -1,0 +1,99 @@
+---
+name: Initiatives
+description: All initiatives created on the platform. Includes all created ones, whatever  their states.
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the initiative
+    title:
+      name: Title
+      description: Title of the initiative
+    description:
+      name: Description
+      description: Description of the initiative
+    decidim_author_id:
+      name: Author ID
+      description: ID of the user that created the initiative
+    published_at:
+      name: Date of publication
+      description: Date of publication of the initiative
+    parsed_state:
+      name: Parsed state
+      description: >
+        Parsed state: as Decidim use an integer to detect the state of an initiative (in evaluation, accepted, ...), this column make the correspondance to ease the visualisation process
+    state:
+      name: State
+      description: State (as registered in Decidim)
+    signature_type:
+      name: Signature type
+      description: >
+        Way this initiative can be signed. If 0, it means it only can be signed online, if equal to 1, it means it only can be signed offline. If equal to 2, it can be signed both ways
+    signature_start_date:
+      name: Signature start date
+      description: Date from which we can sign the initiative
+    signature_end_date:
+      name: Signature end date
+      description: Date from which we can not sign the initiative anymore
+    answer:
+      name: Answer
+      description: Answer of administrators to the initiative (if any)
+    answered_at:
+      name: Date of answer
+      description: Date of the answer of the administrator to the initiative (if any)
+    answer_url:
+      name: Answer URL
+      description: URL of the answer to the initiative (if any)
+    created_at:
+      name: Date of creation
+      description: Date of creation
+    decidim_user_group_id:
+      name: User group ID
+      description: ID of the user group (if any)
+    hashtag:
+      name: Hashtag
+      description: Hashtag
+    scoped_type_id:
+      name: Scoped type ID
+      description: ID of the type of scope of the initiative
+    decidim_author_type:
+      name: Author Type
+      description: Type of the author that wrote the initiative
+    parsed_online_votes:
+      name: Online votes
+      description: Number of online votes made on the initiative
+    parsed_offline_votes:
+      name: Offline votes
+      description: Number of offline votes made on the initiative
+    sum_votes:
+      name: Sum of votes
+      description: Sum of the votes made the initiative (both online and offline)
+    comments_count:
+      name: Comments count
+      description: Number of comments made on the initiative
+    follows_count:
+      name: Follows count
+      description: Number of participants that follow the initiative
+    url:
+      name: URL
+      description: URL of the initiative
+    supports_required:
+      name: Supports required
+      description: >
+        Number of votes that the initiative must gather in order to be validated
+    area_id:
+      name: Area ID
+      description: ID of the area of the initiative
+    area_name:
+      name: Area name
+      description: Name of the area of the initiative
+    area_type_name:
+      name: Area type name
+      description: Name of the area type of the initiative
+    resource_type:
+      name: Resource type
+      description: Resource type
+    id_as_text:
+      name: ID as text
+      description: >
+        In order to link an initiative to its visits, we must cast the ID of the initiative into text
