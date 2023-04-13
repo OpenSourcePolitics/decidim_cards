@@ -1,0 +1,22 @@
+---
+name: Participations
+description: 'All participations made on the platform : proposals, endorsements, proposals'' votes, debates, answers to surveys and comments.  ⚠️ Please note that it also counts answers of unregistered users, in this case they''re identified by their session_id.'
+meta:
+  columns:
+    user_id:
+      name: User ID
+      description: ID of the user that participated
+    participation_id:
+      name: Participation ID
+      description: >
+        ID of the participation.
+    decidim_component_id:
+      name: Component ID
+      description: ID of the component in which the participation was made
+    participation_type:
+      name: Participation type
+      description: >
+        Type of the participation.  A resource can be a proposal, a comment, an endorsement, etc.
+    participation_date:
+      name: Participation date
+      description: Date of the participation
