@@ -5,8 +5,8 @@ query:
   sql: |
     select 
         decidim_initiatives.id,
-        title->>'$LANGUAGE_CODE' as title,
-        regexp_replace(decidim_initiatives.description->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
+        title::jsonb->>'$LANGUAGE_CODE' as title,
+        regexp_replace(decidim_initiatives.description::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         decidim_author_id,
         published_at,
         (case state
@@ -21,7 +21,7 @@ query:
         signature_type,
         signature_start_date,
         signature_end_date,
-        regexp_replace(answer->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as answer,
+        regexp_replace(answer::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as answer,
         answered_at,
         answer_url,
         decidim_initiatives.created_at,
@@ -37,8 +37,8 @@ query:
         concat('https://', (select host from {{#organizations}} org), '/initiatives/i-',decidim_initiatives.id) as url,
         supports_required,
         decidim_areas.id as area_id,
-        coalesce(nullif(decidim_areas.name->>'$LANGUAGE_CODE', ''), 'No sub category') as area_name,
-        coalesce(nullif(decidim_area_types.name->>'$LANGUAGE_CODE',''), 'No category') as area_type_name,
+        coalesce(nullif(decidim_areas.name::jsonb->>'$LANGUAGE_CODE', ''), 'No sub category') as area_name,
+        coalesce(nullif(decidim_area_types.name::jsonb->>'$LANGUAGE_CODE',''), 'No category') as area_type_name,
         'Decidim::Initiative' as resource_type,
         decidim_initiatives.id::text as id_as_text
     from decidim_initiatives
@@ -46,8 +46,8 @@ query:
         join decidim_initiatives_type_scopes on scoped_type_id = decidim_initiatives_type_scopes.id
         left join decidim_areas on decidim_areas.id = decidim_initiatives.decidim_area_id
         left join decidim_area_types on decidim_area_types.id = area_type_id,
-        lateral (select coalesce(nullif(online_votes->>'total',''), '0')::int as parsed_online_votes) t_online,
-        lateral (select coalesce(nullif(offline_votes->>'total',''), '0')::int as parsed_offline_votes) t_offline
+        lateral (select coalesce(nullif(online_votes::jsonb->>'total',''), '0')::int as parsed_online_votes) t_online,
+        lateral (select coalesce(nullif(offline_votes::jsonb->>'total',''), '0')::int as parsed_offline_votes) t_offline
     
   info:
     meta:

@@ -5,8 +5,8 @@ query:
   sql: |
     select
         decidim_meetings_meetings.id,
-        decidim_meetings_meetings.title->>'$LANGUAGE_CODE' as title,
-        regexp_replace(description->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
+        decidim_meetings_meetings.title::jsonb->>'$LANGUAGE_CODE' as title,
+        regexp_replace(description::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         coalesce(nullif(address,''), 'Pas d''adresse') as address,
         coalesce(attendees_count, 0) as attendees_count,
         decidim_meetings_meetings.created_at,

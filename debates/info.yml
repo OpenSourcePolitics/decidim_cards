@@ -5,8 +5,8 @@ query:
   sql: |
     select
         decidim_debates_debates.id,
-        title->>'$LANGUAGE_CODE' as title,
-        regexp_replace(description->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
+        title::jsonb->>'$LANGUAGE_CODE' as title,
+        regexp_replace(description::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         start_time,
         end_time,
         decidim_component_id,

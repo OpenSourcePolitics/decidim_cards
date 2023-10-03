@@ -5,8 +5,8 @@ query:
   sql: |
     select
         decidim_budgets_projects.id, 
-        decidim_budgets_projects.title->>'$LANGUAGE_CODE' as title,
-        regexp_replace(decidim_budgets_projects.description->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
+        decidim_budgets_projects.title::jsonb->>'$LANGUAGE_CODE' as title,
+        regexp_replace(decidim_budgets_projects.description::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         decidim_budgets_projects.created_at,
         decidim_budgets_projects.decidim_scope_id, 
         decidim_budgets_projects.budget_amount as project_amount, 

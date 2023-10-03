@@ -5,7 +5,7 @@ query:
   sql: |
     select
         decidim_budgets_budgets.id,
-        decidim_budgets_budgets.title->>'$LANGUAGE_CODE' as title,
+        decidim_budgets_budgets.title::jsonb->>'$LANGUAGE_CODE' as title,
         decidim_components.id as decidim_component_id,
         decidim_components.ps_url as url,
         ps_slug

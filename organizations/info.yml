@@ -9,7 +9,7 @@ query:
         default_locale,
         available_locales,
         created_at,
-        regexp_replace(description->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
+        regexp_replace(description::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         secondary_hosts,
         available_authorizations,
         header_snippets,

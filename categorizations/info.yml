@@ -6,7 +6,7 @@ query:
     with main_categories as (
         select
             decidim_categories.id as id,
-            decidim_categories.name->>'$LANGUAGE_CODE' as category_name,
+            decidim_categories.name::jsonb->>'$LANGUAGE_CODE' as category_name,
             0 as child_id,
             '' as child_name,
             categorizable_id,
@@ -17,9 +17,9 @@ query:
     ), sub_categories as (  
         select
             parent_categories.id as id,
-            parent_categories.name->>'$LANGUAGE_CODE' as category_name,
+            parent_categories.name::jsonb->>'$LANGUAGE_CODE' as category_name,
             decidim_categories.id as child_id,
-            decidim_categories.name->>'$LANGUAGE_CODE' as child_name,
+            decidim_categories.name::jsonb->>'$LANGUAGE_CODE' as child_name,
             categorizable_id,
             categorizable_type
         from decidim_categorizations

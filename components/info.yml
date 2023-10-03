@@ -8,8 +8,8 @@ query:
             select
                 id as ps_id,
                 published_at as ps_published_at,
-                title->>'$LANGUAGE_CODE' as ps_title,
-                subtitle->>'$LANGUAGE_CODE' as ps_subtitle,
+                title::jsonb->>'$LANGUAGE_CODE' as ps_title,
+                subtitle::jsonb->>'$LANGUAGE_CODE' as ps_subtitle,
                 slug as ps_slug,
                 decidim_organization_id,
                 'Decidim::Assembly' as ps_type,
@@ -19,8 +19,8 @@ query:
             select
                 id as ps_id, 
                 published_at as ps_published_at, 
-                title->>'$LANGUAGE_CODE' as ps_title, 
-                subtitle->>'$LANGUAGE_CODE' as ps_subtitle, 
+                title::jsonb->>'$LANGUAGE_CODE' as ps_title, 
+                subtitle::jsonb->>'$LANGUAGE_CODE' as ps_subtitle, 
                 slug as ps_slug, 
                 decidim_organization_id, 
                 'Decidim::ParticipatoryProcess' as ps_type,
