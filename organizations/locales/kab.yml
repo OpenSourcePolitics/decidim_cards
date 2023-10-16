@@ -1,0 +1,50 @@
+---
+name: Organizations
+description: Informations about of the main organization on your Decidim platform
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the Decidim organization
+    name:
+      name: Name
+      description: Name of the Decidim organization
+    host:
+      name: Host
+      description: 'Host of the Decidim organization. Usually similar to the URL from which we access the platform'
+    default_locale:
+      name: Default locale
+      description: Default language for the Decidim instance
+    available_locales:
+      name: Availables locales
+      description: All available languages that can be enabled on the platform
+    created_at:
+      name: Date of creation
+      description: Date on which the organization was created
+    description:
+      name: Description
+      description: Description of the organization
+    secondary_hosts:
+      name: Secondary hosts
+      description: List of all hosts from which the organization can be accessible
+    available_authorizations:
+      name: Available authorizations
+      description: List of all available authorizations
+    header_snippets:
+      name: Header snippet
+      description: 'The header snippet is a chunk of code that can be embedded on all of the webpages of the organization.'
+    tos_version:
+      name: Version of TOS
+      description: Number of version of the Terms of Services
+    badges_enabled:
+      name: Badges enabled
+      description: Whether or not badges are enabled
+    send_welcome_notification:
+      name: Sending welcome notification ?
+      description: Whether or not a welcome notification is sent to new participants
+    users_registration_mode:
+      name: Users' registration mode
+      description: 'There''s two way a user can be registered on the platform: either by itself, either by an invitation'
+    time_zone:
+      name: Time zone
+      description: Time zone set for the organization

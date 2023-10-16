@@ -1,0 +1,50 @@
+---
+name: Comments
+description: All comments made on the platform.
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the comment
+    decidim_commentable_id:
+      name: Commentable ID
+      description: ID of the commentable resource
+    decidim_commentable_type:
+      name: Commentable type
+      description: Type of the commentable resource
+    decidim_author_id:
+      name: Author ID
+      description: ID of the author of the comment
+    created_at:
+      name: Date of creation
+      description: Date of creation of the comment
+    depth:
+      name: Depth
+      description: >
+        Depth of the comment. If equal to 0, it means the comment was directly made on the resource. If equal to 1, it means the comment is a reaction to a previous comment made on the resource etc.
+    alignment:
+      name: Alignment
+      description: >
+        Alignment of the comment. If equal to 1, it means the author self-described its comment as a positive one. If equal -1, it means the author self-described its comment as a negative one. If equal to 0, it either means the author didn't categorize its comment or described it as neutral
+    decidim_root_commentable_id:
+      name: Root commentable ID
+      description: ID of the root resource that was commented
+    decidim_root_commentable_type:
+      name: Root commentable type
+      description: Type of the resource that was originaly commented
+    decidim_author_type:
+      name: Author type
+      description: >
+        Type of the author : it can be an organization, a single user, etc.
+    body:
+      name: Body
+      description: Body of the comment
+    decidim_component_id:
+      name: Component ID
+      description: ID of the component on which this comment was made
+    ps_slug:
+      name: Participatory space slug
+      description: Slug of the participatory process on which this comment was made
+    comment_url:
+      name: URL
+      description: Comment URL

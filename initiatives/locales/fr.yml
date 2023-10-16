@@ -96,4 +96,4 @@ meta:
     id_as_text:
       name: ID textuel
       description: >
-        In order to link an initiative to its visits, we must cast the ID of the initiative into text
+        Afin de lier une initiative à ses visites, nous devons avoir l'ID de l'initiative comme texte

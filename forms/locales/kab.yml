@@ -1,0 +1,17 @@
+---
+name: Forms
+description: All forms published on the platform including closed ones.
+meta:
+  columns:
+    id:
+      name: ID
+      description: ID of the form
+    title:
+      name: Title
+      description: Title of the form
+    decidim_component_id:
+      name: Component ID
+      description: ID of the component to which belong the form
+    questionnaire_url:
+      name: URL
+      description: URL of the form

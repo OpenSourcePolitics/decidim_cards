@@ -1,18 +1,18 @@
 ---
-name: Attachments files
-description: All attachments files downloaded on the platform
+name: File Allegati
+description: Tutti i file allegati scaricati sulla piattaforma
 meta:
   columns:
     id:
       name: ID
-      description: ID of the attachment file
+      description: ID del file allegato
     attached_to_id:
-      name: ID of attached resource
+      name: ID della risorsa allegata
       description: >
-        ID of the resource linked to this attachment. It could be a meeting, a cold page, a proposal,...
+        ID della risorsa collegata a questo allegato. Potrebbe trattarsi di una riunione, una pagina statica, una proposta...
     attached_to_type:
-      name: Type of attached resource
-      description: Type of resource linked to this attachment
+      name: Tipo di risorsa allegata
+      description: Tipo di risorsa collegata a questo allegato
     url:
       name: URL
-      description: URL of the attachment file on the platform
+      description: URL del file allegato sulla piattaforma

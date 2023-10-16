@@ -1,29 +1,29 @@
 ---
-name: Blogs posts
-description: All blog posts on the platform
+name: Articoli del Blog
+description: Tutti i post del blog sulla piattaforma
 meta:
   columns:
     id:
       name: ID
-      description: ID of the blog post
+      description: ID del post sul blog
     title:
-      name: Title
-      description: Title of the blog post
+      name: Titolo
+      description: Titolo del post sul blog
     body:
-      name: Body
-      description: Body of the blog post
+      name: Testo
+      description: Testo del post del blog
     decidim_component_id:
-      name: Component ID
-      description: ID of the component to which belong this blog post
+      name: ID del Componente
+      description: ID del componente a cui appartiene questo post del blog
     created_at:
-      name: Date of creation
-      description: Date of creation
+      name: Data di creazione
+      description: Data di creazione
     decidim_author_id:
-      name: Author ID
-      description: ID of the author of the blog post
+      name: ID autore
+      description: ID dell'autore del post del blog
     post_url:
       name: URL
-      description: URL of the blog post
+      description: ID del post sul blog
     resource_type:
-      name: Type of resource
-      description: Type of the resource
+      name: Tipo di risorsa
+      description: Tipo di risorsa
