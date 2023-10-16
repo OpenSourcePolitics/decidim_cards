@@ -9,6 +9,7 @@ query:
         regexp_replace(decidim_budgets_projects.description::jsonb->>'$LANGUAGE_CODE', E'(<[^>]+>)|(&[a-z]+;)', '', 'gi') as description,
         decidim_budgets_projects.created_at,
         decidim_budgets_projects.decidim_scope_id, 
+        decidim_scopes.name ->>'fr' as scope_name,
         decidim_budgets_projects.budget_amount as project_amount, 
         decidim_budgets_budgets.id as budget_id,
         decidim_budgets_budgets.title as budget_title,
@@ -22,6 +23,7 @@ query:
     from decidim_budgets_projects
         join {{#budgets}} as decidim_budgets_budgets on decidim_budgets_budgets.id = decidim_budgets_projects.decidim_budgets_budget_id
         join {{#components}} as decidim_components on decidim_components.id = decidim_component_id
+        left join decidim_scopes on decidim_scope_id = decidim_scopes.id
         left join (
             select array_agg(category_name) as categories, 
                 array_agg(child_name) as sub_categories,
@@ -37,3 +39,4 @@ query:
         - budgets
         - components
         - categorizations
+
