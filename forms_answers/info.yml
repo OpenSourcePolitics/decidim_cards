@@ -49,7 +49,7 @@ query:
                   question_type,
                   decidim_forms_questions.position as "position",
                   decidim_forms_answer_choices.body::text as "answer",
-                  decidim_forms_question_matrix_rows.body::jsonb->>'$LANGUAGE_CODE' as "sub_matrix_question",
+                  trim(decidim_forms_question_matrix_rows.body::jsonb->>'$LANGUAGE_CODE') as "sub_matrix_question",
                   '' as custom_body,
                   -1 as sorting_position,
                   decidim_forms_questions.decidim_questionnaire_id,
